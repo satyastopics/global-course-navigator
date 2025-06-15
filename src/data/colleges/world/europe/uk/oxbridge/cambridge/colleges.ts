@@ -1,22 +1,37 @@
 
-import { College } from '../../../../../../../types/collegeTypes';
+import { College } from '../../../../../../types/collegeTypes';
 
 export const cambridgeColleges: College[] = [
   {
-    id: "81",
-    name: "University of Cambridge",
+    id: "cambridge-trinity",
+    name: "Trinity College, Cambridge",
     location: "Cambridge, England, UK",
     type: "Public",
-    overallRanking: 3,
-    establishedYear: 1209,
+    overallRanking: 2,
+    establishedYear: 1546,
     courses: [
-      { name: "Engineering", ranking: 5, strength: "Excellent", fees: "£35K", feeType: "per-year" },
-      { name: "Mathematics", ranking: 1, strength: "Excellent", fees: "£32K", feeType: "per-year" },
-      { name: "Computer Science", ranking: 4, strength: "Excellent", fees: "£35K", feeType: "per-year" },
-      { name: "Medicine", ranking: 3, strength: "Excellent", fees: "£38K", feeType: "per-year" }
+      { name: "Mathematics", ranking: 1, strength: "Excellent", fees: "£35K", feeType: "per-year" },
+      { name: "Natural Sciences", ranking: 1, strength: "Excellent", fees: "£35K", feeType: "per-year" },
+      { name: "Computer Science", ranking: 2, strength: "Excellent", fees: "£35K", feeType: "per-year" }
     ],
-    highlights: ["World-class research", "College system", "STEM excellence", "Historic prestige"],
-    website: "https://www.cam.ac.uk",
+    highlights: ["Largest college", "Newton's apple tree", "Nobel Prize winners", "Scientific excellence"],
+    website: "https://www.trin.cam.ac.uk",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "cambridge-kings",
+    name: "King's College, Cambridge",
+    location: "Cambridge, England, UK",
+    type: "Public",
+    overallRanking: 2,
+    establishedYear: 1441,
+    courses: [
+      { name: "Economics", ranking: 1, strength: "Excellent", fees: "£35K", feeType: "per-year" },
+      { name: "History", ranking: 1, strength: "Excellent", fees: "£35K", feeType: "per-year" },
+      { name: "Modern Languages", ranking: 1, strength: "Excellent", fees: "£35K", feeType: "per-year" }
+    ],
+    highlights: ["Gothic chapel", "Choir excellence", "Progressive traditions", "Academic distinction"],
+    website: "https://www.kings.cam.ac.uk",
     image: "/placeholder.svg"
   }
 ];

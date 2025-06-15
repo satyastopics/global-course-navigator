@@ -1,9 +1,11 @@
 
-import { College } from '../../../../../../types/collegeTypes';
-import { ucSystemUniversities } from './california/uc-system';
+import { College } from '../../../../../types/collegeTypes';
+import { californiaPublicUniversities } from './california';
+import { texasPublicUniversities } from './texas';
 
-export { ucSystemUniversities };
+export { californiaPublicUniversities, texasPublicUniversities };
 
 export const usPublicUniversities: College[] = [
-  ...ucSystemUniversities
+  ...californiaPublicUniversities,
+  ...texasPublicUniversities
 ];
