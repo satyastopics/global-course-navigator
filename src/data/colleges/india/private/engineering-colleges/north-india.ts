@@ -1,28 +1,30 @@
-import { College } from '../../../../../types/collegeTypes';
-import { delhiNCREngineering } from './north-india/delhi';
-import { punjabEngineering } from './north-india/punjab';
-import { uttarPradeshEngineering } from './north-india/uttar-pradesh';
 
-// Keep existing BITS Pilani data
+import { College } from '../../../../../types/collegeTypes';
+import { delhiNCREngineering } from './delhi';
+import { punjabEngineering } from './punjab';
+import { haryanaEngineering } from './haryana';
+import { rajasthanEngineering } from './rajasthan';
+
 export const northIndiaPrivateEngineering: College[] = [
   {
-    id: "33",
-    name: "Birla Institute of Technology and Science",
-    location: "Pilani, Rajasthan, India",
+    id: "36",
+    name: "Bennett University",
+    location: "Greater Noida, Uttar Pradesh, India",
     type: "Private",
-    overallRanking: 13,
-    establishedYear: 1964,
+    overallRanking: 31,
+    establishedYear: 2016,
     courses: [
-      { name: "Computer Science", ranking: 10, strength: "Excellent", fees: "₹4.5L", feeType: "per-year" },
-      { name: "Engineering", ranking: 12, strength: "Very Good", fees: "₹4.5L", feeType: "per-year" },
-      { name: "Pharmacy", ranking: 3, strength: "Very Good", fees: "₹4L", feeType: "per-year" },
-      { name: "Management", ranking: 15, strength: "Good", fees: "₹18L", feeType: "total" }
+      { name: "Computer Science", ranking: 25, strength: "Good", fees: "₹3.5L", feeType: "per-year" },
+      { name: "Engineering", ranking: 31, strength: "Good", fees: "₹3.2L", feeType: "per-year" },
+      { name: "Management", ranking: 45, strength: "Good", fees: "₹12L", feeType: "total" },
+      { name: "Journalism", ranking: 8, strength: "Very Good", fees: "₹4L", feeType: "per-year" }
     ],
-    highlights: ["Deemed university", "Strong industry connections", "Multiple campuses", "Innovation culture"],
-    website: "https://www.bits-pilani.ac.in",
+    highlights: ["Times Group backing", "Media focus", "Industry partnerships", "Modern campus"],
+    website: "https://www.bennett.edu.in",
     image: "/placeholder.svg"
   },
   ...delhiNCREngineering,
   ...punjabEngineering,
-  ...uttarPradeshEngineering
+  ...haryanaEngineering,
+  ...rajasthanEngineering
 ];
