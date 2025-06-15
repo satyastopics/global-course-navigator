@@ -1,3 +1,4 @@
+
 import { College } from '../../../../../../../types/collegeTypes';
 import { utSystemColleges } from './ut-system';
 

@@ -1,3 +1,4 @@
+
 import { College } from '../../../../../../../types/collegeTypes';
 
 export const oxfordColleges: College[] = [
@@ -9,12 +10,12 @@ export const oxfordColleges: College[] = [
     overallRanking: 1,
     establishedYear: 1096,
     courses: [
-      { name: "Philosophy, Politics and Economics", ranking: 1, strength: "Excellent", fees: "£9,250", feeType: "per-year" },
+      { name: "Philosophy Politics Economics", ranking: 1, strength: "Excellent", fees: "£9,250", feeType: "per-year" },
       { name: "Medicine", ranking: 1, strength: "Excellent", fees: "£9,250", feeType: "per-year" },
       { name: "Law", ranking: 1, strength: "Excellent", fees: "£9,250", feeType: "per-year" },
       { name: "English Literature", ranking: 1, strength: "Excellent", fees: "£9,250", feeType: "per-year" }
     ],
-    highlights: ["World's oldest English-speaking university", "Prime Ministers educated here", "Historic traditions", "Academic prestige"],
+    highlights: ["World's oldest English-speaking university", "Collegiate system", "Academic excellence", "Global influence"],
     website: "https://www.ox.ac.uk",
     image: "/placeholder.svg"
   }

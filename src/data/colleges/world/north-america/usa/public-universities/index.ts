@@ -1,4 +1,5 @@
-import { College } from '../../../../../../types/collegeTypes';
+
+import { College } from '../../../../../types/collegeTypes';
 import { californiaPublicUniversities } from './california';
 import { texasPublicUniversities } from './texas';
 
