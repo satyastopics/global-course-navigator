@@ -1,3 +1,4 @@
+
 import { College } from '../../types/collegeTypes';
 
 export const otherColleges: College[] = [
@@ -12,7 +13,7 @@ export const otherColleges: College[] = [
       { name: "Computer Science", ranking: 15, strength: "Excellent", fees: "CAD 58,160", feeType: "per-year" },
       { name: "Engineering", ranking: 12, strength: "Excellent", fees: "CAD 59,310", feeType: "per-year" },
       { name: "Medicine", ranking: 8, strength: "Excellent", fees: "CAD 89,680", feeType: "per-year" },
-      { name: "Business", ranking: 20, strength: "Very Good", fees: "CAD 58,160", feeType: "per-year" }
+      { name: "Business", ranking: 20, strength: "Very Good", fees: "CAD 61,890", feeType: "per-year" }
     ],
     highlights: ["Top Canadian university", "Research intensive", "Diverse student body", "Strong alumni network"],
     website: "https://www.utoronto.ca",
@@ -60,10 +61,10 @@ export const otherColleges: College[] = [
     overallRanking: 194,
     establishedYear: 1829,
     courses: [
-      { name: "Medicine", ranking: 85, strength: "Good", fees: "ZAR 85,000", feeType: "per-year" },
-      { name: "Engineering", ranking: 120, strength: "Average", fees: "ZAR 75,000", feeType: "per-year" },
-      { name: "Business", ranking: 95, strength: "Good", fees: "ZAR 65,000", feeType: "per-year" },
-      { name: "Law", ranking: 88, strength: "Good", fees: "ZAR 55,000", feeType: "per-year" }
+      { name: "Medicine", ranking: 85, strength: "Good", fees: "$6,200", feeType: "per-year" },
+      { name: "Engineering", ranking: 120, strength: "Average", fees: "$5,500", feeType: "per-year" },
+      { name: "Business", ranking: 95, strength: "Good", fees: "$4,700", feeType: "per-year" },
+      { name: "Law", ranking: 88, strength: "Good", fees: "$4,000", feeType: "per-year" }
     ],
     highlights: ["Top African university", "Diverse student body", "Beautiful location", "Research focused"],
     website: "https://www.uct.ac.za",
@@ -94,10 +95,10 @@ export const otherColleges: College[] = [
     overallRanking: 77,
     establishedYear: 1912,
     courses: [
-      { name: "Engineering", ranking: 35, strength: "Very Good", fees: "ILS 11,700", feeType: "per-year" },
-      { name: "Computer Science", ranking: 32, strength: "Very Good", fees: "ILS 11,700", feeType: "per-year" },
-      { name: "Architecture", ranking: 45, strength: "Good", fees: "ILS 11,700", feeType: "per-year" },
-      { name: "Medicine", ranking: 55, strength: "Good", fees: "ILS 27,000", feeType: "per-year" }
+      { name: "Engineering", ranking: 35, strength: "Very Good", fees: "$3,000", feeType: "per-year" },
+      { name: "Computer Science", ranking: 32, strength: "Very Good", fees: "$3,000", feeType: "per-year" },
+      { name: "Architecture", ranking: 45, strength: "Good", fees: "$3,000", feeType: "per-year" },
+      { name: "Medicine", ranking: 55, strength: "Good", fees: "$7,500", feeType: "per-year" }
     ],
     highlights: ["Israel's MIT", "Innovation hub", "Startup ecosystem", "Nobel laureates"],
     website: "https://www.technion.ac.il",
