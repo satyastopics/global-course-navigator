@@ -5,10 +5,18 @@ import { iimColleges } from './government/iims';
 import { nitColleges } from './government/nits';
 import { centralUniversities } from './government/central-universities';
 import { stateUniversities } from './government/state-universities';
-import { deemedUniversities } from './private/deemed-universities';
+import { privateColleges, privateCollegesByType } from './private';
 
 // Export individual collections for easy access
-export { iitColleges, iimColleges, nitColleges, centralUniversities, stateUniversities, deemedUniversities };
+export { 
+  iitColleges, 
+  iimColleges, 
+  nitColleges, 
+  centralUniversities, 
+  stateUniversities, 
+  privateColleges,
+  privateCollegesByType
+};
 
 // Combined government colleges
 export const governmentColleges: College[] = [
@@ -19,14 +27,26 @@ export const governmentColleges: College[] = [
   ...stateUniversities
 ];
 
-// Combined private colleges
-export const privateColleges: College[] = [
-  ...deemedUniversities
-  // Add more private college categories here as they grow
-];
-
 // All Indian colleges
 export const indianColleges: College[] = [
   ...governmentColleges,
   ...privateColleges
 ];
+
+// Indian colleges organized by category for advanced filtering
+export const indianCollegesByCategory = {
+  // Government categories
+  'government-iits': iitColleges,
+  'government-iims': iimColleges,
+  'government-nits': nitColleges,
+  'government-central': centralUniversities,
+  'government-state': stateUniversities,
+  'government-all': governmentColleges,
+  
+  // Private categories (from private/index.ts)
+  ...privateCollegesByType,
+  'private-all': privateColleges,
+  
+  // Main categories
+  'all': indianColleges
+};

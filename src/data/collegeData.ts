@@ -1,7 +1,28 @@
 
 import { College } from '../types/collegeTypes';
-import { indianColleges, governmentColleges, privateColleges, iitColleges, iimColleges, nitColleges } from './colleges/india';
-import { worldColleges, usColleges, ukColleges, europeanColleges, asianColleges, otherColleges } from './colleges/world';
+import { 
+  indianColleges, 
+  governmentColleges, 
+  privateColleges, 
+  iitColleges, 
+  iimColleges, 
+  nitColleges,
+  indianCollegesByCategory,
+  privateCollegesByType
+} from './colleges/india';
+import { 
+  worldColleges, 
+  usColleges, 
+  ukColleges, 
+  europeanColleges, 
+  asianColleges, 
+  otherColleges,
+  worldCollegesByRegion,
+  usCollegesByType,
+  ukCollegesByType,
+  europeanCollegesByCountry,
+  asianCollegesByCountry
+} from './colleges/world';
 
 // Export individual collections for easy access
 export { 
@@ -19,7 +40,16 @@ export {
   ukColleges,
   europeanColleges,
   asianColleges,
-  otherColleges
+  otherColleges,
+  
+  // Granular category exports
+  indianCollegesByCategory,
+  privateCollegesByType,
+  worldCollegesByRegion,
+  usCollegesByType,
+  ukCollegesByType,
+  europeanCollegesByCountry,
+  asianCollegesByCountry
 };
 
 // All colleges combined
@@ -30,26 +60,19 @@ export const allColleges: College[] = [
 
 // Colleges organized by region for filtering and navigation
 export const collegesByRegion = {
-  // Indian subdivisions
-  'indian-government': governmentColleges,
-  'indian-private': privateColleges,
-  'indian-iits': iitColleges,
-  'indian-iims': iimColleges,
-  'indian-nits': nitColleges,
+  // Indian subdivisions with granular categories
+  ...indianCollegesByCategory,
   
-  // World subdivisions
-  'us': usColleges,
-  'uk': ukColleges,
-  'european': europeanColleges,
-  'asian': asianColleges,
-  'other': otherColleges,
+  // World subdivisions with granular categories
+  ...worldCollegesByRegion,
   
   // Main categories
   'indian': indianColleges,
-  'world': worldColleges
+  'world': worldColleges,
+  'all': allColleges
 };
 
-// Statistics for easy access
+// Enhanced statistics for easy access
 export const collegeStats = {
   total: allColleges.length,
   indian: indianColleges.length,
@@ -58,5 +81,19 @@ export const collegeStats = {
   private: privateColleges.length,
   iits: iitColleges.length,
   iims: iimColleges.length,
-  nits: nitColleges.length
+  nits: nitColleges.length,
+  us: usColleges.length,
+  uk: ukColleges.length,
+  european: europeanColleges.length,
+  asian: asianColleges.length,
+  other: otherColleges.length
+};
+
+// Helper functions for dynamic data loading (future use)
+export const getCollegesByCategory = (category: string): College[] => {
+  return collegesByRegion[category as keyof typeof collegesByRegion] || [];
+};
+
+export const getAvailableCategories = (): string[] => {
+  return Object.keys(collegesByRegion);
 };
