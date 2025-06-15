@@ -305,6 +305,298 @@ export const indianColleges: College[] = [
     highlights: ['Media Studies', 'Cultural Diversity', 'Central University', 'Historic Institution'],
     website: 'https://www.jmi.ac.in/',
     image: '/placeholder.svg'
+  },
+  {
+    id: '16',
+    name: 'Indian Institute of Technology Kharagpur',
+    location: 'Kharagpur, West Bengal',
+    type: 'Government',
+    overallRanking: 6,
+    establishedYear: 1951,
+    courses: [
+      { name: 'Computer Science & Engineering', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Electrical Engineering', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Mechanical Engineering', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Mining Engineering', ranking: 1, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Agricultural Engineering', ranking: 2, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Architecture & Regional Planning', ranking: 8, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Law', ranking: 20, strength: 'Good', fees: '₹1.5L', feeType: 'per-year' },
+      { name: 'Management', ranking: 15, strength: 'Very Good', fees: '₹8L', feeType: 'total' }
+    ],
+    highlights: ['First IIT', 'Largest IIT Campus', 'Diverse Programs', 'Strong Alumni Network'],
+    website: 'https://www.iitkgp.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '17',
+    name: 'Indian Institute of Technology Roorkee',
+    location: 'Roorkee, Uttarakhand',
+    type: 'Government',
+    overallRanking: 7,
+    establishedYear: 1847,
+    courses: [
+      { name: 'Civil Engineering', ranking: 2, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Computer Science & Engineering', ranking: 6, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Electrical Engineering', ranking: 6, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Mechanical Engineering', ranking: 6, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Chemical Engineering', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Architecture & Planning', ranking: 12, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Paper Technology', ranking: 1, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Hydrology', ranking: 1, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' }
+    ],
+    highlights: ['Oldest Technical Institution', 'Civil Engineering Excellence', 'Research Heritage', 'Beautiful Campus'],
+    website: 'https://www.iitr.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '18',
+    name: 'National Law School of India University',
+    location: 'Bangalore, Karnataka',
+    type: 'Government',
+    overallRanking: 8,
+    establishedYear: 1987,
+    courses: [
+      { name: 'BA LLB (Hons)', ranking: 1, strength: 'Excellent', fees: '₹2.2L', feeType: 'per-year' },
+      { name: 'LLM', ranking: 1, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'PhD in Law', ranking: 1, strength: 'Excellent', fees: '₹50K', feeType: 'per-year' },
+      { name: 'Certificate Course in Cyber Law', ranking: 2, strength: 'Excellent', fees: '₹25K', feeType: 'total' },
+      { name: 'Diploma in Arbitration', ranking: 1, strength: 'Excellent', fees: '₹1L', feeType: 'total' },
+      { name: 'Corporate Law', ranking: 1, strength: 'Excellent', fees: '₹75K', feeType: 'total' }
+    ],
+    highlights: ['Premier Law School', 'Supreme Court Judges Alumni', 'Legal Research', 'Moot Court Champions'],
+    website: 'https://www.nls.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '19',
+    name: 'Indian Statistical Institute',
+    location: 'Kolkata, West Bengal',
+    type: 'Government',
+    overallRanking: 18,
+    establishedYear: 1931,
+    courses: [
+      { name: 'BStat (Hons)', ranking: 1, strength: 'Excellent', fees: '₹35K', feeType: 'per-year' },
+      { name: 'BMath (Hons)', ranking: 1, strength: 'Excellent', fees: '₹35K', feeType: 'per-year' },
+      { name: 'MStat', ranking: 1, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'MS in Quality Management Science', ranking: 2, strength: 'Excellent', fees: '₹30K', feeType: 'per-year' },
+      { name: 'MS in Quantitative Economics', ranking: 3, strength: 'Excellent', fees: '₹30K', feeType: 'per-year' },
+      { name: 'MTech Computer Science', ranking: 8, strength: 'Very Good', fees: '₹50K', feeType: 'per-year' },
+      { name: 'PhD in Statistics', ranking: 1, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' }
+    ],
+    highlights: ['Statistics Excellence', 'Research Institute', 'Nobel Connections', 'Mathematical Sciences'],
+    website: 'https://www.isical.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '20',
+    name: 'Tata Institute of Fundamental Research',
+    location: 'Mumbai, Maharashtra',
+    type: 'Government',
+    overallRanking: 22,
+    establishedYear: 1945,
+    courses: [
+      { name: 'Integrated PhD in Physics', ranking: 2, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'Integrated PhD in Mathematics', ranking: 3, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'Integrated PhD in Biology', ranking: 5, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'Integrated PhD in Chemistry', ranking: 8, strength: 'Very Good', fees: '₹25K', feeType: 'per-year' },
+      { name: 'MTech Computer Science', ranking: 12, strength: 'Very Good', fees: '₹50K', feeType: 'per-year' },
+      { name: 'MSc Physics', ranking: 3, strength: 'Excellent', fees: '₹30K', feeType: 'per-year' }
+    ],
+    highlights: ['Fundamental Research', 'Nobel Laureate Faculty', 'Pure Sciences', 'Research Excellence'],
+    website: 'https://www.tifr.res.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '21',
+    name: 'Indian Institute of Management Calcutta',
+    location: 'Kolkata, West Bengal',
+    type: 'Government',
+    overallRanking: 2,
+    establishedYear: 1961,
+    courses: [
+      { name: 'MBA (Post Graduate Programme)', ranking: 2, strength: 'Excellent', fees: '₹27L', feeType: 'total' },
+      { name: 'Executive MBA', ranking: 2, strength: 'Excellent', fees: '₹20L', feeType: 'total' },
+      { name: 'Fellow Programme in Management', ranking: 2, strength: 'Excellent', fees: '₹2L', feeType: 'total' },
+      { name: 'Executive Development Programme', ranking: 2, strength: 'Excellent', fees: '₹3L', feeType: 'total' },
+      { name: 'Certificate in Business Analytics', ranking: 3, strength: 'Excellent', fees: '₹2.5L', feeType: 'total' }
+    ],
+    highlights: ['Top Management School', 'Industry Leaders', 'Case Study Method', 'Global Rankings'],
+    website: 'https://www.iimcal.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '22',
+    name: 'Indian Institute of Management Bangalore',
+    location: 'Bangalore, Karnataka',
+    type: 'Government',
+    overallRanking: 3,
+    establishedYear: 1973,
+    courses: [
+      { name: 'MBA (Post Graduate Programme)', ranking: 3, strength: 'Excellent', fees: '₹24L', feeType: 'total' },
+      { name: 'Executive MBA', ranking: 3, strength: 'Excellent', fees: '₹28L', feeType: 'total' },
+      { name: 'PhD in Management', ranking: 3, strength: 'Excellent', fees: '₹1.5L', feeType: 'total' },
+      { name: 'Executive Education', ranking: 2, strength: 'Excellent', fees: '₹5L', feeType: 'total' },
+      { name: 'Certificate in Digital Marketing', ranking: 2, strength: 'Excellent', fees: '₹1.5L', feeType: 'total' }
+    ],
+    highlights: ['Tech Hub Location', 'Innovation Focus', 'Startup Ecosystem', 'Management Excellence'],
+    website: 'https://www.iimb.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '23',
+    name: 'Christian Medical College Vellore',
+    location: 'Vellore, Tamil Nadu',
+    type: 'Private',
+    overallRanking: 10,
+    establishedYear: 1900,
+    courses: [
+      { name: 'MBBS', ranking: 3, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'MD (Internal Medicine)', ranking: 3, strength: 'Excellent', fees: '₹3L', feeType: 'per-year' },
+      { name: 'MS (Surgery)', ranking: 3, strength: 'Excellent', fees: '₹3L', feeType: 'per-year' },
+      { name: 'BSc Nursing', ranking: 2, strength: 'Excellent', fees: '₹50K', feeType: 'per-year' },
+      { name: 'MSc Nursing', ranking: 2, strength: 'Excellent', fees: '₹75K', feeType: 'per-year' },
+      { name: 'BPT (Physiotherapy)', ranking: 5, strength: 'Very Good', fees: '₹1.2L', feeType: 'per-year' },
+      { name: 'PhD in Medical Sciences', ranking: 5, strength: 'Very Good', fees: '₹50K', feeType: 'per-year' }
+    ],
+    highlights: ['Medical Excellence', 'Healthcare Pioneer', 'Research Hospital', 'Christian Values'],
+    website: 'https://www.cmch-vellore.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '24',
+    name: 'National Institute of Technology Trichy',
+    location: 'Tiruchirappalli, Tamil Nadu',
+    type: 'Government',
+    overallRanking: 24,
+    establishedYear: 1964,
+    courses: [
+      { name: 'BTech Computer Science', ranking: 15, strength: 'Very Good', fees: '₹1.5L', feeType: 'per-year' },
+      { name: 'BTech Electrical Engineering', ranking: 18, strength: 'Very Good', fees: '₹1.5L', feeType: 'per-year' },
+      { name: 'BTech Mechanical Engineering', ranking: 20, strength: 'Good', fees: '₹1.5L', feeType: 'per-year' },
+      { name: 'BTech Civil Engineering', ranking: 15, strength: 'Very Good', fees: '₹1.5L', feeType: 'per-year' },
+      { name: 'MTech', ranking: 25, strength: 'Good', fees: '₹75K', feeType: 'per-year' },
+      { name: 'MBA', ranking: 45, strength: 'Good', fees: '₹3L', feeType: 'total' },
+      { name: 'MCA', ranking: 20, strength: 'Good', fees: '₹1L', feeType: 'per-year' }
+    ],
+    highlights: ['Top NIT', 'Engineering Excellence', 'Industry Connect', 'Research Focus'],
+    website: 'https://www.nitt.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '25',
+    name: 'Lady Hardinge Medical College',
+    location: 'New Delhi',
+    type: 'Government',
+    overallRanking: 28,
+    establishedYear: 1916,
+    courses: [
+      { name: 'MBBS', ranking: 8, strength: 'Very Good', fees: '₹8K', feeType: 'per-year' },
+      { name: 'MD (Obstetrics & Gynaecology)', ranking: 3, strength: 'Excellent', fees: '₹30K', feeType: 'per-year' },
+      { name: 'MS (Obstetrics & Gynaecology)', ranking: 2, strength: 'Excellent', fees: '₹30K', feeType: 'per-year' },
+      { name: 'MD (Paediatrics)', ranking: 5, strength: 'Very Good', fees: '₹30K', feeType: 'per-year' },
+      { name: 'Diploma in Child Health', ranking: 4, strength: 'Very Good', fees: '₹25K', feeType: 'per-year' },
+      { name: 'BSc Nursing', ranking: 8, strength: 'Very Good', fees: '₹5K', feeType: 'per-year' }
+    ],
+    highlights: ['Women\'s Medical College', 'Gynecology Excellence', 'Delhi Location', 'Government Medical College'],
+    website: 'https://www.lhmc-du.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '26',
+    name: 'Xavier Labour Relations Institute',
+    location: 'Jamshedpur, Jharkhand',
+    type: 'Private',
+    overallRanking: 38,
+    establishedYear: 1955,
+    courses: [
+      { name: 'MBA (Human Resources)', ranking: 2, strength: 'Excellent', fees: '₹18L', feeType: 'total' },
+      { name: 'MBA (General Management)', ranking: 12, strength: 'Very Good', fees: '₹18L', feeType: 'total' },
+      { name: 'Fellow Programme in Management', ranking: 8, strength: 'Very Good', fees: '₹3L', feeType: 'total' },
+      { name: 'Certificate in Labor Relations', ranking: 1, strength: 'Excellent', fees: '₹2L', feeType: 'total' },
+      { name: 'Executive Development Programme', ranking: 5, strength: 'Very Good', fees: '₹1.5L', feeType: 'total' }
+    ],
+    highlights: ['HR Excellence', 'Industry Connect', 'Social Justice Focus', 'Jesuit Values'],
+    website: 'https://www.xlri.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '27',
+    name: 'Institute of Chemical Technology Mumbai',
+    location: 'Mumbai, Maharashtra',
+    type: 'Government',
+    overallRanking: 42,
+    establishedYear: 1933,
+    courses: [
+      { name: 'BTech Chemical Engineering', ranking: 3, strength: 'Excellent', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'BTech Food Engineering', ranking: 1, strength: 'Excellent', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'BTech Polymer Engineering', ranking: 1, strength: 'Excellent', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'MTech Chemical Engineering', ranking: 3, strength: 'Excellent', fees: '₹85K', feeType: 'per-year' },
+      { name: 'PhD in Chemical Engineering', ranking: 3, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'MBA (Pharmaceutical Management)', ranking: 8, strength: 'Very Good', fees: '₹6L', feeType: 'total' }
+    ],
+    highlights: ['Chemical Engineering Hub', 'Industry Partnerships', 'Research Excellence', 'Specialized Programs'],
+    website: 'https://www.ictmumbai.edu.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '28',
+    name: 'Aligarh Muslim University',
+    location: 'Aligarh, Uttar Pradesh',
+    type: 'Government',
+    overallRanking: 48,
+    establishedYear: 1875,
+    courses: [
+      { name: 'MBBS', ranking: 15, strength: 'Very Good', fees: '₹12K', feeType: 'per-year' },
+      { name: 'BTech Computer Science', ranking: 45, strength: 'Good', fees: '₹65K', feeType: 'per-year' },
+      { name: 'BA Honours Urdu', ranking: 2, strength: 'Excellent', fees: '₹5K', feeType: 'per-year' },
+      { name: 'LLB', ranking: 18, strength: 'Good', fees: '₹15K', feeType: 'per-year' },
+      { name: 'MBA', ranking: 55, strength: 'Average', fees: '₹1.2L', feeType: 'per-year' },
+      { name: 'MA Islamic Studies', ranking: 1, strength: 'Excellent', fees: '₹3K', feeType: 'per-year' },
+      { name: 'BSc Agriculture', ranking: 15, strength: 'Very Good', fees: '₹25K', feeType: 'per-year' }
+    ],
+    highlights: ['Historic University', 'Cultural Heritage', 'Diverse Programs', 'Minority Institution'],
+    website: 'https://www.amu.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '29',
+    name: 'Symbiosis International University',
+    location: 'Pune, Maharashtra',
+    type: 'Private',
+    overallRanking: 52,
+    establishedYear: 1971,
+    courses: [
+      { name: 'MBA', ranking: 25, strength: 'Good', fees: '₹22L', feeType: 'total' },
+      { name: 'BA LLB', ranking: 12, strength: 'Very Good', fees: '₹3.5L', feeType: 'per-year' },
+      { name: 'BBA', ranking: 15, strength: 'Very Good', fees: '₹5L', feeType: 'per-year' },
+      { name: 'BTech Computer Science', ranking: 55, strength: 'Average', fees: '₹6L', feeType: 'per-year' },
+      { name: 'Mass Communication', ranking: 8, strength: 'Very Good', fees: '₹4L', feeType: 'per-year' },
+      { name: 'Design', ranking: 12, strength: 'Very Good', fees: '₹5.5L', feeType: 'per-year' },
+      { name: 'International Business', ranking: 5, strength: 'Very Good', fees: '₹7L', feeType: 'per-year' }
+    ],
+    highlights: ['International Focus', 'Industry Connect', 'Modern Campus', 'Diverse Programs'],
+    website: 'https://www.siu.edu.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '30',
+    name: 'Ashoka University',
+    location: 'Sonepat, Haryana',
+    type: 'Private',
+    overallRanking: 55,
+    establishedYear: 2014,
+    courses: [
+      { name: 'BA (Liberal Arts)', ranking: 3, strength: 'Excellent', fees: '₹9L', feeType: 'per-year' },
+      { name: 'BSc Economics', ranking: 8, strength: 'Very Good', fees: '₹9L', feeType: 'per-year' },
+      { name: 'BSc Computer Science', ranking: 25, strength: 'Good', fees: '₹9L', feeType: 'per-year' },
+      { name: 'MA Economics', ranking: 12, strength: 'Very Good', fees: '₹6L', feeType: 'per-year' },
+      { name: 'MBA', ranking: 35, strength: 'Good', fees: '₹28L', feeType: 'total' },
+      { name: 'MPP (Public Policy)', ranking: 5, strength: 'Very Good', fees: '₹8L', feeType: 'per-year' },
+      { name: 'MSc Data Science', ranking: 15, strength: 'Very Good', fees: '₹7L', feeType: 'per-year' }
+    ],
+    highlights: ['Liberal Arts Focus', 'International Faculty', 'Modern Campus', 'Innovation Hub'],
+    website: 'https://www.ashoka.edu.in/',
+    image: '/placeholder.svg'
   }
 ];
 
@@ -714,6 +1006,206 @@ export const worldColleges: College[] = [
     ],
     highlights: ['Ivy League', 'Beautiful Campus', 'Strong in Sciences', 'Research University'],
     website: 'https://www.cornell.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w21',
+    name: 'University of Melbourne',
+    location: 'Melbourne, Australia',
+    type: 'Public',
+    overallRanking: 21,
+    establishedYear: 1853,
+    courses: [
+      { name: 'Medicine', ranking: 18, strength: 'Good', fees: '$70K', feeType: 'per-year' },
+      { name: 'Law', ranking: 8, strength: 'Very Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Business', ranking: 22, strength: 'Good', fees: '$50K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 25, strength: 'Good', fees: '$55K', feeType: 'per-year' },
+      { name: 'Arts', ranking: 12, strength: 'Very Good', fees: '$35K', feeType: 'per-year' },
+      { name: 'Architecture', ranking: 15, strength: 'Very Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Education', ranking: 8, strength: 'Very Good', fees: '$35K', feeType: 'per-year' }
+    ],
+    highlights: ['Top Australian University', 'Research Excellence', 'Global Recognition', 'Diverse Programs'],
+    website: 'https://www.unimelb.edu.au/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w22',
+    name: 'London School of Economics',
+    location: 'London, UK',
+    type: 'Public',
+    overallRanking: 22,
+    establishedYear: 1895,
+    courses: [
+      { name: 'Economics', ranking: 3, strength: 'Excellent', fees: '£28K', feeType: 'per-year' },
+      { name: 'Political Science', ranking: 2, strength: 'Excellent', fees: '£28K', feeType: 'per-year' },
+      { name: 'International Relations', ranking: 1, strength: 'Excellent', fees: '£28K', feeType: 'per-year' },
+      { name: 'Sociology', ranking: 1, strength: 'Excellent', fees: '£28K', feeType: 'per-year' },
+      { name: 'Law', ranking: 8, strength: 'Very Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Anthropology', ranking: 3, strength: 'Excellent', fees: '£28K', feeType: 'per-year' },
+      { name: 'Philosophy', ranking: 8, strength: 'Very Good', fees: '£28K', feeType: 'per-year' }
+    ],
+    highlights: ['Social Sciences Excellence', 'Political Leaders Alumni', 'London Location', 'Research Focus'],
+    website: 'https://www.lse.ac.uk/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w23',
+    name: 'Australian National University',
+    location: 'Canberra, Australia',
+    type: 'Public',
+    overallRanking: 23,
+    establishedYear: 1946,
+    courses: [
+      { name: 'Political Science', ranking: 8, strength: 'Very Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'International Relations', ranking: 5, strength: 'Very Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 18, strength: 'Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Philosophy', ranking: 5, strength: 'Very Good', fees: '$35K', feeType: 'per-year' },
+      { name: 'Physics', ranking: 20, strength: 'Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 35, strength: 'Good', fees: '$50K', feeType: 'per-year' },
+      { name: 'Law', ranking: 15, strength: 'Very Good', fees: '$40K', feeType: 'per-year' }
+    ],
+    highlights: ['National Research University', 'Government Connections', 'Liberal Arts', 'Policy Focus'],
+    website: 'https://www.anu.edu.au/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w24',
+    name: 'King\'s College London',
+    location: 'London, UK',
+    type: 'Public',
+    overallRanking: 24,
+    establishedYear: 1829,
+    courses: [
+      { name: 'Medicine', ranking: 12, strength: 'Very Good', fees: '£35K', feeType: 'per-year' },
+      { name: 'Law', ranking: 15, strength: 'Very Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'International Relations', ranking: 8, strength: 'Very Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'English Literature', ranking: 12, strength: 'Very Good', fees: '£25K', feeType: 'per-year' },
+      { name: 'History', ranking: 8, strength: 'Very Good', fees: '£25K', feeType: 'per-year' },
+      { name: 'Nursing', ranking: 8, strength: 'Very Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Dentistry', ranking: 15, strength: 'Very Good', fees: '£45K', feeType: 'per-year' }
+    ],
+    highlights: ['Historic University', 'Medical Excellence', 'London Location', 'Research Focus'],
+    website: 'https://www.kcl.ac.uk/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w25',
+    name: 'University of California Berkeley',
+    location: 'Berkeley, USA',
+    type: 'Public',
+    overallRanking: 25,
+    establishedYear: 1868,
+    courses: [
+      { name: 'Computer Science', ranking: 4, strength: 'Excellent', fees: '$45K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 3, strength: 'Excellent', fees: '$45K', feeType: 'per-year' },
+      { name: 'Business', ranking: 8, strength: 'Very Good', fees: '$65K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 5, strength: 'Excellent', fees: '$43K', feeType: 'per-year' },
+      { name: 'Chemistry', ranking: 2, strength: 'Excellent', fees: '$43K', feeType: 'per-year' },
+      { name: 'Physics', ranking: 3, strength: 'Excellent', fees: '$43K', feeType: 'per-year' },
+      { name: 'Law', ranking: 8, strength: 'Very Good', fees: '$50K', feeType: 'per-year' }
+    ],
+    highlights: ['Public Ivy', 'Silicon Valley Proximity', 'Nobel Laureates', 'Research Excellence'],
+    website: 'https://www.berkeley.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w26',
+    name: 'University of California Los Angeles',
+    location: 'Los Angeles, USA',
+    type: 'Public',
+    overallRanking: 26,
+    establishedYear: 1919,
+    courses: [
+      { name: 'Film & Television', ranking: 1, strength: 'Excellent', fees: '$43K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 15, strength: 'Very Good', fees: '$38K', feeType: 'per-year' },
+      { name: 'Business', ranking: 15, strength: 'Very Good', fees: '$60K', feeType: 'per-year' },
+      { name: 'Psychology', ranking: 8, strength: 'Very Good', fees: '$43K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 18, strength: 'Good', fees: '$43K', feeType: 'per-year' },
+      { name: 'Art & Design', ranking: 5, strength: 'Very Good', fees: '$43K', feeType: 'per-year' },
+      { name: 'Public Health', ranking: 5, strength: 'Very Good', fees: '$30K', feeType: 'per-year' }
+    ],
+    highlights: ['Entertainment Industry Hub', 'Research University', 'Beautiful Campus', 'Diverse Programs'],
+    website: 'https://www.ucla.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w27',
+    name: 'University of Hong Kong',
+    location: 'Hong Kong',
+    type: 'Public',
+    overallRanking: 27,
+    establishedYear: 1911,
+    courses: [
+      { name: 'Medicine', ranking: 20, strength: 'Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Law', ranking: 18, strength: 'Good', fees: '$25K', feeType: 'per-year' },
+      { name: 'Business', ranking: 25, strength: 'Good', fees: '$30K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 30, strength: 'Good', fees: '$30K', feeType: 'per-year' },
+      { name: 'Architecture', ranking: 12, strength: 'Very Good', fees: '$30K', feeType: 'per-year' },
+      { name: 'Dentistry', ranking: 8, strength: 'Very Good', fees: '$35K', feeType: 'per-year' },
+      { name: 'Social Sciences', ranking: 25, strength: 'Good', fees: '$25K', feeType: 'per-year' }
+    ],
+    highlights: ['Asian Financial Hub', 'English Medium', 'Global Rankings', 'Research Focus'],
+    website: 'https://www.hku.hk/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w28',
+    name: 'University of Tokyo',
+    location: 'Tokyo, Japan',
+    type: 'Public',
+    overallRanking: 28,
+    establishedYear: 1877,
+    courses: [
+      { name: 'Engineering', ranking: 8, strength: 'Very Good', fees: '$8K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 25, strength: 'Good', fees: '$10K', feeType: 'per-year' },
+      { name: 'Natural Sciences', ranking: 15, strength: 'Very Good', fees: '$8K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 25, strength: 'Good', fees: '$8K', feeType: 'per-year' },
+      { name: 'Law', ranking: 20, strength: 'Good', fees: '$8K', feeType: 'per-year' },
+      { name: 'Liberal Arts', ranking: 20, strength: 'Good', fees: '$8K', feeType: 'per-year' },
+      { name: 'Agriculture', ranking: 12, strength: 'Very Good', fees: '$8K', feeType: 'per-year' }
+    ],
+    highlights: ['Top Japanese University', 'Government Leaders', 'Research Excellence', 'Traditional Values'],
+    website: 'https://www.u-tokyo.ac.jp/en/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w29',
+    name: 'McGill University',
+    location: 'Montreal, Canada',
+    type: 'Public',
+    overallRanking: 29,
+    establishedYear: 1821,
+    courses: [
+      { name: 'Medicine', ranking: 22, strength: 'Good', fees: '$55K', feeType: 'per-year' },
+      { name: 'Business', ranking: 35, strength: 'Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 35, strength: 'Good', fees: '$50K', feeType: 'per-year' },
+      { name: 'Law', ranking: 25, strength: 'Good', fees: '$40K', feeType: 'per-year' },
+      { name: 'Arts', ranking: 22, strength: 'Good', fees: '$35K', feeType: 'per-year' },
+      { name: 'Music', ranking: 15, strength: 'Very Good', fees: '$35K', feeType: 'per-year' },
+      { name: 'Agriculture', ranking: 18, strength: 'Good', fees: '$40K', feeType: 'per-year' }
+    ],
+    highlights: ['Historic Canadian University', 'Bilingual Environment', 'Research Focus', 'Global Recognition'],
+    website: 'https://www.mcgill.ca/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w30',
+    name: 'Northwestern University',
+    location: 'Evanston, USA',
+    type: 'Private',
+    overallRanking: 30,
+    establishedYear: 1851,
+    courses: [
+      { name: 'Journalism', ranking: 3, strength: 'Excellent', fees: '$58K', feeType: 'per-year' },
+      { name: 'Business', ranking: 6, strength: 'Excellent', fees: '$74K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 18, strength: 'Good', fees: '$65K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 22, strength: 'Good', fees: '$58K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 12, strength: 'Very Good', fees: '$58K', feeType: 'per-year' },
+      { name: 'Theatre', ranking: 5, strength: 'Very Good', fees: '$58K', feeType: 'per-year' },
+      { name: 'Materials Science', ranking: 2, strength: 'Excellent', fees: '$58K', feeType: 'per-year' }
+    ],
+    highlights: ['Media Excellence', 'Chicago Location', 'Research University', 'Strong Alumni Network'],
+    website: 'https://www.northwestern.edu/',
     image: '/placeholder.svg'
   }
 ];
