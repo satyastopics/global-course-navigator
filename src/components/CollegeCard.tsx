@@ -54,13 +54,6 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
 
   const isIndian = college.courses[0]?.fees.includes('₹');
 
-  // Find the course with the lowest fee for display
-  const lowestFeeCourse = college.courses.reduce((min, course) => {
-    const minAmount = parseFloat(min.fees.replace(/[₹$£€LK,]/g, ''));
-    const courseAmount = parseFloat(course.fees.replace(/[₹$£€LK,]/g, ''));
-    return courseAmount < minAmount ? course : min;
-  }, college.courses[0]);
-
   const getFeeRange = () => {
     const fees = college.courses.map(course => parseFloat(course.fees.replace(/[₹$£€LK,]/g, '')));
     const minFee = Math.min(...fees);
@@ -76,7 +69,7 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
   };
 
   return (
-    <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-white border-0 rounded-3xl overflow-hidden animate-fade-in shadow-lg"
+    <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-white border-0 rounded-3xl overflow-hidden animate-fade-in shadow-lg h-full flex flex-col"
           style={{ animationDelay: `${index * 0.1}s` }}>
       <div className="relative">
         {/* Header with gradient background */}
@@ -121,47 +114,41 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
         </div>
       </div>
 
-      <CardContent className="p-6 space-y-6">
-        {/* Courses Section */}
-        <div>
-          <h4 className="font-bold mb-3 flex items-center text-lg text-slate-800">
+      <CardContent className="p-6 space-y-6 flex-1 flex flex-col">
+        {/* All Programs Section - Show all courses */}
+        <div className="flex-1">
+          <h4 className="font-bold mb-4 flex items-center text-lg text-slate-800">
             <BookOpen className="h-5 w-5 mr-2 text-blue-600" />
-            Top Programs
+            Top Programs ({college.courses.length})
           </h4>
-          <div className="space-y-3">
-            {college.courses.slice(0, 2).map((course, idx) => (
-              <div key={idx} className="bg-slate-50 rounded-xl p-4 hover:bg-slate-100 transition-colors">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center space-x-2">
-                    <span className="font-semibold text-slate-800 text-sm">{course.name}</span>
-                    <Badge variant="outline" className={`${getStrengthColor(course.strength)} text-xs font-medium`}>
-                      {course.strength}
-                    </Badge>
-                  </div>
-                  <div className="flex items-center space-x-1 text-blue-600">
-                    <Star className="h-3 w-3 fill-current" />
-                    <span className="text-sm font-semibold">#{course.ranking}</span>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between text-sm text-slate-600">
-                  <div className="flex items-center space-x-1">
-                    {isIndian ? <IndianRupee className="h-4 w-4" /> : <DollarSign className="h-4 w-4" />}
-                    <span className="font-medium">{course.fees}</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Clock className="h-3 w-3" />
-                    <span className="text-xs">{course.feeType === 'per-year' ? 'per year' : 'total'}</span>
+          <div className="space-y-3 max-h-80 overflow-y-auto">
+            {college.courses.map((course, idx) => (
+              <div key={idx} className="bg-slate-50 rounded-xl p-4 hover:bg-slate-100 transition-colors border border-slate-100">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex-1">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <span className="font-semibold text-slate-800 text-sm leading-tight">{course.name}</span>
+                      <Badge variant="outline" className={`${getStrengthColor(course.strength)} text-xs font-medium flex-shrink-0`}>
+                        {course.strength}
+                      </Badge>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-1 text-slate-600">
+                        {isIndian ? <IndianRupee className="h-4 w-4" /> : <DollarSign className="h-4 w-4" />}
+                        <span className="font-medium text-sm">{course.fees}</span>
+                        <span className="text-xs text-slate-500">
+                          ({course.feeType === 'per-year' ? 'per year' : 'total'})
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-1 text-blue-600">
+                        <Star className="h-3 w-3 fill-current" />
+                        <span className="text-sm font-semibold">#{course.ranking}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
-            {college.courses.length > 2 && (
-              <div className="text-center">
-                <span className="text-sm text-slate-500 font-medium">
-                  +{college.courses.length - 2} more programs
-                </span>
-              </div>
-            )}
           </div>
         </div>
 
@@ -169,7 +156,7 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
         <div>
           <h4 className="font-bold mb-3 text-slate-800">Key Highlights</h4>
           <div className="flex flex-wrap gap-2">
-            {college.highlights.slice(0, 3).map((highlight, idx) => (
+            {college.highlights.map((highlight, idx) => (
               <Badge key={idx} variant="outline" className="text-xs bg-blue-50 border-blue-200 text-blue-700 px-2 py-1 font-medium">
                 {highlight}
               </Badge>
@@ -178,21 +165,25 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between pt-4 border-t border-slate-200">
+        <div className="flex items-center justify-between pt-4 border-t border-slate-200 mt-auto">
           <div className="space-y-1">
             <div className="flex items-center space-x-2 text-slate-700">
               {isIndian ? <IndianRupee className="h-4 w-4" /> : <DollarSign className="h-4 w-4" />}
               <span className="font-bold text-lg">{getFeeRange()}</span>
             </div>
-            <span className="text-sm text-slate-500">{college.courses.length} programs</span>
+            <span className="text-sm text-slate-500">{college.courses.length} programs available</span>
           </div>
-          <Button 
-            size="sm" 
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl px-4 py-2 font-semibold shadow-md hover:shadow-lg transition-all duration-300"
-          >
-            <ExternalLink className="h-4 w-4 mr-1" />
-            Explore
-          </Button>
+          <div className="text-right">
+            <a 
+              href={college.website} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl px-4 py-2 font-semibold shadow-md hover:shadow-lg transition-all duration-300 text-sm"
+            >
+              <ExternalLink className="h-4 w-4 mr-1" />
+              Visit Website
+            </a>
+          </div>
         </div>
       </CardContent>
     </Card>
