@@ -220,10 +220,10 @@ const Index = () => {
         </section>
       )}
 
-      {/* College Type Tabs */}
-      <section className="px-4 sm:px-6 mb-8 sm:mb-12">
+      {/* College Type Tabs - Fixed spacing */}
+      <section className="px-4 sm:px-6 mb-8 sm:mb-12 pt-4">
         <div className="container mx-auto">
-          <div className="flex justify-center space-x-3 sm:space-x-4">
+          <div className="flex justify-center space-x-3 sm:space-x-4 mt-8">
             <Button
               onClick={() => handleTabChange('indian')}
               variant={activeTab === 'indian' ? 'default' : 'outline'}

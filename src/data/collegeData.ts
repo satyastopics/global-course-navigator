@@ -1,4 +1,3 @@
-
 interface Course {
   name: string;
   ranking: number;
@@ -445,6 +444,261 @@ export const indianColleges: College[] = [
     highlights: ['Liberal Arts Focus', 'Research Culture', 'Social Impact', 'Holistic Development'],
     website: 'https://www.christuniversity.in',
     image: ''
+  },
+  {
+    id: 'iit-guwahati',
+    name: 'IIT Guwahati',
+    location: 'Guwahati, Assam',
+    type: 'Government',
+    overallRanking: 26,
+    establishedYear: 1994,
+    courses: [
+      { name: 'Computer Science Engineering', ranking: 16, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Electronics Engineering', ranking: 17, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Biotechnology', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Design', ranking: 2, strength: 'Excellent', fees: '₹2.8L', feeType: 'per-year' }
+    ],
+    highlights: ['Scenic Campus', 'Design Excellence', 'Research Hub', 'Northeast Gateway'],
+    website: 'https://www.iitg.ac.in',
+    image: ''
+  },
+  {
+    id: 'nit-surathkal',
+    name: 'NIT Karnataka (Surathkal)',
+    location: 'Surathkal, Karnataka',
+    type: 'Government',
+    overallRanking: 27,
+    establishedYear: 1960,
+    courses: [
+      { name: 'Computer Science Engineering', ranking: 20, strength: 'Very Good', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'Information Technology', ranking: 15, strength: 'Very Good', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'Chemical Engineering', ranking: 15, strength: 'Very Good', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'Civil Engineering', ranking: 18, strength: 'Very Good', fees: '₹1.8L', feeType: 'per-year' }
+    ],
+    highlights: ['Coastal Campus', 'Industry Connect', 'Strong Alumni', 'Technical Excellence'],
+    website: 'https://www.nitk.ac.in',
+    image: ''
+  },
+  {
+    id: 'nit-rourkela',
+    name: 'NIT Rourkela',
+    location: 'Rourkela, Odisha',
+    type: 'Government',
+    overallRanking: 28,
+    establishedYear: 1961,
+    courses: [
+      { name: 'Metallurgical Engineering', ranking: 3, strength: 'Excellent', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'Computer Science Engineering', ranking: 22, strength: 'Very Good', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'Mining Engineering', ranking: 3, strength: 'Excellent', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'Industrial Design', ranking: 8, strength: 'Excellent', fees: '₹2L', feeType: 'per-year' }
+    ],
+    highlights: ['Mining Excellence', 'Industrial Hub', 'Research Focus', 'Large Campus'],
+    website: 'https://www.nitrkl.ac.in',
+    image: ''
+  },
+  {
+    id: 'iiser-pune',
+    name: 'IISER Pune',
+    location: 'Pune, Maharashtra',
+    type: 'Government',
+    overallRanking: 29,
+    establishedYear: 2006,
+    courses: [
+      { name: 'Biology', ranking: 4, strength: 'Excellent', fees: '₹60K', feeType: 'per-year' },
+      { name: 'Chemistry', ranking: 5, strength: 'Excellent', fees: '₹60K', feeType: 'per-year' },
+      { name: 'Physics', ranking: 6, strength: 'Excellent', fees: '₹60K', feeType: 'per-year' },
+      { name: 'Mathematics', ranking: 8, strength: 'Excellent', fees: '₹60K', feeType: 'per-year' }
+    ],
+    highlights: ['Pure Science Focus', 'Research Excellence', 'PhD Programs', 'Modern Labs'],
+    website: 'https://www.iiserpune.ac.in',
+    image: ''
+  },
+  {
+    id: 'isi-kolkata',
+    name: 'Indian Statistical Institute',
+    location: 'Kolkata, West Bengal',
+    type: 'Government',
+    overallRanking: 30,
+    establishedYear: 1931,
+    courses: [
+      { name: 'Statistics', ranking: 1, strength: 'Excellent', fees: '₹45K', feeType: 'per-year' },
+      { name: 'Mathematics', ranking: 4, strength: 'Excellent', fees: '₹45K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 25, strength: 'Very Good', fees: '₹60K', feeType: 'per-year' },
+      { name: 'Quality Control', ranking: 1, strength: 'Excellent', fees: '₹50K', feeType: 'per-year' }
+    ],
+    highlights: ['Statistics Pioneer', 'Research Institute', 'Data Science Hub', 'Mathematical Excellence'],
+    website: 'https://www.isical.ac.in',
+    image: ''
+  },
+  {
+    id: 'jnu-delhi',
+    name: 'Jawaharlal Nehru University',
+    location: 'New Delhi',
+    type: 'Government',
+    overallRanking: 31,
+    establishedYear: 1969,
+    courses: [
+      { name: 'International Relations', ranking: 2, strength: 'Excellent', fees: '₹15K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 6, strength: 'Excellent', fees: '₹15K', feeType: 'per-year' },
+      { name: 'Social Sciences', ranking: 3, strength: 'Excellent', fees: '₹15K', feeType: 'per-year' },
+      { name: 'Languages', ranking: 4, strength: 'Excellent', fees: '₹12K', feeType: 'per-year' }
+    ],
+    highlights: ['Liberal Arts Excellence', 'Research University', 'Political Science Hub', 'Diverse Community'],
+    website: 'https://www.jnu.ac.in',
+    image: ''
+  },
+  {
+    id: 'du-delhi',
+    name: 'University of Delhi',
+    location: 'New Delhi',
+    type: 'Government',
+    overallRanking: 32,
+    establishedYear: 1922,
+    courses: [
+      { name: 'Economics', ranking: 8, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'English Literature', ranking: 5, strength: 'Excellent', fees: '₹20K', feeType: 'per-year' },
+      { name: 'History', ranking: 4, strength: 'Excellent', fees: '₹18K', feeType: 'per-year' },
+      { name: 'Commerce', ranking: 6, strength: 'Excellent', fees: '₹22K', feeType: 'per-year' }
+    ],
+    highlights: ['College System', 'Liberal Arts', 'Cultural Heritage', 'Alumni Network'],
+    website: 'https://www.du.ac.in',
+    image: ''
+  },
+  {
+    id: 'bhu-varanasi',
+    name: 'Banaras Hindu University',
+    location: 'Varanasi, Uttar Pradesh',
+    type: 'Government',
+    overallRanking: 33,
+    establishedYear: 1916,
+    courses: [
+      { name: 'Sanskrit Studies', ranking: 1, strength: 'Excellent', fees: '₹18K', feeType: 'per-year' },
+      { name: 'Medicine (MBBS)', ranking: 15, strength: 'Very Good', fees: '₹1.2L', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 45, strength: 'Good', fees: '₹1.5L', feeType: 'per-year' },
+      { name: 'Arts & Humanities', ranking: 12, strength: 'Very Good', fees: '₹15K', feeType: 'per-year' }
+    ],
+    highlights: ['Cultural Heritage', 'Sanskrit Excellence', 'Large Campus', 'Diverse Programs'],
+    website: 'https://www.bhu.ac.in',
+    image: ''
+  },
+  {
+    id: 'iim-ahmedabad',
+    name: 'IIM Ahmedabad',
+    location: 'Ahmedabad, Gujarat',
+    type: 'Government',
+    overallRanking: 34,
+    establishedYear: 1961,
+    courses: [
+      { name: 'MBA', ranking: 1, strength: 'Excellent', fees: '₹25L', feeType: 'total' },
+      { name: 'Executive MBA', ranking: 1, strength: 'Excellent', fees: '₹35L', feeType: 'total' },
+      { name: 'PhD Management', ranking: 2, strength: 'Excellent', fees: '₹2L', feeType: 'total' },
+      { name: 'Fellow Programme', ranking: 1, strength: 'Excellent', fees: '₹2L', feeType: 'total' }
+    ],
+    highlights: ['Top MBA School', 'Case Study Method', 'Alumni Network', 'Management Excellence'],
+    website: 'https://www.iima.ac.in',
+    image: ''
+  },
+  {
+    id: 'iim-bangalore',
+    name: 'IIM Bangalore',
+    location: 'Bangalore, Karnataka',
+    type: 'Government',
+    overallRanking: 35,
+    establishedYear: 1973,
+    courses: [
+      { name: 'MBA', ranking: 2, strength: 'Excellent', fees: '₹24L', feeType: 'total' },
+      { name: 'Executive MBA', ranking: 2, strength: 'Excellent', fees: '₹32L', feeType: 'total' },
+      { name: 'PhD Management', ranking: 3, strength: 'Excellent', fees: '₹2L', feeType: 'total' },
+      { name: 'Management Development', ranking: 2, strength: 'Excellent', fees: '₹5L', feeType: 'total' }
+    ],
+    highlights: ['IT Capital Location', 'Research Focus', 'Industry Connect', 'Global Rankings'],
+    website: 'https://www.iimb.ac.in',
+    image: ''
+  },
+  {
+    id: 'iim-calcutta',
+    name: 'IIM Calcutta',
+    location: 'Kolkata, West Bengal',
+    type: 'Government',
+    overallRanking: 36,
+    establishedYear: 1961,
+    courses: [
+      { name: 'MBA', ranking: 3, strength: 'Excellent', fees: '₹23L', feeType: 'total' },
+      { name: 'Executive MBA', ranking: 3, strength: 'Excellent', fees: '₹30L', feeType: 'total' },
+      { name: 'PhD Management', ranking: 4, strength: 'Excellent', fees: '₹2L', feeType: 'total' },
+      { name: 'Finance', ranking: 2, strength: 'Excellent', fees: '₹25L', feeType: 'total' }
+    ],
+    highlights: ['Finance Excellence', 'Cultural City', 'Research Heritage', 'Alumni Success'],
+    website: 'https://www.iimcal.ac.in',
+    image: ''
+  },
+  {
+    id: 'aiims-delhi',
+    name: 'AIIMS Delhi',
+    location: 'New Delhi',
+    type: 'Government',
+    overallRanking: 37,
+    establishedYear: 1956,
+    courses: [
+      { name: 'Medicine (MBBS)', ranking: 1, strength: 'Excellent', fees: '₹5K', feeType: 'per-year' },
+      { name: 'Nursing', ranking: 1, strength: 'Excellent', fees: '₹3K', feeType: 'per-year' },
+      { name: 'MD/MS', ranking: 1, strength: 'Excellent', fees: '₹10K', feeType: 'per-year' },
+      { name: 'DM/MCh', ranking: 1, strength: 'Excellent', fees: '₹15K', feeType: 'per-year' }
+    ],
+    highlights: ['Medical Excellence', 'Research Hospital', 'Affordable Education', 'Global Recognition'],
+    website: 'https://www.aiims.edu',
+    image: ''
+  },
+  {
+    id: 'nlu-delhi',
+    name: 'National Law University Delhi',
+    location: 'New Delhi',
+    type: 'Government',
+    overallRanking: 38,
+    establishedYear: 2008,
+    courses: [
+      { name: 'Law (BA LLB)', ranking: 3, strength: 'Excellent', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'Law (LLM)', ranking: 5, strength: 'Excellent', fees: '₹2.2L', feeType: 'per-year' },
+      { name: 'PhD Law', ranking: 4, strength: 'Excellent', fees: '₹1L', feeType: 'per-year' },
+      { name: 'Corporate Law', ranking: 2, strength: 'Excellent', fees: '₹2L', feeType: 'per-year' }
+    ],
+    highlights: ['Law Excellence', 'Moot Court', 'Legal Research', 'Capital Advantage'],
+    website: 'https://www.nludelhi.ac.in',
+    image: ''
+  },
+  {
+    id: 'nalsar-hyderabad',
+    name: 'NALSAR University of Law',
+    location: 'Hyderabad, Telangana',
+    type: 'Government',
+    overallRanking: 39,
+    establishedYear: 1998,
+    courses: [
+      { name: 'Law (BA LLB)', ranking: 4, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Law (BBA LLB)', ranking: 3, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'LLM', ranking: 6, strength: 'Excellent', fees: '₹2.8L', feeType: 'per-year' },
+      { name: 'Corporate Law', ranking: 4, strength: 'Excellent', fees: '₹3L', feeType: 'per-year' }
+    ],
+    highlights: ['Corporate Law Focus', 'Modern Campus', 'Industry Connect', 'Moot Excellence'],
+    website: 'https://www.nalsar.ac.in',
+    image: ''
+  },
+  {
+    id: 'nift-delhi',
+    name: 'National Institute of Fashion Technology',
+    location: 'New Delhi',
+    type: 'Government',
+    overallRanking: 40,
+    establishedYear: 1986,
+    courses: [
+      { name: 'Fashion Design', ranking: 1, strength: 'Excellent', fees: '₹2.8L', feeType: 'per-year' },
+      { name: 'Fashion Technology', ranking: 1, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Fashion Management', ranking: 1, strength: 'Excellent', fees: '₹3L', feeType: 'per-year' },
+      { name: 'Textile Design', ranking: 2, strength: 'Excellent', fees: '₹2.6L', feeType: 'per-year' }
+    ],
+    highlights: ['Fashion Authority', 'Industry Integration', 'Global Exposure', 'Creative Excellence'],
+    website: 'https://www.nift.ac.in',
+    image: ''
   }
 ];
 
@@ -787,6 +1041,346 @@ export const worldColleges: College[] = [
     ],
     highlights: ['Chicago Area', 'Business Excellence', 'Research University', 'Lake Campus'],
     website: 'https://www.northwestern.edu',
+    image: ''
+  },
+  {
+    id: 'brown',
+    name: 'Brown University',
+    location: 'Providence, USA',
+    type: 'Private',
+    overallRanking: 21,
+    establishedYear: 1764,
+    courses: [
+      { name: 'Liberal Arts', ranking: 12, strength: 'Very Good', fees: '$59K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 12, strength: 'Very Good', fees: '$65K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 18, strength: 'Very Good', fees: '$59K', feeType: 'per-year' },
+      { name: 'International Relations', ranking: 8, strength: 'Excellent', fees: '$59K', feeType: 'per-year' }
+    ],
+    highlights: ['Open Curriculum', 'Ivy League', 'Liberal Arts', 'Student Freedom'],
+    website: 'https://www.brown.edu',
+    image: ''
+  },
+  {
+    id: 'rice',
+    name: 'Rice University',
+    location: 'Houston, USA',
+    type: 'Private',
+    overallRanking: 22,
+    establishedYear: 1912,
+    courses: [
+      { name: 'Engineering', ranking: 16, strength: 'Very Good', fees: '$52K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 20, strength: 'Very Good', fees: '$52K', feeType: 'per-year' },
+      { name: 'Architecture', ranking: 5, strength: 'Excellent', fees: '$52K', feeType: 'per-year' },
+      { name: 'Business', ranking: 20, strength: 'Very Good', fees: '$65K', feeType: 'per-year' }
+    ],
+    highlights: ['Small Class Size', 'Engineering Excellence', 'Research University', 'Merit Aid'],
+    website: 'https://www.rice.edu',
+    image: ''
+  },
+  {
+    id: 'carnegie-mellon',
+    name: 'Carnegie Mellon University',
+    location: 'Pittsburgh, USA',
+    type: 'Private',
+    overallRanking: 23,
+    establishedYear: 1900,
+    courses: [
+      { name: 'Computer Science', ranking: 3, strength: 'Excellent', fees: '$59K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 8, strength: 'Excellent', fees: '$59K', feeType: 'per-year' },
+      { name: 'Drama', ranking: 1, strength: 'Excellent', fees: '$59K', feeType: 'per-year' },
+      { name: 'Business', ranking: 18, strength: 'Very Good', fees: '$69K', feeType: 'per-year' }
+    ],
+    highlights: ['Tech Innovation', 'AI Research', 'Interdisciplinary', 'Industry Partners'],
+    website: 'https://www.cmu.edu',
+    image: ''
+  },
+  {
+    id: 'vanderbilt',
+    name: 'Vanderbilt University',
+    location: 'Nashville, USA',
+    type: 'Private',
+    overallRanking: 24,
+    establishedYear: 1873,
+    courses: [
+      { name: 'Medicine', ranking: 14, strength: 'Very Good', fees: '$63K', feeType: 'per-year' },
+      { name: 'Education', ranking: 4, strength: 'Excellent', fees: '$52K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 28, strength: 'Very Good', fees: '$52K', feeType: 'per-year' },
+      { name: 'Music', ranking: 6, strength: 'Excellent', fees: '$52K', feeType: 'per-year' }
+    ],
+    highlights: ['Beautiful Campus', 'Strong Alumni', 'Research University', 'Music City'],
+    website: 'https://www.vanderbilt.edu',
+    image: ''
+  },
+  {
+    id: 'washington-university',
+    name: 'Washington University in St. Louis',
+    location: 'St. Louis, USA',
+    type: 'Private',
+    overallRanking: 25,
+    establishedYear: 1853,
+    courses: [
+      { name: 'Medicine', ranking: 9, strength: 'Excellent', fees: '$66K', feeType: 'per-year' },
+      { name: 'Business', ranking: 16, strength: 'Very Good', fees: '$67K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 24, strength: 'Very Good', fees: '$56K', feeType: 'per-year' },
+      { name: 'Social Work', ranking: 2, strength: 'Excellent', fees: '$48K', feeType: 'per-year' }
+    ],
+    highlights: ['Medical Excellence', 'Research Focus', 'Merit Scholarships', 'Campus Beauty'],
+    website: 'https://www.wustl.edu',
+    image: ''
+  },
+  {
+    id: 'notre-dame',
+    name: 'University of Notre Dame',
+    location: 'Notre Dame, USA',
+    type: 'Private',
+    overallRanking: 26,
+    establishedYear: 1842,
+    courses: [
+      { name: 'Business', ranking: 14, strength: 'Very Good', fees: '$58K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 30, strength: 'Good', fees: '$58K', feeType: 'per-year' },
+      { name: 'Architecture', ranking: 8, strength: 'Excellent', fees: '$58K', feeType: 'per-year' },
+      { name: 'Liberal Arts', ranking: 15, strength: 'Very Good', fees: '$58K', feeType: 'per-year' }
+    ],
+    highlights: ['Catholic Heritage', 'Strong Alumni', 'Football Excellence', 'Community Spirit'],
+    website: 'https://www.nd.edu',
+    image: ''
+  },
+  {
+    id: 'emory',
+    name: 'Emory University',
+    location: 'Atlanta, USA',
+    type: 'Private',
+    overallRanking: 27,
+    establishedYear: 1836,
+    courses: [
+      { name: 'Medicine', ranking: 16, strength: 'Very Good', fees: '$62K', feeType: 'per-year' },
+      { name: 'Business', ranking: 22, strength: 'Very Good', fees: '$63K', feeType: 'per-year' },
+      { name: 'Public Health', ranking: 5, strength: 'Excellent', fees: '$48K', feeType: 'per-year' },
+      { name: 'Nursing', ranking: 8, strength: 'Excellent', fees: '$45K', feeType: 'per-year' }
+    ],
+    highlights: ['Medical Research', 'CDC Partnership', 'Liberal Arts', 'Atlanta Location'],
+    website: 'https://www.emory.edu',
+    image: ''
+  },
+  {
+    id: 'georgetown',
+    name: 'Georgetown University',
+    location: 'Washington DC, USA',
+    type: 'Private',
+    overallRanking: 28,
+    establishedYear: 1789,
+    courses: [
+      { name: 'International Relations', ranking: 1, strength: 'Excellent', fees: '$58K', feeType: 'per-year' },
+      { name: 'Law', ranking: 14, strength: 'Very Good', fees: '$65K', feeType: 'per-year' },
+      { name: 'Business', ranking: 24, strength: 'Very Good', fees: '$59K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 22, strength: 'Very Good', fees: '$61K', feeType: 'per-year' }
+    ],
+    highlights: ['DC Location', 'Politics Hub', 'Jesuit Tradition', 'Global Affairs'],
+    website: 'https://www.georgetown.edu',
+    image: ''
+  },
+  {
+    id: 'berkeley',
+    name: 'University of California, Berkeley',
+    location: 'Berkeley, USA',
+    type: 'Public',
+    overallRanking: 29,
+    establishedYear: 1868,
+    courses: [
+      { name: 'Engineering', ranking: 3, strength: 'Excellent', fees: '$45K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 4, strength: 'Excellent', fees: '$45K', feeType: 'per-year' },
+      { name: 'Business', ranking: 8, strength: 'Excellent', fees: '$60K', feeType: 'per-year' },
+      { name: 'Chemistry', ranking: 2, strength: 'Excellent', fees: '$45K', feeType: 'per-year' }
+    ],
+    highlights: ['Public Ivy', 'Research Excellence', 'Silicon Valley', 'Liberal Culture'],
+    website: 'https://www.berkeley.edu',
+    image: ''
+  },
+  {
+    id: 'ucla',
+    name: 'University of California, Los Angeles',
+    location: 'Los Angeles, USA',
+    type: 'Public',
+    overallRanking: 30,
+    establishedYear: 1919,
+    courses: [
+      { name: 'Film & Television', ranking: 1, strength: 'Excellent', fees: '$45K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 11, strength: 'Very Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 16, strength: 'Very Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Business', ranking: 18, strength: 'Very Good', fees: '$58K', feeType: 'per-year' }
+    ],
+    highlights: ['Entertainment Industry', 'Research University', 'Sports Excellence', 'Diversity'],
+    website: 'https://www.ucla.edu',
+    image: ''
+  },
+  {
+    id: 'university-melbourne',
+    name: 'University of Melbourne',
+    location: 'Melbourne, Australia',
+    type: 'Public',
+    overallRanking: 31,
+    establishedYear: 1853,
+    courses: [
+      { name: 'Medicine', ranking: 15, strength: 'Very Good', fees: '$65K', feeType: 'per-year' },
+      { name: 'Law', ranking: 12, strength: 'Very Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 32, strength: 'Good', fees: '$45K', feeType: 'per-year' },
+      { name: 'Business', ranking: 26, strength: 'Very Good', fees: '$46K', feeType: 'per-year' }
+    ],
+    highlights: ['Group of Eight', 'Research Excellence', 'Cultural City', 'International Hub'],
+    website: 'https://www.unimelb.edu.au',
+    image: ''
+  },
+  {
+    id: 'australian-national',
+    name: 'Australian National University',
+    location: 'Canberra, Australia',
+    type: 'Public',
+    overallRanking: 32,
+    establishedYear: 1946,
+    courses: [
+      { name: 'Politics & International Relations', ranking: 5, strength: 'Excellent', fees: '$46K', feeType: 'per-year' },
+      { name: 'Philosophy', ranking: 4, strength: 'Excellent', fees: '$42K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 18, strength: 'Very Good', fees: '$46K', feeType: 'per-year' },
+      { name: 'Astronomy', ranking: 6, strength: 'Excellent', fees: '$48K', feeType: 'per-year' }
+    ],
+    highlights: ['Capital City', 'Research Focus', 'Government Links', 'Academic Excellence'],
+    website: 'https://www.anu.edu.au',
+    image: ''
+  },
+  {
+    id: 'university-sydney',
+    name: 'University of Sydney',
+    location: 'Sydney, Australia',
+    type: 'Public',
+    overallRanking: 33,
+    establishedYear: 1850,
+    courses: [
+      { name: 'Architecture', ranking: 12, strength: 'Very Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 18, strength: 'Very Good', fees: '$72K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 38, strength: 'Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Business', ranking: 32, strength: 'Good', fees: '$50K', feeType: 'per-year' }
+    ],
+    highlights: ['Historic Campus', 'Harbor City', 'Alumni Network', 'Research University'],
+    website: 'https://www.sydney.edu.au',
+    image: ''
+  },
+  {
+    id: 'mcgill',
+    name: 'McGill University',
+    location: 'Montreal, Canada',
+    type: 'Public',
+    overallRanking: 34,
+    establishedYear: 1821,
+    courses: [
+      { name: 'Medicine', ranking: 12, strength: 'Very Good', fees: '$42K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 35, strength: 'Good', fees: '$38K', feeType: 'per-year' },
+      { name: 'Business', ranking: 28, strength: 'Very Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Arts', ranking: 22, strength: 'Very Good', fees: '$35K', feeType: 'per-year' }
+    ],
+    highlights: ['Bilingual City', 'Research Excellence', 'International Students', 'Historic Campus'],
+    website: 'https://www.mcgill.ca',
+    image: ''
+  },
+  {
+    id: 'kings-college-london',
+    name: 'Kings College London',
+    location: 'London, UK',
+    type: 'Public',
+    overallRanking: 35,
+    establishedYear: 1829,
+    courses: [
+      { name: 'Medicine', ranking: 8, strength: 'Excellent', fees: '£44K', feeType: 'per-year' },
+      { name: 'Law', ranking: 15, strength: 'Very Good', fees: '£32K', feeType: 'per-year' },
+      { name: 'Dentistry', ranking: 3, strength: 'Excellent', fees: '£46K', feeType: 'per-year' },
+      { name: 'War Studies', ranking: 1, strength: 'Excellent', fees: '£28K', feeType: 'per-year' }
+    ],
+    highlights: ['Central London', 'Medical Excellence', 'Research University', 'Royal Charter'],
+    website: 'https://www.kcl.ac.uk',
+    image: ''
+  },
+  {
+    id: 'lse',
+    name: 'London School of Economics',
+    location: 'London, UK',
+    type: 'Public',
+    overallRanking: 36,
+    establishedYear: 1895,
+    courses: [
+      { name: 'Economics', ranking: 3, strength: 'Excellent', fees: '£25K', feeType: 'per-year' },
+      { name: 'Politics', ranking: 2, strength: 'Excellent', fees: '£25K', feeType: 'per-year' },
+      { name: 'International Relations', ranking: 2, strength: 'Excellent', fees: '£25K', feeType: 'per-year' },
+      { name: 'Sociology', ranking: 3, strength: 'Excellent', fees: '£25K', feeType: 'per-year' }
+    ],
+    highlights: ['Social Sciences', 'London Location', 'Political Hub', 'Nobel Laureates'],
+    website: 'https://www.lse.ac.uk',
+    image: ''
+  },
+  {
+    id: 'edinburgh',
+    name: 'University of Edinburgh',
+    location: 'Edinburgh, UK',
+    type: 'Public',
+    overallRanking: 37,
+    establishedYear: 1583,
+    courses: [
+      { name: 'Medicine', ranking: 18, strength: 'Very Good', fees: '£42K', feeType: 'per-year' },
+      { name: 'Veterinary Medicine', ranking: 6, strength: 'Excellent', fees: '£38K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 42, strength: 'Good', fees: '£32K', feeType: 'per-year' },
+      { name: 'Arts & Humanities', ranking: 15, strength: 'Very Good', fees: '£25K', feeType: 'per-year' }
+    ],
+    highlights: ['Ancient University', 'Cultural City', 'Research Excellence', 'Festival City'],
+    website: 'https://www.ed.ac.uk',
+    image: ''
+  },
+  {
+    id: 'warwick',
+    name: 'University of Warwick',
+    location: 'Coventry, UK',
+    type: 'Public',
+    overallRanking: 38,
+    establishedYear: 1965,
+    courses: [
+      { name: 'Business', ranking: 12, strength: 'Very Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 8, strength: 'Excellent', fees: '£25K', feeType: 'per-year' },
+      { name: 'Mathematics', ranking: 12, strength: 'Very Good', fees: '£25K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 45, strength: 'Good', fees: '£28K', feeType: 'per-year' }
+    ],
+    highlights: ['Young University', 'Business Excellence', 'Modern Campus', 'Industry Links'],
+    website: 'https://www.warwick.ac.uk',
+    image: ''
+  },
+  {
+    id: 'manchester',
+    name: 'University of Manchester',
+    location: 'Manchester, UK',
+    type: 'Public',
+    overallRanking: 39,
+    establishedYear: 1824,
+    courses: [
+      { name: 'Engineering', ranking: 28, strength: 'Very Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 32, strength: 'Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Business', ranking: 35, strength: 'Good', fees: '£25K', feeType: 'per-year' },
+      { name: 'Materials Science', ranking: 8, strength: 'Excellent', fees: '£28K', feeType: 'per-year' }
+    ],
+    highlights: ['Industrial Heritage', 'Research University', 'Large Campus', 'Innovation City'],
+    website: 'https://www.manchester.ac.uk',
+    image: ''
+  },
+  {
+    id: 'tsinghua',
+    name: 'Tsinghua University',
+    location: 'Beijing, China',
+    type: 'Public',
+    overallRanking: 40,
+    establishedYear: 1911,
+    courses: [
+      { name: 'Engineering', ranking: 12, strength: 'Very Good', fees: '$5K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 15, strength: 'Very Good', fees: '$5K', feeType: 'per-year' },
+      { name: 'Architecture', ranking: 10, strength: 'Excellent', fees: '$5K', feeType: 'per-year' },
+      { name: 'Business', ranking: 30, strength: 'Good', fees: '$25K', feeType: 'per-year' }
+    ],
+    highlights: ['Top Chinese University', 'Engineering Excellence', 'Research Focus', 'Government Support'],
+    website: 'https://www.tsinghua.edu.cn',
     image: ''
   }
 ];
