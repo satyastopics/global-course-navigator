@@ -516,7 +516,6 @@ export const worldColleges: College[] = [
     website: "https://www.berkeley.edu",
     image: "/placeholder.svg"
   },
-  // ... keep existing code (additional world colleges from previous data)
   {
     id: "61",
     name: "University of Toronto",
