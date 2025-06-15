@@ -1,4 +1,4 @@
-import { College } from '../../../../../../types/collegeTypes';
+import { College } from '../../../../../../../types/collegeTypes';
 
 export const ucSystemColleges: College[] = [
   {
