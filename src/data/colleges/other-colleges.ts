@@ -1,5 +1,4 @@
-
-import { College } from '../collegeTypes';
+import { College } from '../types/collegeTypes';
 
 export const otherColleges: College[] = [
   {
