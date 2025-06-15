@@ -1,20 +1,21 @@
-import { College } from '../../../../../../../types/collegeTypes';
+
+import { College } from '../../../../../../types/collegeTypes';
 
 export const csuSystemColleges: College[] = [
   {
     id: "csu-01",
-    name: "California Polytechnic State University",
-    location: "San Luis Obispo, California, USA",
+    name: "California State University, Long Beach",
+    location: "Long Beach, California, USA",
     type: "Public",
-    overallRanking: 45,
-    establishedYear: 1901,
+    overallRanking: 200,
+    establishedYear: 1949,
     courses: [
-      { name: "Engineering", ranking: 35, strength: "Good", fees: "$25K", feeType: "per-year" },
-      { name: "Agriculture", ranking: 8, strength: "Very Good", fees: "$25K", feeType: "per-year" },
-      { name: "Architecture", ranking: 15, strength: "Good", fees: "$25K", feeType: "per-year" }
+      { name: "Business", ranking: 150, strength: "Good", fees: "$12,000", feeType: "per-year" },
+      { name: "Engineering", ranking: 180, strength: "Good", fees: "$12,000", feeType: "per-year" },
+      { name: "Liberal Arts", ranking: 160, strength: "Good", fees: "$10,000", feeType: "per-year" }
     ],
-    highlights: ["Learn by doing", "Strong industry ties", "Beautiful campus", "Practical education"],
-    website: "https://www.calpoly.edu",
+    highlights: ["Large student body", "Diverse programs", "Affordable education", "Strong alumni network"],
+    website: "https://www.csulb.edu",
     image: "/placeholder.svg"
   }
 ];
