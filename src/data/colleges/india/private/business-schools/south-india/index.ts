@@ -1,5 +1,5 @@
 
-import { College } from '../../../../../types/collegeTypes';
+import { College } from '../../../../../../types/collegeTypes';
 import { bangaloreBusinessSchools } from './bangalore';
 import { hyderabadBusinessSchools } from './hyderabad';
 

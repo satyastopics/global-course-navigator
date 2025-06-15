@@ -1,5 +1,5 @@
 
-import { College } from '../../../../../types/collegeTypes';
+import { College } from '../../../../../../types/collegeTypes';
 import { delhiBusinessSchools } from './delhi';
 import { punjabBusinessSchools } from './punjab';
 
