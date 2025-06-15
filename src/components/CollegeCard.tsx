@@ -1,5 +1,5 @@
 
-import { MapPin, Star, Users, BookOpen, ExternalLink, IndianRupee, DollarSign } from 'lucide-react';
+import { MapPin, Star, Users, BookOpen, ExternalLink, IndianRupee, DollarSign, Clock } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -9,13 +9,14 @@ interface Course {
   ranking: number;
   strength: 'Excellent' | 'Very Good' | 'Good' | 'Average';
   fees: string;
+  feeType: 'per-year' | 'total';
 }
 
 interface College {
   id: string;
   name: string;
   location: string;
-  type: 'Government' | 'Private' | 'Deemed';
+  type: 'Government' | 'Private' | 'Deemed' | 'Public' | 'Ivy League' | 'Liberal Arts';
   overallRanking: number;
   establishedYear: number;
   courses: Course[];
@@ -39,7 +40,40 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
     }
   };
 
+  const getTypeColor = (type: string) => {
+    switch (type) {
+      case 'Government':
+      case 'Public': return 'bg-green-600 text-white';
+      case 'Private': return 'bg-blue-600 text-white';
+      case 'Deemed': return 'bg-purple-600 text-white';
+      case 'Ivy League': return 'bg-red-600 text-white';
+      case 'Liberal Arts': return 'bg-orange-600 text-white';
+      default: return 'bg-gray-600 text-white';
+    }
+  };
+
   const isIndian = college.courses[0]?.fees.includes('₹');
+
+  // Find the course with the lowest fee for display
+  const lowestFeeCourse = college.courses.reduce((min, course) => {
+    const minAmount = parseFloat(min.fees.replace(/[₹$£€LK,]/g, ''));
+    const courseAmount = parseFloat(course.fees.replace(/[₹$£€LK,]/g, ''));
+    return courseAmount < minAmount ? course : min;
+  }, college.courses[0]);
+
+  const getFeeRange = () => {
+    const fees = college.courses.map(course => parseFloat(course.fees.replace(/[₹$£€LK,]/g, '')));
+    const minFee = Math.min(...fees);
+    const maxFee = Math.max(...fees);
+    
+    if (minFee === maxFee) {
+      return `${college.courses[0].fees}`;
+    }
+    
+    const currency = isIndian ? '₹' : '$';
+    const suffix = isIndian ? 'L' : 'K';
+    return `${currency}${minFee}${suffix} - ${currency}${maxFee}${suffix}`;
+  };
 
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm border border-white/20 animate-fade-in overflow-hidden"
@@ -53,10 +87,7 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
             </Badge>
           </div>
           <div className="absolute top-4 right-4">
-            <Badge 
-              variant={college.type === 'Government' ? 'default' : 'outline'}
-              className={college.type === 'Government' ? 'bg-green-600' : 'bg-white/90 text-gray-800'}
-            >
+            <Badge className={getTypeColor(college.type)}>
               {college.type}
             </Badge>
           </div>
@@ -85,16 +116,28 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
           </h4>
           <div className="space-y-2">
             {college.courses.slice(0, 3).map((course, idx) => (
-              <div key={idx} className="flex items-center justify-between text-sm">
-                <div className="flex items-center space-x-2">
-                  <span className="font-medium">{course.name}</span>
-                  <Badge variant="outline" className={getStrengthColor(course.strength)}>
-                    {course.strength}
-                  </Badge>
+              <div key={idx} className="space-y-1">
+                <div className="flex items-center justify-between text-sm">
+                  <div className="flex items-center space-x-2">
+                    <span className="font-medium text-xs">{course.name}</span>
+                    <Badge variant="outline" className={`${getStrengthColor(course.strength)} text-xs`}>
+                      {course.strength}
+                    </Badge>
+                  </div>
+                  <div className="flex items-center text-gray-600">
+                    <Star className="h-3 w-3 mr-1 text-yellow-500" />
+                    #{course.ranking}
+                  </div>
                 </div>
-                <div className="flex items-center text-gray-600">
-                  <Star className="h-3 w-3 mr-1 text-yellow-500" />
-                  #{course.ranking}
+                <div className="flex items-center justify-between text-xs text-gray-500">
+                  <div className="flex items-center">
+                    {isIndian ? <IndianRupee className="h-3 w-3 mr-1" /> : <DollarSign className="h-3 w-3 mr-1" />}
+                    <span>{course.fees}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Clock className="h-3 w-3 mr-1" />
+                    <span>{course.feeType === 'per-year' ? 'per year' : 'total program'}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -104,7 +147,7 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
         <div className="mb-4">
           <h4 className="font-semibold mb-2">Key Highlights</h4>
           <div className="flex flex-wrap gap-1">
-            {college.highlights.map((highlight, idx) => (
+            {college.highlights.slice(0, 4).map((highlight, idx) => (
               <Badge key={idx} variant="outline" className="text-xs">
                 {highlight}
               </Badge>
@@ -113,9 +156,12 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
         </div>
 
         <div className="flex items-center justify-between pt-4 border-t">
-          <div className="flex items-center text-sm text-gray-600">
-            {isIndian ? <IndianRupee className="h-4 w-4 mr-1" /> : <DollarSign className="h-4 w-4 mr-1" />}
-            <span>From {college.courses[0]?.fees}</span>
+          <div className="flex flex-col">
+            <div className="flex items-center text-sm text-gray-600">
+              {isIndian ? <IndianRupee className="h-4 w-4 mr-1" /> : <DollarSign className="h-4 w-4 mr-1" />}
+              <span className="font-medium">{getFeeRange()}</span>
+            </div>
+            <span className="text-xs text-gray-500">{college.courses.length} courses available</span>
           </div>
           <Button size="sm" className="group-hover:bg-indigo-600 transition-colors">
             <ExternalLink className="h-4 w-4 mr-1" />

@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Search, Filter, Globe, MapPin, Star, Users, BookOpen, GraduationCap, SlidersHorizontal } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -61,21 +62,48 @@ const Index = () => {
       if (!hasRequiredStrength) return false;
     }
     
-    // Fee range filter
+    // Fee range filter - Updated logic for better parsing
     if (filters.fees) {
       const feeRanges = activeTab === 'indian' 
         ? {
-            'very-low': (fee: string) => parseInt(fee.replace(/[₹L,]/g, '')) < 2,
-            'low': (fee: string) => parseInt(fee.replace(/[₹L,]/g, '')) >= 2 && parseInt(fee.replace(/[₹L,]/g, '')) < 5,
-            'medium': (fee: string) => parseInt(fee.replace(/[₹L,]/g, '')) >= 5 && parseInt(fee.replace(/[₹L,]/g, '')) < 15,
-            'high': (fee: string) => parseInt(fee.replace(/[₹L,]/g, '')) >= 15 && parseInt(fee.replace(/[₹L,]/g, '')) < 25,
-            'very-high': (fee: string) => parseInt(fee.replace(/[₹L,]/g, '')) >= 25
+            'very-low': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[₹LK,]/g, ''));
+              return amount < 2;
+            },
+            'low': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[₹LK,]/g, ''));
+              return amount >= 2 && amount < 5;
+            },
+            'medium': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[₹LK,]/g, ''));
+              return amount >= 5 && amount < 15;
+            },
+            'high': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[₹LK,]/g, ''));
+              return amount >= 15 && amount < 25;
+            },
+            'very-high': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[₹LK,]/g, ''));
+              return amount >= 25;
+            }
           }
         : {
-            'low': (fee: string) => parseInt(fee.replace(/[$K,]/g, '')) < 30,
-            'medium': (fee: string) => parseInt(fee.replace(/[$K,]/g, '')) >= 30 && parseInt(fee.replace(/[$K,]/g, '')) < 60,
-            'high': (fee: string) => parseInt(fee.replace(/[$K,]/g, '')) >= 60 && parseInt(fee.replace(/[$K,]/g, '')) < 80,
-            'very-high': (fee: string) => parseInt(fee.replace(/[$K,]/g, '')) >= 80
+            'low': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[$K£€,]/g, ''));
+              return amount < 30;
+            },
+            'medium': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[$K£€,]/g, ''));
+              return amount >= 30 && amount < 60;
+            },
+            'high': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[$K£€,]/g, ''));
+              return amount >= 60 && amount < 80;
+            },
+            'very-high': (fee: string) => {
+              const amount = parseFloat(fee.replace(/[$K£€,]/g, ''));
+              return amount >= 80;
+            }
           };
       
       const feeCheck = feeRanges[filters.fees as keyof typeof feeRanges];
@@ -147,7 +175,7 @@ const Index = () => {
               className="h-12 px-8 text-lg"
             >
               <MapPin className="h-5 w-5 mr-2" />
-              Indian Colleges
+              Indian Colleges ({indianColleges.length})
             </Button>
             <Button
               onClick={() => setActiveTab('world')}
@@ -155,7 +183,7 @@ const Index = () => {
               className="h-12 px-8 text-lg"
             >
               <Globe className="h-5 w-5 mr-2" />
-              World Colleges
+              World Colleges ({worldColleges.length})
             </Button>
           </div>
         </div>
@@ -181,7 +209,7 @@ const Index = () => {
                   <span className="text-indigo-600 ml-2">({filteredColleges.length} results)</span>
                 </h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  Showing course-specific rankings and strengths
+                  Showing course-specific rankings and fee structures (per year or total program)
                 </p>
               </div>
               {filteredColleges.length > 0 && (
@@ -190,6 +218,9 @@ const Index = () => {
                     <Badge variant="outline">Top Rank: #{Math.min(...filteredColleges.map(c => c.overallRanking))}</Badge>
                     <Badge variant="outline">
                       Years: {Math.min(...filteredColleges.map(c => c.establishedYear))} - {Math.max(...filteredColleges.map(c => c.establishedYear))}
+                    </Badge>
+                    <Badge variant="outline">
+                      Fee Range: {activeTab === 'indian' ? '₹50K - ₹22L' : '$1.4K - $85K'}
                     </Badge>
                   </div>
                 </div>
@@ -258,7 +289,7 @@ const Index = () => {
                 <CardTitle>Comprehensive Database</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Thousands of colleges with detailed information and course-specific data</p>
+                <p className="text-gray-600">Hundreds of colleges with detailed information and course-specific data</p>
               </CardContent>
             </Card>
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
