@@ -1,6 +1,14 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { northIndiaPrivateLiberalArts } from './liberal-arts-colleges/north-india';
+import { southIndiaPrivateLiberalArts } from './liberal-arts-colleges/south-india';
+
+export { 
+  northIndiaPrivateLiberalArts,
+  southIndiaPrivateLiberalArts
+};
 
 export const privateLiberalArtsColleges: College[] = [
-  // This will be populated with private liberal arts colleges
-  // Keeping it empty for now but structured for future additions
+  ...northIndiaPrivateLiberalArts,
+  ...southIndiaPrivateLiberalArts
 ];

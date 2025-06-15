@@ -1,6 +1,9 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { seoulUniversities } from './south-korea/seoul';
+
+export { seoulUniversities };
 
 export const southKoreanColleges: College[] = [
-  // This will be populated with South Korean universities
-  // Keeping it structured for future granular organization
+  ...seoulUniversities
 ];

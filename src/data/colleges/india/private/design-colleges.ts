@@ -1,6 +1,14 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { northIndiaPrivateDesign } from './design-colleges/north-india';
+import { westIndiaPrivateDesign } from './design-colleges/west-india';
+
+export { 
+  northIndiaPrivateDesign,
+  westIndiaPrivateDesign
+};
 
 export const privateDesignColleges: College[] = [
-  // This will be populated with private design colleges
-  // Keeping it empty for now but structured for future additions
+  ...northIndiaPrivateDesign,
+  ...westIndiaPrivateDesign
 ];

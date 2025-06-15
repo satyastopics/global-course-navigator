@@ -1,6 +1,11 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { munichUniversities } from './germany/munich';
+import { berlinUniversities } from './germany/berlin';
+
+export { munichUniversities, berlinUniversities };
 
 export const germanColleges: College[] = [
-  // This will be populated with German universities
-  // Keeping it structured for future granular organization
+  ...munichUniversities,
+  ...berlinUniversities
 ];

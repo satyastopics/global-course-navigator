@@ -1,6 +1,11 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { tokyoUniversities } from './japan/tokyo';
+import { osakaUniversities } from './japan/osaka';
+
+export { tokyoUniversities, osakaUniversities };
 
 export const japaneseColleges: College[] = [
-  // This will be populated with Japanese universities
-  // Keeping it structured for future granular organization
+  ...tokyoUniversities,
+  ...osakaUniversities
 ];
