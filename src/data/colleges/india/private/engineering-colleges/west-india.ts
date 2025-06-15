@@ -1,5 +1,6 @@
 
 import { College } from '../../../../../types/collegeTypes';
+import { maharashtraEngineering } from './west-india/maharashtra';
 
 export const westIndiaPrivateEngineering: College[] = [
   {
@@ -18,5 +19,6 @@ export const westIndiaPrivateEngineering: College[] = [
     highlights: ["Deemed university", "Strong industry connections", "Multiple campuses", "Innovation culture"],
     website: "https://www.bits-pilani.ac.in",
     image: "/placeholder.svg"
-  }
+  },
+  ...maharashtraEngineering
 ];

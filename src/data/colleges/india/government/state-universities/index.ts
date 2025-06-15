@@ -6,10 +6,10 @@ import { westIndiaStateUniversities } from './west-india';
 import { eastIndiaStateUniversities } from './east-india';
 
 export { 
-  northIndiaStateUniversities, 
-  southIndiaStateUniversities, 
-  westIndiaStateUniversities, 
-  eastIndiaStateUniversities 
+  northIndiaStateUniversities,
+  southIndiaStateUniversities,
+  westIndiaStateUniversities,
+  eastIndiaStateUniversities
 };
 
 export const stateUniversities: College[] = [

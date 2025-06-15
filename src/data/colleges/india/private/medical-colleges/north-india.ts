@@ -1,6 +1,7 @@
 
 import { College } from '../../../../../types/collegeTypes';
+import { delhiMedical } from './north-india/delhi';
 
 export const northIndiaPrivateMedical: College[] = [
-  // This will be populated with north India private medical colleges
+  ...delhiMedical
 ];

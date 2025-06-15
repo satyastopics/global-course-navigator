@@ -1,7 +1,9 @@
 import { College } from '../../../../../types/collegeTypes';
 import { delhiNCREngineering } from './north-india/delhi';
+import { punjabEngineering } from './north-india/punjab';
+import { uttarPradeshEngineering } from './north-india/uttar-pradesh';
 
-// Keep existing VIT data
+// Keep existing BITS Pilani data
 export const northIndiaPrivateEngineering: College[] = [
   {
     id: "33",
@@ -20,5 +22,7 @@ export const northIndiaPrivateEngineering: College[] = [
     website: "https://www.bits-pilani.ac.in",
     image: "/placeholder.svg"
   },
-  ...delhiNCREngineering
+  ...delhiNCREngineering,
+  ...punjabEngineering,
+  ...uttarPradeshEngineering
 ];

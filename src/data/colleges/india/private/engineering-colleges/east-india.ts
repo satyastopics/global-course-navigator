@@ -1,6 +1,7 @@
 
 import { College } from '../../../../../types/collegeTypes';
+import { westBengalEngineering } from './east-india/west-bengal';
 
 export const eastIndiaPrivateEngineering: College[] = [
-  // This will be populated with east India private engineering colleges
+  ...westBengalEngineering
 ];
