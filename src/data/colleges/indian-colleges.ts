@@ -1,3 +1,4 @@
+
 import { College } from '../../types/collegeTypes';
 
 export const indianColleges: College[] = [
@@ -172,7 +173,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "21",
+    id: "31",
     name: "Jawaharlal Nehru University",
     location: "New Delhi, Delhi, India",
     type: "Government",
@@ -189,7 +190,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "22",
+    id: "32",
     name: "University of Delhi",
     location: "New Delhi, Delhi, India",
     type: "Government",
@@ -206,7 +207,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "23",
+    id: "33",
     name: "Birla Institute of Technology and Science",
     location: "Pilani, Rajasthan, India",
     type: "Private",
@@ -223,7 +224,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "24",
+    id: "34",
     name: "Indian Statistical Institute",
     location: "Kolkata, West Bengal, India",
     type: "Deemed",
@@ -240,7 +241,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "25",
+    id: "35",
     name: "Indian Institute of Technology Hyderabad",
     location: "Hyderabad, Telangana, India",
     type: "Government",
@@ -257,7 +258,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "26",
+    id: "36",
     name: "Banaras Hindu University",
     location: "Varanasi, Uttar Pradesh, India",
     type: "Government",
@@ -274,7 +275,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "27",
+    id: "37",
     name: "Vellore Institute of Technology",
     location: "Vellore, Tamil Nadu, India",
     type: "Private",
@@ -291,7 +292,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "28",
+    id: "38",
     name: "Manipal Academy of Higher Education",
     location: "Manipal, Karnataka, India",
     type: "Private",
@@ -308,7 +309,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "29",
+    id: "39",
     name: "Jadavpur University",
     location: "Kolkata, West Bengal, India",
     type: "Government",
@@ -325,7 +326,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "30",
+    id: "40",
     name: "Anna University",
     location: "Chennai, Tamil Nadu, India",
     type: "Government",
@@ -342,7 +343,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "31",
+    id: "41",
     name: "Indian Institute of Management Bangalore",
     location: "Bangalore, Karnataka, India",
     type: "Government",
@@ -359,7 +360,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "32",
+    id: "42",
     name: "Indian Institute of Management Calcutta",
     location: "Kolkata, West Bengal, India",
     type: "Government",
@@ -376,7 +377,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "33",
+    id: "43",
     name: "Indian Institute of Technology Ropar",
     location: "Rupnagar, Punjab, India",
     type: "Government",
@@ -393,7 +394,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "34",
+    id: "44",
     name: "Indian Institute of Technology Indore",
     location: "Indore, Madhya Pradesh, India",
     type: "Government",
@@ -410,7 +411,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "35",
+    id: "45",
     name: "Delhi Technological University",
     location: "New Delhi, Delhi, India",
     type: "Government",
@@ -427,7 +428,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "36",
+    id: "46",
     name: "Netaji Subhas University of Technology",
     location: "New Delhi, Delhi, India",
     type: "Government",
@@ -444,7 +445,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "37",
+    id: "47",
     name: "National Institute of Technology Trichy",
     location: "Tiruchirappalli, Tamil Nadu, India",
     type: "Government",
@@ -461,7 +462,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "38",
+    id: "48",
     name: "National Institute of Technology Warangal",
     location: "Warangal, Telangana, India",
     type: "Government",
@@ -478,7 +479,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "39",
+    id: "49",
     name: "National Institute of Technology Karnataka",
     location: "Surathkal, Karnataka, India",
     type: "Government",
@@ -495,7 +496,7 @@ export const indianColleges: College[] = [
     image: "/placeholder.svg"
   },
   {
-    id: "40",
+    id: "50",
     name: "Indian Institute of Technology (BHU) Varanasi",
     location: "Varanasi, Uttar Pradesh, India",
     type: "Government",
@@ -509,346 +510,6 @@ export const indianColleges: College[] = [
     ],
     highlights: ["Heritage institution", "Strong metallurgy program", "Cultural city", "Research excellence"],
     website: "https://www.iitbhu.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "41",
-    name: "Indian Institute of Information Technology Hyderabad",
-    location: "Hyderabad, Telangana, India",
-    type: "Government",
-    overallRanking: 31,
-    establishedYear: 1998,
-    courses: [
-      { name: "Computer Science", ranking: 8, strength: "Excellent", fees: "₹2L", feeType: "per-year" },
-      { name: "Information Technology", ranking: 2, strength: "Excellent", fees: "₹2L", feeType: "per-year" },
-      { name: "Electronics", ranking: 6, strength: "Very Good", fees: "₹2L", feeType: "per-year" },
-      { name: "Artificial Intelligence", ranking: 3, strength: "Excellent", fees: "₹2L", feeType: "per-year" }
-    ],
-    highlights: ["IT specialization", "Research excellence", "Industry partnerships", "Innovation hub"],
-    website: "https://www.iiit.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "42",
-    name: "Tata Institute of Fundamental Research",
-    location: "Mumbai, Maharashtra, India",
-    type: "Deemed",
-    overallRanking: 32,
-    establishedYear: 1945,
-    courses: [
-      { name: "Physics", ranking: 2, strength: "Excellent", fees: "₹30K", feeType: "per-year" },
-      { name: "Mathematics", ranking: 2, strength: "Excellent", fees: "₹30K", feeType: "per-year" },
-      { name: "Biology", ranking: 4, strength: "Very Good", fees: "₹30K", feeType: "per-year" },
-      { name: "Computer Science", ranking: 18, strength: "Good", fees: "₹30K", feeType: "per-year" }
-    ],
-    highlights: ["Research institute", "Nobel laureate faculty", "Pure sciences focus", "International recognition"],
-    website: "https://www.tifr.res.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "43",
-    name: "National Law School of India University",
-    location: "Bangalore, Karnataka, India",
-    type: "Government",
-    overallRanking: 33,
-    establishedYear: 1987,
-    courses: [
-      { name: "Law", ranking: 1, strength: "Excellent", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Constitutional Law", ranking: 1, strength: "Excellent", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Corporate Law", ranking: 2, strength: "Excellent", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Human Rights Law", ranking: 1, strength: "Excellent", fees: "₹2.5L", feeType: "per-year" }
-    ],
-    highlights: ["Top law school", "Legal education pioneer", "Supreme Court judges alumni", "Research excellence"],
-    website: "https://www.nls.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "44",
-    name: "Amrita Vishwa Vidyapeetham",
-    location: "Coimbatore, Tamil Nadu, India",
-    type: "Private",
-    overallRanking: 34,
-    establishedYear: 2003,
-    courses: [
-      { name: "Engineering", ranking: 26, strength: "Good", fees: "₹3.5L", feeType: "per-year" },
-      { name: "Medicine", ranking: 8, strength: "Very Good", fees: "₹20L", feeType: "per-year" },
-      { name: "Management", ranking: 22, strength: "Good", fees: "₹8L", feeType: "total" },
-      { name: "Computer Science", ranking: 22, strength: "Good", fees: "₹3.5L", feeType: "per-year" }
-    ],
-    highlights: ["Multi-campus university", "Healthcare excellence", "Spiritual foundation", "International programs"],
-    website: "https://www.amrita.edu",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "45",
-    name: "SRM Institute of Science and Technology",
-    location: "Chennai, Tamil Nadu, India",
-    type: "Private",
-    overallRanking: 35,
-    establishedYear: 1985,
-    courses: [
-      { name: "Engineering", ranking: 28, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Medicine", ranking: 12, strength: "Good", fees: "₹18L", feeType: "per-year" },
-      { name: "Management", ranking: 28, strength: "Good", fees: "₹6L", feeType: "total" },
-      { name: "Computer Science", ranking: 25, strength: "Good", fees: "₹2.5L", feeType: "per-year" }
-    ],
-    highlights: ["Large private university", "International collaborations", "Industry partnerships", "Multiple campuses"],
-    website: "https://www.srmist.edu.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "46",
-    name: "Jamia Millia Islamia",
-    location: "New Delhi, Delhi, India",
-    type: "Government",
-    overallRanking: 36,
-    establishedYear: 1920,
-    courses: [
-      { name: "Engineering", ranking: 30, strength: "Good", fees: "₹1.2L", feeType: "per-year" },
-      { name: "Mass Communication", ranking: 3, strength: "Very Good", fees: "₹50K", feeType: "per-year" },
-      { name: "Social Sciences", ranking: 8, strength: "Good", fees: "₹25K", feeType: "per-year" },
-      { name: "Architecture", ranking: 8, strength: "Good", fees: "₹1.5L", feeType: "per-year" }
-    ],
-    highlights: ["Central university", "Media studies excellence", "Affordable education", "Diverse programs"],
-    website: "https://www.jmi.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "47",
-    name: "Aligarh Muslim University",
-    location: "Aligarh, Uttar Pradesh, India",
-    type: "Government",
-    overallRanking: 37,
-    establishedYear: 1875,
-    courses: [
-      { name: "Engineering", ranking: 32, strength: "Good", fees: "₹1L", feeType: "per-year" },
-      { name: "Medicine", ranking: 15, strength: "Good", fees: "₹25K", feeType: "per-year" },
-      { name: "Arts", ranking: 12, strength: "Good", fees: "₹8K", feeType: "per-year" },
-      { name: "Law", ranking: 8, strength: "Good", fees: "₹15K", feeType: "per-year" }
-    ],
-    highlights: ["Historical institution", "Very affordable", "Diverse programs", "Cultural heritage"],
-    website: "https://www.amu.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "48",
-    name: "Saveetha Institute of Medical and Technical Sciences",
-    location: "Chennai, Tamil Nadu, India",
-    type: "Private",
-    overallRanking: 38,
-    establishedYear: 1988,
-    courses: [
-      { name: "Medicine", ranking: 18, strength: "Good", fees: "₹22L", feeType: "per-year" },
-      { name: "Dentistry", ranking: 5, strength: "Very Good", fees: "₹15L", feeType: "per-year" },
-      { name: "Engineering", ranking: 35, strength: "Average", fees: "₹2L", feeType: "per-year" },
-      { name: "Pharmacy", ranking: 12, strength: "Good", fees: "₹1.5L", feeType: "per-year" }
-    ],
-    highlights: ["Healthcare focus", "Medical excellence", "Modern facilities", "Research programs"],
-    website: "https://www.saveetha.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "49",
-    name: "Kalinga Institute of Industrial Technology",
-    location: "Bhubaneswar, Odisha, India",
-    type: "Private",
-    overallRanking: 39,
-    establishedYear: 1992,
-    courses: [
-      { name: "Engineering", ranking: 38, strength: "Average", fees: "₹3L", feeType: "per-year" },
-      { name: "Management", ranking: 35, strength: "Average", fees: "₹8L", feeType: "total" },
-      { name: "Computer Science", ranking: 28, strength: "Good", fees: "₹3L", feeType: "per-year" },
-      { name: "Law", ranking: 18, strength: "Good", fees: "₹2L", feeType: "per-year" }
-    ],
-    highlights: ["Multi-disciplinary university", "Sports excellence", "Industry partnerships", "International programs"],
-    website: "https://kiit.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "50",
-    name: "Lovely Professional University",
-    location: "Phagwara, Punjab, India",
-    type: "Private",
-    overallRanking: 40,
-    establishedYear: 2005,
-    courses: [
-      { name: "Engineering", ranking: 40, strength: "Average", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Management", ranking: 40, strength: "Average", fees: "₹6L", feeType: "total" },
-      { name: "Computer Science", ranking: 30, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Design", ranking: 15, strength: "Good", fees: "₹3L", feeType: "per-year" }
-    ],
-    highlights: ["Large campus", "International students", "Industry connections", "Diverse programs"],
-    website: "https://www.lpu.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "51",
-    name: "Indian Institute of Technology Mandi",
-    location: "Mandi, Himachal Pradesh, India",
-    type: "Government",
-    overallRanking: 41,
-    establishedYear: 2009,
-    courses: [
-      { name: "Computer Science", ranking: 17, strength: "Very Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Engineering", ranking: 24, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Data Science", ranking: 4, strength: "Very Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Civil Engineering", ranking: 8, strength: "Good", fees: "₹2.5L", feeType: "per-year" }
-    ],
-    highlights: ["New generation IIT", "Himalayan location", "Data science focus", "Sustainable technology"],
-    website: "https://www.iitmandi.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "52",
-    name: "Indian Institute of Technology Gandhinagar",
-    location: "Gandhinagar, Gujarat, India",
-    type: "Government",
-    overallRanking: 42,
-    establishedYear: 2008,
-    courses: [
-      { name: "Computer Science", ranking: 18, strength: "Very Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Engineering", ranking: 26, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Liberal Arts", ranking: 3, strength: "Very Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Chemical Engineering", ranking: 9, strength: "Good", fees: "₹2.5L", feeType: "per-year" }
-    ],
-    highlights: ["Liberal arts integration", "Modern infrastructure", "International programs", "Industry partnerships"],
-    website: "https://www.iitgn.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "53",
-    name: "Indian Institute of Technology Bhubaneswar",
-    location: "Bhubaneswar, Odisha, India",
-    type: "Government",
-    overallRanking: 43,
-    establishedYear: 2008,
-    courses: [
-      { name: "Computer Science", ranking: 20, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Engineering", ranking: 28, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Electrical Engineering", ranking: 12, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Mechanical Engineering", ranking: 15, strength: "Good", fees: "₹2.5L", feeType: "per-year" }
-    ],
-    highlights: ["Third generation IIT", "Eastern India hub", "Research focus", "Modern facilities"],
-    website: "https://www.iitbbs.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "54",
-    name: "Indian Institute of Technology Patna",
-    location: "Patna, Bihar, India",
-    type: "Government",
-    overallRanking: 44,
-    establishedYear: 2008,
-    courses: [
-      { name: "Computer Science", ranking: 21, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Engineering", ranking: 30, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Mechanical Engineering", ranking: 18, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Civil Engineering", ranking: 12, strength: "Good", fees: "₹2.5L", feeType: "per-year" }
-    ],
-    highlights: ["New generation IIT", "Bihar's premier institute", "Growing infrastructure", "Research potential"],
-    website: "https://www.iitp.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "55",
-    name: "Indian Institute of Management Lucknow",
-    location: "Lucknow, Uttar Pradesh, India",
-    type: "Government",
-    overallRanking: 45,
-    establishedYear: 1984,
-    courses: [
-      { name: "MBA", ranking: 5, strength: "Excellent", fees: "₹20L", feeType: "total" },
-      { name: "Executive MBA", ranking: 5, strength: "Very Good", fees: "₹12L", feeType: "total" },
-      { name: "PhD Management", ranking: 5, strength: "Very Good", fees: "₹50K", feeType: "per-year" },
-      { name: "Management Studies", ranking: 8, strength: "Good", fees: "₹10L", feeType: "total" }
-    ],
-    highlights: ["Top tier IIM", "Strong alumni network", "Industry connections", "Research excellence"],
-    website: "https://www.iiml.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "56",
-    name: "Indian Institute of Management Kozhikode",
-    location: "Kozhikode, Kerala, India",
-    type: "Government",
-    overallRanking: 46,
-    establishedYear: 1996,
-    courses: [
-      { name: "MBA", ranking: 6, strength: "Excellent", fees: "₹20L", feeType: "total" },
-      { name: "Executive MBA", ranking: 6, strength: "Very Good", fees: "₹12L", feeType: "total" },
-      { name: "PhD Management", ranking: 6, strength: "Very Good", fees: "₹50K", feeType: "per-year" },
-      { name: "Public Policy", ranking: 4, strength: "Very Good", fees: "₹8L", feeType: "total" }
-    ],
-    highlights: ["Coastal IIM", "Social impact focus", "Strong placement record", "International programs"],
-    website: "https://www.iimk.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "57",
-    name: "National Institute of Technology Rourkela",
-    location: "Rourkela, Odisha, India",
-    type: "Government",
-    overallRanking: 47,
-    establishedYear: 1961,
-    courses: [
-      { name: "Engineering", ranking: 14, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Computer Science", ranking: 16, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Metallurgy", ranking: 4, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Mining Engineering", ranking: 4, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" }
-    ],
-    highlights: ["Metallurgy excellence", "Industrial town location", "Strong industry ties", "Research focus"],
-    website: "https://www.nitrkl.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "58",
-    name: "National Institute of Technology Calicut",
-    location: "Calicut, Kerala, India",
-    type: "Government",
-    overallRanking: 48,
-    establishedYear: 1961,
-    courses: [
-      { name: "Engineering", ranking: 16, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Computer Science", ranking: 17, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Architecture", ranking: 6, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Electronics", ranking: 12, strength: "Good", fees: "₹1.8L", feeType: "per-year" }
-    ],
-    highlights: ["Kerala's premier NIT", "Architecture excellence", "Beautiful campus", "Strong alumni"],
-    website: "https://www.nitc.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "59",
-    name: "International Institute of Information Technology Bangalore",
-    location: "Bangalore, Karnataka, India",
-    type: "Private",
-    overallRanking: 49,
-    establishedYear: 1999,
-    courses: [
-      { name: "Computer Science", ranking: 23, strength: "Good", fees: "₹14L", feeType: "total" },
-      { name: "Information Technology", ranking: 8, strength: "Very Good", fees: "₹14L", feeType: "total" },
-      { name: "Data Science", ranking: 6, strength: "Very Good", fees: "₹14L", feeType: "total" },
-      { name: "Digital Society", ranking: 3, strength: "Very Good", fees: "₹14L", feeType: "total" }
-    ],
-    highlights: ["IT focus", "Industry partnerships", "Research oriented", "Bangalore advantage"],
-    website: "https://www.iiitb.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "60",
-    name: "Hindustan Institute of Technology and Science",
-    location: "Chennai, Tamil Nadu, India",
-    type: "Private",
-    overallRanking: 50,
-    establishedYear: 1985,
-    courses: [
-      { name: "Engineering", ranking: 42, strength: "Average", fees: "₹2.8L", feeType: "per-year" },
-      { name: "Aerospace Engineering", ranking: 6, strength: "Very Good", fees: "₹3.2L", feeType: "per-year" },
-      { name: "Computer Science", ranking: 35, strength: "Average", fees: "₹2.8L", feeType: "per-year" },
-      { name: "Management", ranking: 45, strength: "Average", fees: "₹5L", feeType: "total" }
-    ],
-    highlights: ["Aerospace specialization", "Industry connections", "Modern infrastructure", "Placement support"],
-    website: "https://www.hindustanuniv.ac.in",
     image: "/placeholder.svg"
   }
 ];

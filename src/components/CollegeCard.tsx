@@ -1,29 +1,8 @@
-
 import { MapPin, Star, Users, BookOpen, ExternalLink, IndianRupee, DollarSign, Clock, Award, Calendar, TrendingUp } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-
-interface Course {
-  name: string;
-  ranking: number;
-  strength: 'Excellent' | 'Very Good' | 'Good' | 'Average';
-  fees: string;
-  feeType: 'per-year' | 'total';
-}
-
-interface College {
-  id: string;
-  name: string;
-  location: string;
-  type: 'Government' | 'Private' | 'Deemed' | 'Public' | 'Ivy League' | 'Liberal Arts';
-  overallRanking: number;
-  establishedYear: number;
-  courses: Course[];
-  highlights: string[];
-  website: string;
-  image: string;
-}
+import { College } from '../types/collegeTypes';
 
 interface CollegeCardProps {
   college: College;
