@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Search, Filter, Globe, MapPin, Star, Users, BookOpen, Graduation } from 'lucide-react';
+import { Search, Filter, Globe, MapPin, Star, Users, BookOpen, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -43,7 +43,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Graduation className="h-8 w-8 text-indigo-600" />
+              <GraduationCap className="h-8 w-8 text-indigo-600" />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 EduSelect Pro
               </h1>
