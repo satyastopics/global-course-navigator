@@ -1,5 +1,5 @@
 
-import { College } from '../../../types/collegeTypes';
+import { College } from '../../../../types/collegeTypes';
 import { allUkColleges } from '../uk';
 
 export { allUkColleges };
