@@ -597,6 +597,204 @@ export const indianColleges: College[] = [
     highlights: ['Liberal Arts Focus', 'International Faculty', 'Modern Campus', 'Innovation Hub'],
     website: 'https://www.ashoka.edu.in/',
     image: '/placeholder.svg'
+  },
+  {
+    id: '31',
+    name: 'Indian Institute of Technology Guwahati',
+    location: 'Guwahati, Assam',
+    type: 'Government',
+    overallRanking: 8,
+    establishedYear: 1994,
+    courses: [
+      { name: 'Computer Science & Engineering', ranking: 7, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Electrical Engineering', ranking: 7, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Mechanical Engineering', ranking: 8, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Chemical Engineering', ranking: 6, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Civil Engineering', ranking: 8, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Electronics & Communication', ranking: 8, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Biotechnology', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Design', ranking: 8, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' }
+    ],
+    highlights: ['Northeast Excellence', 'Research Focus', 'Scenic Campus', 'Innovation Hub'],
+    website: 'https://www.iitg.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '32',
+    name: 'Indian Institute of Technology Hyderabad',
+    location: 'Hyderabad, Telangana',
+    type: 'Government',
+    overallRanking: 9,
+    establishedYear: 2008,
+    courses: [
+      { name: 'Computer Science & Engineering', ranking: 8, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Electrical Engineering', ranking: 8, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Mechanical Engineering', ranking: 9, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Chemical Engineering', ranking: 7, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Civil Engineering', ranking: 9, strength: 'Very Good', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Materials Science & Metallurgy', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Biomedical Engineering', ranking: 3, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' },
+      { name: 'Artificial Intelligence', ranking: 5, strength: 'Excellent', fees: '₹2.5L', feeType: 'per-year' }
+    ],
+    highlights: ['New Age IIT', 'Modern Infrastructure', 'AI Research', 'Industry Connect'],
+    website: 'https://www.iith.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '33',
+    name: 'Indian Institute of Management Lucknow',
+    location: 'Lucknow, Uttar Pradesh',
+    type: 'Government',
+    overallRanking: 4,
+    establishedYear: 1984,
+    courses: [
+      { name: 'MBA (Post Graduate Programme)', ranking: 4, strength: 'Excellent', fees: '₹20L', feeType: 'total' },
+      { name: 'Executive MBA', ranking: 4, strength: 'Excellent', fees: '₹18L', feeType: 'total' },
+      { name: 'Fellow Programme in Management', ranking: 4, strength: 'Excellent', fees: '₹2L', feeType: 'total' },
+      { name: 'Working Managers Programme', ranking: 3, strength: 'Excellent', fees: '₹15L', feeType: 'total' },
+      { name: 'Advanced Management Programme', ranking: 4, strength: 'Excellent', fees: '₹3L', feeType: 'total' }
+    ],
+    highlights: ['Top IIM', 'Management Excellence', 'Industry Leaders', 'Government Connections'],
+    website: 'https://www.iiml.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '34',
+    name: 'Indian Institute of Management Kozhikode',
+    location: 'Kozhikode, Kerala',
+    type: 'Government',
+    overallRanking: 5,
+    establishedYear: 1996,
+    courses: [
+      { name: 'MBA (Post Graduate Programme)', ranking: 5, strength: 'Excellent', fees: '₹20L', feeType: 'total' },
+      { name: 'Executive MBA', ranking: 5, strength: 'Excellent', fees: '₹16L', feeType: 'total' },
+      { name: 'Fellow Programme in Management', ranking: 5, strength: 'Excellent', fees: '₹2L', feeType: 'total' },
+      { name: 'Executive Post Graduate Programme', ranking: 6, strength: 'Excellent', fees: '₹25L', feeType: 'total' },
+      { name: 'Management Development Programme', ranking: 5, strength: 'Excellent', fees: '₹2L', feeType: 'total' }
+    ],
+    highlights: ['Coastal Campus', 'Management Education', 'Industry Interface', 'Global Perspective'],
+    website: 'https://www.iimk.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '35',
+    name: 'National Institute of Design',
+    location: 'Ahmedabad, Gujarat',
+    type: 'Government',
+    overallRanking: 50,
+    establishedYear: 1961,
+    courses: [
+      { name: 'Bachelor of Design (Product Design)', ranking: 1, strength: 'Excellent', fees: '₹3L', feeType: 'per-year' },
+      { name: 'Bachelor of Design (Communication Design)', ranking: 1, strength: 'Excellent', fees: '₹3L', feeType: 'per-year' },
+      { name: 'Bachelor of Design (Textile Design)', ranking: 1, strength: 'Excellent', fees: '₹3L', feeType: 'per-year' },
+      { name: 'Master of Design (Animation Film Design)', ranking: 1, strength: 'Excellent', fees: '₹3.5L', feeType: 'per-year' },
+      { name: 'Master of Design (Interaction Design)', ranking: 2, strength: 'Excellent', fees: '₹3.5L', feeType: 'per-year' },
+      { name: 'Master of Design (Transportation Design)', ranking: 1, strength: 'Excellent', fees: '₹3.5L', feeType: 'per-year' },
+      { name: 'PhD in Design', ranking: 1, strength: 'Excellent', fees: '₹50K', feeType: 'per-year' }
+    ],
+    highlights: ['Premier Design Institute', 'Creative Excellence', 'Industry Collaboration', 'Innovation Hub'],
+    website: 'https://www.nid.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '36',
+    name: 'Jadavpur University',
+    location: 'Kolkata, West Bengal',
+    type: 'Government',
+    overallRanking: 32,
+    establishedYear: 1955,
+    courses: [
+      { name: 'BTech Computer Science', ranking: 30, strength: 'Good', fees: '₹8K', feeType: 'per-year' },
+      { name: 'BTech Electronics & Telecommunication', ranking: 25, strength: 'Good', fees: '₹8K', feeType: 'per-year' },
+      { name: 'BTech Mechanical Engineering', ranking: 35, strength: 'Good', fees: '₹8K', feeType: 'per-year' },
+      { name: 'MA Comparative Literature', ranking: 5, strength: 'Very Good', fees: '₹3K', feeType: 'per-year' },
+      { name: 'MA International Relations', ranking: 8, strength: 'Very Good', fees: '₹3K', feeType: 'per-year' },
+      { name: 'MFA (Film & Television)', ranking: 3, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'PhD in Engineering', ranking: 25, strength: 'Good', fees: '₹5K', feeType: 'per-year' }
+    ],
+    highlights: ['Cultural Heritage', 'Film Studies', 'Research Excellence', 'Liberal Environment'],
+    website: 'https://www.jaduniv.edu.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '37',
+    name: 'Panjab University',
+    location: 'Chandigarh',
+    type: 'Government',
+    overallRanking: 44,
+    establishedYear: 1882,
+    courses: [
+      { name: 'BA Honours English', ranking: 12, strength: 'Very Good', fees: '₹15K', feeType: 'per-year' },
+      { name: 'BSc Honours Physics', ranking: 18, strength: 'Good', fees: '₹18K', feeType: 'per-year' },
+      { name: 'BCom Honours', ranking: 15, strength: 'Very Good', fees: '₹15K', feeType: 'per-year' },
+      { name: 'LLB', ranking: 20, strength: 'Good', fees: '₹25K', feeType: 'per-year' },
+      { name: 'MBA', ranking: 45, strength: 'Good', fees: '₹2L', feeType: 'per-year' },
+      { name: 'MA Psychology', ranking: 15, strength: 'Very Good', fees: '₹8K', feeType: 'per-year' },
+      { name: 'MSc Biotechnology', ranking: 20, strength: 'Good', fees: '₹25K', feeType: 'per-year' }
+    ],
+    highlights: ['Historic University', 'Beautiful Campus', 'Diverse Programs', 'Cultural Center'],
+    website: 'https://puchd.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '38',
+    name: 'Savitribai Phule Pune University',
+    location: 'Pune, Maharashtra',
+    type: 'Government',
+    overallRanking: 46,
+    establishedYear: 1949,
+    courses: [
+      { name: 'BTech Computer Engineering', ranking: 50, strength: 'Average', fees: '₹85K', feeType: 'per-year' },
+      { name: 'BTech Information Technology', ranking: 45, strength: 'Good', fees: '₹85K', feeType: 'per-year' },
+      { name: 'BA Psychology', ranking: 20, strength: 'Good', fees: '₹12K', feeType: 'per-year' },
+      { name: 'MSc Computer Science', ranking: 35, strength: 'Good', fees: '₹25K', feeType: 'per-year' },
+      { name: 'MBA', ranking: 55, strength: 'Average', fees: '₹1.8L', feeType: 'per-year' },
+      { name: 'MA Sociology', ranking: 12, strength: 'Very Good', fees: '₹8K', feeType: 'per-year' },
+      { name: 'MSc Biotechnology', ranking: 25, strength: 'Good', fees: '₹35K', feeType: 'per-year' }
+    ],
+    highlights: ['State University', 'Diverse Programs', 'Research Focus', 'Cultural Activities'],
+    website: 'http://www.unipune.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '39',
+    name: 'Cochin University of Science and Technology',
+    location: 'Kochi, Kerala',
+    type: 'Government',
+    overallRanking: 38,
+    establishedYear: 1971,
+    courses: [
+      { name: 'BTech Computer Science', ranking: 40, strength: 'Good', fees: '₹45K', feeType: 'per-year' },
+      { name: 'BTech Electronics', ranking: 35, strength: 'Good', fees: '₹45K', feeType: 'per-year' },
+      { name: 'BTech Marine Engineering', ranking: 3, strength: 'Excellent', fees: '₹65K', feeType: 'per-year' },
+      { name: 'BTech Ship Technology', ranking: 2, strength: 'Excellent', fees: '₹65K', feeType: 'per-year' },
+      { name: 'MSc Atmospheric Sciences', ranking: 5, strength: 'Very Good', fees: '₹25K', feeType: 'per-year' },
+      { name: 'MSc Ocean Technology', ranking: 3, strength: 'Excellent', fees: '₹35K', feeType: 'per-year' },
+      { name: 'PhD in Engineering', ranking: 30, strength: 'Good', fees: '₹8K', feeType: 'per-year' }
+    ],
+    highlights: ['Marine Technology', 'Coastal Engineering', 'Research Excellence', 'Industry Connect'],
+    website: 'https://cusat.ac.in/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: '40',
+    name: 'Indian Institute of Space Science and Technology',
+    location: 'Thiruvananthapuram, Kerala',
+    type: 'Government',
+    overallRanking: 45,
+    establishedYear: 2007,
+    courses: [
+      { name: 'BTech Aerospace Engineering', ranking: 4, strength: 'Excellent', fees: '₹2L', feeType: 'per-year' },
+      { name: 'BTech Avionics', ranking: 2, strength: 'Excellent', fees: '₹2L', feeType: 'per-year' },
+      { name: 'BTech Physical Sciences', ranking: 8, strength: 'Very Good', fees: '₹2L', feeType: 'per-year' },
+      { name: 'MTech Satellite Technology', ranking: 1, strength: 'Excellent', fees: '₹1L', feeType: 'per-year' },
+      { name: 'MTech Space Science', ranking: 1, strength: 'Excellent', fees: '₹1L', feeType: 'per-year' },
+      { name: 'PhD in Space Technology', ranking: 2, strength: 'Excellent', fees: '₹25K', feeType: 'per-year' },
+      { name: 'Dual Degree Space Technology', ranking: 1, strength: 'Excellent', fees: '₹2L', feeType: 'per-year' }
+    ],
+    highlights: ['ISRO Connection', 'Space Technology', 'Research Excellence', 'Unique Programs'],
+    website: 'https://www.iist.ac.in/',
+    image: '/placeholder.svg'
   }
 ];
 
@@ -1206,6 +1404,214 @@ export const worldColleges: College[] = [
     ],
     highlights: ['Media Excellence', 'Chicago Location', 'Research University', 'Strong Alumni Network'],
     website: 'https://www.northwestern.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w31',
+    name: 'University of Michigan Ann Arbor',
+    location: 'Ann Arbor, USA',
+    type: 'Public',
+    overallRanking: 31,
+    establishedYear: 1817,
+    courses: [
+      { name: 'Engineering', ranking: 7, strength: 'Excellent', fees: '$50K', feeType: 'per-year' },
+      { name: 'Business (Ross)', ranking: 4, strength: 'Excellent', fees: '$70K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 12, strength: 'Very Good', fees: '$58K', feeType: 'per-year' },
+      { name: 'Law', ranking: 10, strength: 'Very Good', fees: '$63K', feeType: 'per-year' },
+      { name: 'Public Policy', ranking: 3, strength: 'Excellent', fees: '$48K', feeType: 'per-year' },
+      { name: 'Psychology', ranking: 5, strength: 'Excellent', fees: '$48K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 12, strength: 'Very Good', fees: '$50K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 8, strength: 'Very Good', fees: '$48K', feeType: 'per-year' }
+    ],
+    highlights: ['Public Ivy', 'Research Powerhouse', 'Big Ten Athletics', 'Strong Alumni Network'],
+    website: 'https://umich.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w32',
+    name: 'New York University',
+    location: 'New York, USA',
+    type: 'Private',
+    overallRanking: 32,
+    establishedYear: 1831,
+    courses: [
+      { name: 'Film & Television (Tisch)', ranking: 2, strength: 'Excellent', fees: '$56K', feeType: 'per-year' },
+      { name: 'Business (Stern)', ranking: 10, strength: 'Very Good', fees: '$77K', feeType: 'per-year' },
+      { name: 'Law', ranking: 6, strength: 'Excellent', fees: '$69K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 5, strength: 'Excellent', fees: '$55K', feeType: 'per-year' },
+      { name: 'Drama', ranking: 3, strength: 'Excellent', fees: '$56K', feeType: 'per-year' },
+      { name: 'Mathematics', ranking: 8, strength: 'Very Good', fees: '$56K', feeType: 'per-year' },
+      { name: 'Philosophy', ranking: 1, strength: 'Excellent', fees: '$56K', feeType: 'per-year' },
+      { name: 'Social Work', ranking: 1, strength: 'Excellent', fees: '$45K', feeType: 'per-year' }
+    ],
+    highlights: ['NYC Campus', 'Global Network', 'Arts Excellence', 'Urban Experience'],
+    website: 'https://www.nyu.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w33',
+    name: 'University of Sydney',
+    location: 'Sydney, Australia',
+    type: 'Public',
+    overallRanking: 33,
+    establishedYear: 1850,
+    courses: [
+      { name: 'Medicine', ranking: 16, strength: 'Very Good', fees: '$68K', feeType: 'per-year' },
+      { name: 'Law', ranking: 12, strength: 'Very Good', fees: '$47K', feeType: 'per-year' },
+      { name: 'Business', ranking: 18, strength: 'Good', fees: '$52K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 28, strength: 'Good', fees: '$53K', feeType: 'per-year' },
+      { name: 'Veterinary Science', ranking: 8, strength: 'Very Good', fees: '$75K', feeType: 'per-year' },
+      { name: 'Architecture', ranking: 18, strength: 'Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Arts & Social Sciences', ranking: 15, strength: 'Very Good', fees: '$42K', feeType: 'per-year' },
+      { name: 'Nursing', ranking: 12, strength: 'Very Good', fees: '$38K', feeType: 'per-year' }
+    ],
+    highlights: ['Historic Australian University', 'Beautiful Campus', 'Research Excellence', 'Global Recognition'],
+    website: 'https://www.sydney.edu.au/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w34',
+    name: 'Technical University of Munich',
+    location: 'Munich, Germany',
+    type: 'Public',
+    overallRanking: 34,
+    establishedYear: 1868,
+    courses: [
+      { name: 'Engineering', ranking: 12, strength: 'Very Good', fees: '€150', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 18, strength: 'Good', fees: '€150', feeType: 'per-year' },
+      { name: 'Physics', ranking: 25, strength: 'Good', fees: '€150', feeType: 'per-year' },
+      { name: 'Mathematics', ranking: 20, strength: 'Good', fees: '€150', feeType: 'per-year' },
+      { name: 'Architecture', ranking: 15, strength: 'Very Good', fees: '€150', feeType: 'per-year' },
+      { name: 'Management & Technology', ranking: 20, strength: 'Good', fees: '€150', feeType: 'per-year' },
+      { name: 'Life Sciences', ranking: 22, strength: 'Good', fees: '€150', feeType: 'per-year' }
+    ],
+    highlights: ['German Engineering Excellence', 'Industry Connections', 'Research Focus', 'Low Fees'],
+    website: 'https://www.tum.de/en/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w35',
+    name: 'University of Wisconsin Madison',
+    location: 'Madison, USA',
+    type: 'Public',
+    overallRanking: 35,
+    establishedYear: 1848,
+    courses: [
+      { name: 'Engineering', ranking: 15, strength: 'Very Good', fees: '$40K', feeType: 'per-year' },
+      { name: 'Business', ranking: 18, strength: 'Good', fees: '$43K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 25, strength: 'Good', fees: '$38K', feeType: 'per-year' },
+      { name: 'Agriculture & Life Sciences', ranking: 8, strength: 'Very Good', fees: '$38K', feeType: 'per-year' },
+      { name: 'Education', ranking: 5, strength: 'Very Good', fees: '$35K', feeType: 'per-year' },
+      { name: 'Journalism', ranking: 8, strength: 'Very Good', fees: '$38K', feeType: 'per-year' },
+      { name: 'Psychology', ranking: 12, strength: 'Very Good', fees: '$38K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 25, strength: 'Good', fees: '$40K', feeType: 'per-year' }
+    ],
+    highlights: ['Research University', 'Big Ten Conference', 'Liberal Traditions', 'Beautiful Campus'],
+    website: 'https://www.wisc.edu/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w36',
+    name: 'University of Manchester',
+    location: 'Manchester, UK',
+    type: 'Public',
+    overallRanking: 36,
+    establishedYear: 1824,
+    courses: [
+      { name: 'Engineering', ranking: 20, strength: 'Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 25, strength: 'Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Business', ranking: 30, strength: 'Good', fees: '£22K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 18, strength: 'Good', fees: '£38K', feeType: 'per-year' },
+      { name: 'Chemistry', ranking: 15, strength: 'Very Good', fees: '£25K', feeType: 'per-year' },
+      { name: 'Materials Science', ranking: 12, strength: 'Very Good', fees: '£28K', feeType: 'per-year' },
+      { name: 'Social Sciences', ranking: 25, strength: 'Good', fees: '£20K', feeType: 'per-year' },
+      { name: 'Economics', ranking: 22, strength: 'Good', fees: '£22K', feeType: 'per-year' }
+    ],
+    highlights: ['Research Excellence', 'Industrial Heritage', 'Diverse Programs', 'City Campus'],
+    website: 'https://www.manchester.ac.uk/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w37',
+    name: 'Seoul National University',
+    location: 'Seoul, South Korea',
+    type: 'Public',
+    overallRanking: 37,
+    establishedYear: 1946,
+    courses: [
+      { name: 'Engineering', ranking: 15, strength: 'Very Good', fees: '$7K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 20, strength: 'Good', fees: '$8K', feeType: 'per-year' },
+      { name: 'Business', ranking: 25, strength: 'Good', fees: '$6K', feeType: 'per-year' },
+      { name: 'Liberal Arts', ranking: 18, strength: 'Good', fees: '$5K', feeType: 'per-year' },
+      { name: 'Natural Sciences', ranking: 20, strength: 'Good', fees: '$6K', feeType: 'per-year' },
+      { name: 'Social Sciences', ranking: 15, strength: 'Very Good', fees: '$5K', feeType: 'per-year' },
+      { name: 'Agriculture & Life Sciences', ranking: 12, strength: 'Very Good', fees: '$6K', feeType: 'per-year' },
+      { name: 'Veterinary Medicine', ranking: 15, strength: 'Very Good', fees: '$7K', feeType: 'per-year' }
+    ],
+    highlights: ['Top Korean University', 'Government Leaders', 'Research Excellence', 'Affordable Education'],
+    website: 'https://en.snu.ac.kr/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w38',
+    name: 'University of British Columbia',
+    location: 'Vancouver, Canada',
+    type: 'Public',
+    overallRanking: 38,
+    establishedYear: 1908,
+    courses: [
+      { name: 'Medicine', ranking: 20, strength: 'Good', fees: '$58K', feeType: 'per-year' },
+      { name: 'Engineering', ranking: 20, strength: 'Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Business (Sauder)', ranking: 28, strength: 'Good', fees: '$52K', feeType: 'per-year' },
+      { name: 'Forestry', ranking: 3, strength: 'Excellent', fees: '$40K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 25, strength: 'Good', fees: '$48K', feeType: 'per-year' },
+      { name: 'Psychology', ranking: 18, strength: 'Good', fees: '$42K', feeType: 'per-year' },
+      { name: 'Arts', ranking: 20, strength: 'Good', fees: '$35K', feeType: 'per-year' },
+      { name: 'Science', ranking: 22, strength: 'Good', fees: '$45K', feeType: 'per-year' }
+    ],
+    highlights: ['Beautiful Campus', 'Research University', 'Multicultural', 'Pacific Coast Location'],
+    website: 'https://www.ubc.ca/',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w39',
+    name: 'University of Amsterdam',
+    location: 'Amsterdam, Netherlands',
+    type: 'Public',
+    overallRanking: 39,
+    establishedYear: 1877,
+    courses: [
+      { name: 'Economics & Business', ranking: 15, strength: 'Very Good', fees: '€2.2K', feeType: 'per-year' },
+      { name: 'Social Sciences', ranking: 12, strength: 'Very Good', fees: '€2.2K', feeType: 'per-year' },
+      { name: 'Psychology', ranking: 15, strength: 'Very Good', fees: '€2.2K', feeType: 'per-year' },
+      { name: 'Media Studies', ranking: 8, strength: 'Very Good', fees: '€2.2K', feeType: 'per-year' },
+      { name: 'Law', ranking: 20, strength: 'Good', fees: '€2.2K', feeType: 'per-year' },
+      { name: 'Computer Science', ranking: 30, strength: 'Good', fees: '€2.2K', feeType: 'per-year' },
+      { name: 'Medicine', ranking: 25, strength: 'Good', fees: '€2.2K', feeType: 'per-year' },
+      { name: 'Liberal Arts & Sciences', ranking: 12, strength: 'Very Good', fees: '€2.2K', feeType: 'per-year' }
+    ],
+    highlights: ['Historic City Campus', 'International Environment', 'Research Excellence', 'Low Tuition'],
+    website: 'https://www.uva.nl/en',
+    image: '/placeholder.svg'
+  },
+  {
+    id: 'w40',
+    name: 'Karolinska Institute',
+    location: 'Stockholm, Sweden',
+    type: 'Public',
+    overallRanking: 40,
+    establishedYear: 1810,
+    courses: [
+      { name: 'Medicine', ranking: 8, strength: 'Very Good', fees: 'Free', feeType: 'total' },
+      { name: 'Global Health', ranking: 3, strength: 'Excellent', fees: 'Free', feeType: 'total' },
+      { name: 'Biomedicine', ranking: 5, strength: 'Very Good', fees: 'Free', feeType: 'total' },
+      { name: 'Public Health Sciences', ranking: 8, strength: 'Very Good', fees: 'Free', feeType: 'total' },
+      { name: 'Neuroscience', ranking: 8, strength: 'Very Good', fees: 'Free', feeType: 'total' },
+      { name: 'Toxicology', ranking: 5, strength: 'Very Good', fees: 'Free', feeType: 'total' },
+      { name: 'Molecular Medicine', ranking: 8, strength: 'Very Good', fees: 'Free', feeType: 'total' }
+    ],
+    highlights: ['Nobel Prize Connection', 'Medical Excellence', 'Research Institute', 'Free Education'],
+    website: 'https://ki.se/en',
     image: '/placeholder.svg'
   }
 ];
