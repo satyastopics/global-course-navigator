@@ -1,4 +1,4 @@
-import { College } from '../../../../../../../types/collegeTypes';
+import { College } from '../../../../../../types/collegeTypes';
 import { utSystemColleges } from './ut-system';
 
 export { utSystemColleges };
