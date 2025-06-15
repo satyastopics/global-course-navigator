@@ -1,11 +1,10 @@
 
 import { College } from '../../../../types/collegeTypes';
-import { ivyLeagueColleges } from '../north-america/usa/ivy-league';
-import { usPublicUniversities } from './public-universities';
-import { usPrivateUniversities } from './private-universities';
-import { usLiberalArtsColleges } from './liberal-arts';
+import { ivyLeagueColleges } from './ivy-league';
+import { usPublicUniversities } from '../../../us/public-universities';
+import { usPrivateUniversities } from '../../../us/private-universities';
+import { usLiberalArtsColleges } from '../../../us/liberal-arts';
 
-// Export individual US college categories
 export { 
   ivyLeagueColleges,
   usPublicUniversities,
@@ -13,7 +12,6 @@ export {
   usLiberalArtsColleges
 };
 
-// All US colleges
 export const allUsColleges: College[] = [
   ...ivyLeagueColleges,
   ...usPublicUniversities,
@@ -21,7 +19,6 @@ export const allUsColleges: College[] = [
   ...usLiberalArtsColleges
 ];
 
-// US colleges organized by type for easy filtering
 export const usCollegesByType = {
   'ivy-league': ivyLeagueColleges,
   'public': usPublicUniversities,

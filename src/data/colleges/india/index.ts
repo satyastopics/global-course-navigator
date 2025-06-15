@@ -1,10 +1,6 @@
 
 import { College } from '../../../types/collegeTypes';
-import { iitColleges } from './government/iits';
-import { iimColleges } from './government/iims';
-import { nitColleges } from './government/nits';
-import { centralUniversities } from './government/central-universities';
-import { stateUniversities } from './government/state-universities';
+import { governmentColleges, iitColleges, iimColleges, nitColleges, centralUniversities, stateUniversities } from './government';
 import { privateColleges, privateCollegesByType } from './private';
 
 // Export individual collections for easy access
@@ -15,17 +11,9 @@ export {
   centralUniversities, 
   stateUniversities, 
   privateColleges,
-  privateCollegesByType
+  privateCollegesByType,
+  governmentColleges
 };
-
-// Combined government colleges
-export const governmentColleges: College[] = [
-  ...iitColleges,
-  ...iimColleges,
-  ...nitColleges,
-  ...centralUniversities,
-  ...stateUniversities
-];
 
 // All Indian colleges
 export const indianColleges: College[] = [

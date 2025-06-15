@@ -1,39 +1,20 @@
 
 import { College } from '../../../../types/collegeTypes';
+import { northIndiaPrivateEngineering } from './engineering-colleges/north-india';
+import { southIndiaPrivateEngineering } from './engineering-colleges/south-india';
+import { westIndiaPrivateEngineering } from './engineering-colleges/west-india';
+import { eastIndiaPrivateEngineering } from './engineering-colleges/east-india';
+
+export { 
+  northIndiaPrivateEngineering,
+  southIndiaPrivateEngineering,
+  westIndiaPrivateEngineering,
+  eastIndiaPrivateEngineering
+};
 
 export const privateEngineeringColleges: College[] = [
-  {
-    id: "33",
-    name: "Birla Institute of Technology and Science",
-    location: "Pilani, Rajasthan, India",
-    type: "Private",
-    overallRanking: 13,
-    establishedYear: 1964,
-    courses: [
-      { name: "Computer Science", ranking: 10, strength: "Excellent", fees: "₹4.5L", feeType: "per-year" },
-      { name: "Engineering", ranking: 12, strength: "Very Good", fees: "₹4.5L", feeType: "per-year" },
-      { name: "Pharmacy", ranking: 3, strength: "Very Good", fees: "₹4L", feeType: "per-year" },
-      { name: "Management", ranking: 15, strength: "Good", fees: "₹18L", feeType: "total" }
-    ],
-    highlights: ["Deemed university", "Strong industry connections", "Multiple campuses", "Innovation culture"],
-    website: "https://www.bits-pilani.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "37",
-    name: "Vellore Institute of Technology",
-    location: "Vellore, Tamil Nadu, India",
-    type: "Private",
-    overallRanking: 17,
-    establishedYear: 1984,
-    courses: [
-      { name: "Computer Science", ranking: 15, strength: "Very Good", fees: "₹2L", feeType: "per-year" },
-      { name: "Engineering", ranking: 18, strength: "Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Management", ranking: 25, strength: "Good", fees: "₹8L", feeType: "total" },
-      { name: "Law", ranking: 15, strength: "Good", fees: "₹2.5L", feeType: "per-year" }
-    ],
-    highlights: ["Large private university", "Industry partnerships", "International collaborations", "Modern facilities"],
-    website: "https://vit.ac.in",
-    image: "/placeholder.svg"
-  }
+  ...northIndiaPrivateEngineering,
+  ...southIndiaPrivateEngineering,
+  ...westIndiaPrivateEngineering,
+  ...eastIndiaPrivateEngineering
 ];
