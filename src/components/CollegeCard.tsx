@@ -171,7 +171,6 @@ const CollegeCard = ({ college, index }: CollegeCardProps) => {
               {isIndian ? <IndianRupee className="h-4 w-4" /> : <DollarSign className="h-4 w-4" />}
               <span className="font-bold text-lg">{getFeeRange()}</span>
             </div>
-            <span className="text-sm text-slate-500">{college.courses.length} programs available</span>
           </div>
           <div className="text-right">
             <a 
