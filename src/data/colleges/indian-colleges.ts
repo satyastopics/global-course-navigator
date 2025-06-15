@@ -44,10 +44,10 @@ export const indianColleges: College[] = [
     overallRanking: 3,
     establishedYear: 1909,
     courses: [
-      { name: "Physics", ranking: 1, strength: "Excellent", fees: "₹18K", feeType: "per-year" },
-      { name: "Computer Science", ranking: 3, strength: "Excellent", fees: "₹18K", feeType: "per-year" },
-      { name: "Engineering", ranking: 4, strength: "Excellent", fees: "₹18K", feeType: "per-year" },
-      { name: "Mathematics", ranking: 2, strength: "Excellent", fees: "₹18K", feeType: "per-year" }
+      { name: "Physics", ranking: 1, strength: "Excellent", fees: "₹25K", feeType: "per-year" },
+      { name: "Computer Science", ranking: 3, strength: "Excellent", fees: "₹25K", feeType: "per-year" },
+      { name: "Engineering", ranking: 4, strength: "Excellent", fees: "₹25K", feeType: "per-year" },
+      { name: "Mathematics", ranking: 2, strength: "Excellent", fees: "₹25K", feeType: "per-year" }
     ],
     highlights: ["Research-focused", "Oldest science institute", "Low fees", "PhD programs"],
     website: "https://www.iisc.ac.in",
@@ -95,10 +95,10 @@ export const indianColleges: College[] = [
     overallRanking: 6,
     establishedYear: 1956,
     courses: [
-      { name: "Medicine", ranking: 1, strength: "Excellent", fees: "₹5,856", feeType: "per-year" },
-      { name: "Nursing", ranking: 1, strength: "Excellent", fees: "₹3,000", feeType: "per-year" },
-      { name: "Biotechnology", ranking: 3, strength: "Very Good", fees: "₹5,856", feeType: "per-year" },
-      { name: "Pharmacy", ranking: 2, strength: "Very Good", fees: "₹5,856", feeType: "per-year" }
+      { name: "Medicine", ranking: 1, strength: "Excellent", fees: "₹6K", feeType: "per-year" },
+      { name: "Nursing", ranking: 1, strength: "Excellent", fees: "₹3K", feeType: "per-year" },
+      { name: "Biotechnology", ranking: 3, strength: "Very Good", fees: "₹6K", feeType: "per-year" },
+      { name: "Pharmacy", ranking: 2, strength: "Very Good", fees: "₹6K", feeType: "per-year" }
     ],
     highlights: ["Premier medical institute", "Extremely low fees", "Top healthcare", "Research excellence"],
     website: "https://www.aiims.edu",
@@ -165,7 +165,7 @@ export const indianColleges: College[] = [
     courses: [
       { name: "MBA", ranking: 1, strength: "Excellent", fees: "₹25L", feeType: "total" },
       { name: "Executive MBA", ranking: 1, strength: "Excellent", fees: "₹15L", feeType: "total" },
-      { name: "PhD Management", ranking: 1, strength: "Excellent", fees: "₹1L", feeType: "total" },
+      { name: "PhD Management", ranking: 1, strength: "Excellent", fees: "₹50K", feeType: "per-year" },
       { name: "Public Policy", ranking: 2, strength: "Very Good", fees: "₹8L", feeType: "total" }
     ],
     highlights: ["Top business school", "Premier management institute", "Strong industry connect", "Global recognition"],
@@ -180,10 +180,10 @@ export const indianColleges: College[] = [
     overallRanking: 11,
     establishedYear: 1969,
     courses: [
-      { name: "Political Science", ranking: 1, strength: "Excellent", fees: "₹432", feeType: "per-year" },
-      { name: "International Relations", ranking: 1, strength: "Excellent", fees: "₹432", feeType: "per-year" },
-      { name: "Social Sciences", ranking: 2, strength: "Excellent", fees: "₹432", feeType: "per-year" },
-      { name: "Languages", ranking: 3, strength: "Very Good", fees: "₹432", feeType: "per-year" }
+      { name: "Political Science", ranking: 1, strength: "Excellent", fees: "₹500", feeType: "per-year" },
+      { name: "International Relations", ranking: 1, strength: "Excellent", fees: "₹500", feeType: "per-year" },
+      { name: "Social Sciences", ranking: 2, strength: "Excellent", fees: "₹500", feeType: "per-year" },
+      { name: "Languages", ranking: 3, strength: "Very Good", fees: "₹500", feeType: "per-year" }
     ],
     highlights: ["Social sciences leader", "Very low fees", "Research university", "Political science excellence"],
     website: "https://www.jnu.ac.in",
@@ -217,7 +217,7 @@ export const indianColleges: College[] = [
       { name: "Computer Science", ranking: 10, strength: "Excellent", fees: "₹4.5L", feeType: "per-year" },
       { name: "Engineering", ranking: 12, strength: "Very Good", fees: "₹4.5L", feeType: "per-year" },
       { name: "Pharmacy", ranking: 3, strength: "Very Good", fees: "₹4L", feeType: "per-year" },
-      { name: "Management", ranking: 15, strength: "Good", fees: "₹20L", feeType: "total" }
+      { name: "Management", ranking: 15, strength: "Good", fees: "₹18L", feeType: "total" }
     ],
     highlights: ["Deemed university", "Strong industry connections", "Multiple campuses", "Innovation culture"],
     website: "https://www.bits-pilani.ac.in",

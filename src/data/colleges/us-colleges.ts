@@ -29,7 +29,7 @@ export const usColleges: College[] = [
     courses: [
       { name: "Computer Science", ranking: 2, strength: "Excellent", fees: "$61,731", feeType: "per-year" },
       { name: "Engineering", ranking: 2, strength: "Excellent", fees: "$61,731", feeType: "per-year" },
-      { name: "Business", ranking: 1, strength: "Excellent", fees: "$78,898", feeType: "per-year" },
+      { name: "Business", ranking: 1, strength: "Excellent", fees: "$74,706", feeType: "per-year" },
       { name: "Medicine", ranking: 3, strength: "Excellent", fees: "$66,996", feeType: "per-year" }
     ],
     highlights: ["Silicon Valley proximity", "Entrepreneurial culture", "Strong research", "Diverse programs"],
@@ -95,9 +95,9 @@ export const usColleges: College[] = [
     overallRanking: 10,
     establishedYear: 1868,
     courses: [
-      { name: "Computer Science", ranking: 4, strength: "Excellent", fees: "$47,644", feeType: "per-year" },
-      { name: "Engineering", ranking: 6, strength: "Excellent", fees: "$47,644", feeType: "per-year" },
-      { name: "Business", ranking: 7, strength: "Very Good", fees: "$63,700", feeType: "per-year" },
+      { name: "Computer Science", ranking: 4, strength: "Excellent", fees: "$14,254", feeType: "per-year" },
+      { name: "Engineering", ranking: 6, strength: "Excellent", fees: "$14,254", feeType: "per-year" },
+      { name: "Business", ranking: 7, strength: "Very Good", fees: "$61,442", feeType: "per-year" },
       { name: "Law", ranking: 9, strength: "Very Good", fees: "$53,315", feeType: "per-year" }
     ],
     highlights: ["Top public university", "Strong research", "Diverse student body", "Bay Area location"],
