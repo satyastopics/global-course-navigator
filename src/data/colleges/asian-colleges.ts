@@ -13,7 +13,7 @@ export const asianColleges: College[] = [
       { name: "Engineering", ranking: 20, strength: "Excellent", fees: "$8,200", feeType: "per-year" },
       { name: "Computer Science", ranking: 22, strength: "Very Good", fees: "$8,200", feeType: "per-year" },
       { name: "Medicine", ranking: 15, strength: "Excellent", fees: "$12,400", feeType: "per-year" },
-      { name: "Business", ranking: 35, strength: "Good", fees: "$8,200", feeType: "per-year" }
+      { name: "Liberal Arts", ranking: 35, strength: "Good", fees: "$6,500", feeType: "per-year" }
     ],
     highlights: ["Korea's top university", "Strong in STEM", "Government support", "Research focused"],
     website: "https://www.snu.ac.kr",
@@ -30,7 +30,7 @@ export const asianColleges: College[] = [
       { name: "Engineering", ranking: 5, strength: "Excellent", fees: "$5,500", feeType: "per-year" },
       { name: "Computer Science", ranking: 8, strength: "Excellent", fees: "$5,500", feeType: "per-year" },
       { name: "Architecture", ranking: 3, strength: "Excellent", fees: "$5,500", feeType: "per-year" },
-      { name: "Physics", ranking: 12, strength: "Excellent", fees: "$5,500", feeType: "per-year" }
+      { name: "Business", ranking: 25, strength: "Very Good", fees: "$15,000", feeType: "per-year" }
     ],
     highlights: ["China's MIT", "Engineering excellence", "Strong industry ties", "Innovation hub"],
     website: "https://www.tsinghua.edu.cn",
@@ -38,36 +38,36 @@ export const asianColleges: College[] = [
   },
   {
     id: "73",
-    name: "Waseda University",
+    name: "University of Tokyo",
     location: "Tokyo, Japan",
-    type: "Private",
-    overallRanking: 203,
-    establishedYear: 1882,
+    type: "Public",
+    overallRanking: 23,
+    establishedYear: 1877,
     courses: [
-      { name: "Political Science", ranking: 85, strength: "Good", fees: "$12,800", feeType: "per-year" },
-      { name: "Business", ranking: 120, strength: "Average", fees: "$12,100", feeType: "per-year" },
-      { name: "Engineering", ranking: 145, strength: "Average", fees: "$16,000", feeType: "per-year" },
-      { name: "International Studies", ranking: 95, strength: "Good", fees: "$12,800", feeType: "per-year" }
+      { name: "Engineering", ranking: 15, strength: "Excellent", fees: "$3,500", feeType: "per-year" },
+      { name: "Medicine", ranking: 18, strength: "Excellent", fees: "$3,500", feeType: "per-year" },
+      { name: "Liberal Arts", ranking: 25, strength: "Very Good", fees: "$3,500", feeType: "per-year" },
+      { name: "Law", ranking: 20, strength: "Very Good", fees: "$3,500", feeType: "per-year" }
     ],
-    highlights: ["Strong alumni network", "International programs", "Central Tokyo location", "Liberal education"],
-    website: "https://www.waseda.jp",
+    highlights: ["Japan's top university", "Imperial university", "Research excellence", "Liberal education"],
+    website: "https://www.u-tokyo.ac.jp",
     image: "/placeholder.svg"
   },
   {
     id: "75",
-    name: "Chulalongkorn University",
-    location: "Bangkok, Thailand",
+    name: "National University of Singapore",
+    location: "Singapore",
     type: "Public",
-    overallRanking: 208,
-    establishedYear: 1917,
+    overallRanking: 11,
+    establishedYear: 1905,
     courses: [
-      { name: "Medicine", ranking: 180, strength: "Average", fees: "$9,800", feeType: "per-year" },
-      { name: "Engineering", ranking: 195, strength: "Average", fees: "$5,000", feeType: "per-year" },
-      { name: "Business", ranking: 185, strength: "Average", fees: "$4,200", feeType: "per-year" },
-      { name: "Arts", ranking: 175, strength: "Average", fees: "$3,400", feeType: "per-year" }
+      { name: "Engineering", ranking: 8, strength: "Excellent", fees: "$39,000", feeType: "per-year" },
+      { name: "Computer Science", ranking: 10, strength: "Excellent", fees: "$39,000", feeType: "per-year" },
+      { name: "Business", ranking: 12, strength: "Excellent", fees: "$45,000", feeType: "per-year" },
+      { name: "Medicine", ranking: 22, strength: "Very Good", fees: "$65,000", feeType: "per-year" }
     ],
-    highlights: ["Thailand's oldest university", "Royal patronage", "Central Bangkok", "Strong traditions"],
-    website: "https://www.chula.ac.th",
+    highlights: ["Asia's top university", "Global city campus", "Strong research", "International outlook"],
+    website: "https://www.nus.edu.sg",
     image: "/placeholder.svg"
   }
 ];

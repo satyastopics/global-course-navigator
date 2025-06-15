@@ -29,7 +29,7 @@ export const otherColleges: College[] = [
     courses: [
       { name: "Medicine", ranking: 12, strength: "Excellent", fees: "AUD 89,824", feeType: "per-year" },
       { name: "Engineering", ranking: 25, strength: "Very Good", fees: "AUD 48,736", feeType: "per-year" },
-      { name: "Arts", ranking: 18, strength: "Very Good", fees: "AUD 33,344", feeType: "per-year" },
+      { name: "Liberal Arts", ranking: 18, strength: "Very Good", fees: "AUD 33,344", feeType: "per-year" },
       { name: "Business", ranking: 28, strength: "Very Good", fees: "AUD 47,712", feeType: "per-year" }
     ],
     highlights: ["Go8 member", "Research excellence", "International outlook", "Beautiful campus"],
@@ -47,7 +47,7 @@ export const otherColleges: College[] = [
       { name: "Medicine", ranking: 45, strength: "Good", fees: "Free", feeType: "total" },
       { name: "Engineering", ranking: 55, strength: "Good", fees: "Free", feeType: "total" },
       { name: "Business", ranking: 65, strength: "Average", fees: "Free", feeType: "total" },
-      { name: "Arts", ranking: 48, strength: "Good", fees: "Free", feeType: "total" }
+      { name: "Liberal Arts", ranking: 48, strength: "Good", fees: "Free", feeType: "total" }
     ],
     highlights: ["Top Brazilian university", "Free education", "Large research output", "Diverse programs"],
     website: "https://www.usp.br",
@@ -81,7 +81,7 @@ export const otherColleges: College[] = [
       { name: "Medicine", ranking: 150, strength: "Average", fees: "$32,000", feeType: "per-year" },
       { name: "Engineering", ranking: 180, strength: "Average", fees: "$28,000", feeType: "per-year" },
       { name: "Business", ranking: 165, strength: "Average", fees: "$25,000", feeType: "per-year" },
-      { name: "Arts", ranking: 145, strength: "Average", fees: "$22,000", feeType: "per-year" }
+      { name: "Liberal Arts", ranking: 145, strength: "Average", fees: "$22,000", feeType: "per-year" }
     ],
     highlights: ["Liberal arts tradition", "American model", "Regional leader", "Diverse programs"],
     website: "https://www.aub.edu.lb",
@@ -115,7 +115,7 @@ export const otherColleges: College[] = [
       { name: "Medicine", ranking: 42, strength: "Good", fees: "Free", feeType: "total" },
       { name: "Law", ranking: 38, strength: "Very Good", fees: "Free", feeType: "total" },
       { name: "Economics", ranking: 55, strength: "Good", fees: "Free", feeType: "total" },
-      { name: "Psychology", ranking: 48, strength: "Good", fees: "Free", feeType: "total" }
+      { name: "Liberal Arts", ranking: 48, strength: "Good", fees: "Free", feeType: "total" }
     ],
     highlights: ["Free education", "Large enrollment", "Strong in humanities", "Regional influence"],
     website: "https://www.uba.ar",
@@ -132,7 +132,7 @@ export const otherColleges: College[] = [
       { name: "Medicine", ranking: 48, strength: "Good", fees: "NZD 76,269", feeType: "per-year" },
       { name: "Engineering", ranking: 65, strength: "Good", fees: "NZD 43,166", feeType: "per-year" },
       { name: "Business", ranking: 85, strength: "Good", fees: "NZD 35,742", feeType: "per-year" },
-      { name: "Arts", ranking: 78, strength: "Good", fees: "NZD 28,390", feeType: "per-year" }
+      { name: "Liberal Arts", ranking: 78, strength: "Good", fees: "NZD 28,390", feeType: "per-year" }
     ],
     highlights: ["Top NZ university", "Research intensive", "Multicultural", "Beautiful campus"],
     website: "https://www.auckland.ac.nz",

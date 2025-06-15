@@ -30,7 +30,7 @@ export const usColleges: College[] = [
       { name: "Computer Science", ranking: 2, strength: "Excellent", fees: "$61,731", feeType: "per-year" },
       { name: "Engineering", ranking: 2, strength: "Excellent", fees: "$61,731", feeType: "per-year" },
       { name: "Business", ranking: 1, strength: "Excellent", fees: "$78,898", feeType: "per-year" },
-      { name: "Law", ranking: 2, strength: "Excellent", fees: "$68,997", feeType: "per-year" }
+      { name: "Medicine", ranking: 3, strength: "Excellent", fees: "$66,996", feeType: "per-year" }
     ],
     highlights: ["Silicon Valley proximity", "Entrepreneurial culture", "Strong research", "Diverse programs"],
     website: "https://www.stanford.edu",
@@ -47,7 +47,7 @@ export const usColleges: College[] = [
       { name: "Law", ranking: 1, strength: "Excellent", fees: "$70,430", feeType: "per-year" },
       { name: "Business", ranking: 2, strength: "Excellent", fees: "$73,440", feeType: "per-year" },
       { name: "Medicine", ranking: 1, strength: "Excellent", fees: "$69,300", feeType: "per-year" },
-      { name: "Political Science", ranking: 1, strength: "Excellent", fees: "$56,550", feeType: "per-year" }
+      { name: "Liberal Arts", ranking: 1, strength: "Excellent", fees: "$56,550", feeType: "per-year" }
     ],
     highlights: ["Oldest US university", "Prestigious faculty", "Extensive library", "Strong global influence"],
     website: "https://www.harvard.edu",
@@ -80,7 +80,7 @@ export const usColleges: College[] = [
     courses: [
       { name: "Economics", ranking: 1, strength: "Excellent", fees: "$62,940", feeType: "per-year" },
       { name: "Law", ranking: 3, strength: "Excellent", fees: "$71,676", feeType: "per-year" },
-      { name: "Political Science", ranking: 4, strength: "Excellent", fees: "$62,940", feeType: "per-year" },
+      { name: "Business", ranking: 3, strength: "Excellent", fees: "$75,000", feeType: "per-year" },
       { name: "Sociology", ranking: 2, strength: "Excellent", fees: "$62,940", feeType: "per-year" }
     ],
     highlights: ["Strong social sciences", "Research university", "Urban campus", "Nobel laureates"],
@@ -95,8 +95,8 @@ export const usColleges: College[] = [
     overallRanking: 10,
     establishedYear: 1868,
     courses: [
-      { name: "Computer Science", ranking: 4, strength: "Excellent", fees: "$14,312", feeType: "per-year" },
-      { name: "Engineering", ranking: 6, strength: "Excellent", fees: "$14,312", feeType: "per-year" },
+      { name: "Computer Science", ranking: 4, strength: "Excellent", fees: "$47,644", feeType: "per-year" },
+      { name: "Engineering", ranking: 6, strength: "Excellent", fees: "$47,644", feeType: "per-year" },
       { name: "Business", ranking: 7, strength: "Very Good", fees: "$63,700", feeType: "per-year" },
       { name: "Law", ranking: 9, strength: "Very Good", fees: "$53,315", feeType: "per-year" }
     ],

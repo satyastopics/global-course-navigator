@@ -30,7 +30,7 @@ export const europeanColleges: College[] = [
       { name: "Engineering", ranking: 18, strength: "Excellent", fees: "€3,000", feeType: "per-year" },
       { name: "Computer Science", ranking: 25, strength: "Very Good", fees: "€3,000", feeType: "per-year" },
       { name: "Physics", ranking: 22, strength: "Very Good", fees: "€3,000", feeType: "per-year" },
-      { name: "Mathematics", ranking: 28, strength: "Very Good", fees: "€3,000", feeType: "per-year" }
+      { name: "Business", ranking: 35, strength: "Good", fees: "€25,000", feeType: "per-year" }
     ],
     highlights: ["Top German tech university", "Industry partnerships", "Affordable fees", "Research focus"],
     website: "https://www.tum.de",
@@ -46,8 +46,8 @@ export const europeanColleges: College[] = [
     courses: [
       { name: "Medicine", ranking: 6, strength: "Excellent", fees: "€22,000", feeType: "per-year" },
       { name: "Biomedical Sciences", ranking: 8, strength: "Excellent", fees: "€22,000", feeType: "per-year" },
-      { name: "Public Health", ranking: 12, strength: "Excellent", fees: "€22,000", feeType: "per-year" },
-      { name: "Nursing", ranking: 15, strength: "Very Good", fees: "€22,000", feeType: "per-year" }
+      { name: "Public Health", ranking: 12, strength: "Excellent", fees: "€18,000", feeType: "per-year" },
+      { name: "Pharmacy", ranking: 15, strength: "Very Good", fees: "€20,000", feeType: "per-year" }
     ],
     highlights: ["Nobel Prize selection", "Medical excellence", "Research intensive", "EU student rates available"],
     website: "https://ki.se",

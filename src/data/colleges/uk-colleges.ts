@@ -10,10 +10,10 @@ export const ukColleges: College[] = [
     overallRanking: 5,
     establishedYear: 1096,
     courses: [
-      { name: "Law", ranking: 1, strength: "Excellent", fees: "£32,760", feeType: "per-year" },
+      { name: "Philosophy Politics Economics", ranking: 1, strength: "Excellent", fees: "£32,760", feeType: "per-year" },
       { name: "Medicine", ranking: 3, strength: "Excellent", fees: "£46,730", feeType: "per-year" },
-      { name: "Philosophy", ranking: 1, strength: "Excellent", fees: "£32,760", feeType: "per-year" },
-      { name: "Politics", ranking: 2, strength: "Excellent", fees: "£32,760", feeType: "per-year" }
+      { name: "Law", ranking: 1, strength: "Excellent", fees: "£32,760", feeType: "per-year" },
+      { name: "English Literature", ranking: 1, strength: "Excellent", fees: "£32,760", feeType: "per-year" }
     ],
     highlights: ["Oldest English-speaking university", "Collegiate system", "Strong humanities", "Global reputation"],
     website: "https://www.ox.ac.uk",
@@ -29,8 +29,8 @@ export const ukColleges: College[] = [
     courses: [
       { name: "Mathematics", ranking: 1, strength: "Excellent", fees: "£33,825", feeType: "per-year" },
       { name: "Engineering", ranking: 4, strength: "Excellent", fees: "£37,293", feeType: "per-year" },
-      { name: "Physics", ranking: 3, strength: "Excellent", fees: "£37,293", feeType: "per-year" },
-      { name: "Law", ranking: 2, strength: "Excellent", fees: "£33,825", feeType: "per-year" }
+      { name: "Natural Sciences", ranking: 2, strength: "Excellent", fees: "£37,293", feeType: "per-year" },
+      { name: "Computer Science", ranking: 6, strength: "Excellent", fees: "£37,293", feeType: "per-year" }
     ],
     highlights: ["Collegiate university", "Strong research", "Historic campus", "Global alumni"],
     website: "https://www.cam.ac.uk",
@@ -63,7 +63,7 @@ export const ukColleges: College[] = [
     courses: [
       { name: "Medicine", ranking: 18, strength: "Excellent", fees: "£54,200", feeType: "per-year" },
       { name: "Computer Science", ranking: 28, strength: "Very Good", fees: "£34,800", feeType: "per-year" },
-      { name: "Arts", ranking: 15, strength: "Very Good", fees: "£25,300", feeType: "per-year" },
+      { name: "Liberal Arts", ranking: 15, strength: "Very Good", fees: "£25,300", feeType: "per-year" },
       { name: "Business", ranking: 32, strength: "Good", fees: "£35,000", feeType: "per-year" }
     ],
     highlights: ["Ancient university", "Research excellence", "Beautiful city", "Strong alumni"],
