@@ -1,6 +1,11 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { newEnglandLiberalArts } from './liberal-arts/new-england';
+import { midwestLiberalArts } from './liberal-arts/midwest';
+
+export { newEnglandLiberalArts, midwestLiberalArts };
 
 export const usLiberalArtsColleges: College[] = [
-  // This will be populated with US liberal arts colleges
-  // Keeping it structured for future granular organization
+  ...newEnglandLiberalArts,
+  ...midwestLiberalArts
 ];

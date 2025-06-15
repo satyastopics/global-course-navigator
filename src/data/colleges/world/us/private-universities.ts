@@ -1,6 +1,11 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { eastCoastPrivate } from './private-universities/east-coast';
+import { westCoastPrivate } from './private-universities/west-coast';
+
+export { eastCoastPrivate, westCoastPrivate };
 
 export const usPrivateUniversities: College[] = [
-  // This will be populated with US private universities
-  // Keeping it structured for future granular organization
+  ...eastCoastPrivate,
+  ...westCoastPrivate
 ];
