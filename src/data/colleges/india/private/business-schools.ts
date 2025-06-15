@@ -1,6 +1,7 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { northIndiaPrivateBusinessSchools } from './business-schools/north-india';
 
 export const privateBusinessSchools: College[] = [
-  // This will be populated with private business schools
-  // Keeping it empty for now but structured for future additions
+  ...northIndiaPrivateBusinessSchools
 ];

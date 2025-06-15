@@ -1,6 +1,5 @@
 
 import { College } from '../../../../../../types/collegeTypes';
+import { cambridgeColleges } from './cambridge/colleges';
 
-export const cambridgeColleges: College[] = [
-  // This will be populated with Cambridge colleges
-];
+export { cambridgeColleges };

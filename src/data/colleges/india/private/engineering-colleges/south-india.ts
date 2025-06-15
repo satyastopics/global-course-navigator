@@ -1,5 +1,5 @@
-
 import { College } from '../../../../../types/collegeTypes';
+import { karnatakaPrivateEngineering } from './south-india/bangalore';
 
 export const southIndiaPrivateEngineering: College[] = [
   {
@@ -18,5 +18,6 @@ export const southIndiaPrivateEngineering: College[] = [
     highlights: ["Large private university", "Industry partnerships", "International collaborations", "Modern facilities"],
     website: "https://vit.ac.in",
     image: "/placeholder.svg"
-  }
+  },
+  ...karnatakaPrivateEngineering
 ];

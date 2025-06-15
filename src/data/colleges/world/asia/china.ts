@@ -1,6 +1,7 @@
+
 import { College } from '../../../../types/collegeTypes';
+import { beijingUniversities } from './china/beijing';
 
 export const chineseColleges: College[] = [
-  // This will be populated with Chinese universities
-  // Keeping it structured for future granular organization
+  ...beijingUniversities
 ];
