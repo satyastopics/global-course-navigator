@@ -1,20 +1,32 @@
 
 import { useState } from 'react';
-import { Search, Filter, Globe, MapPin, Star, Users, BookOpen, GraduationCap, SlidersHorizontal, Lightbulb, Brain, Target, Compass } from 'lucide-react';
+import { Search, Filter, Globe, MapPin, Star, Users, BookOpen, GraduationCap, SlidersHorizontal, Lightbulb, Brain, Target, Compass, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 import CollegeCard from '@/components/CollegeCard';
 import FilterPanel from '@/components/FilterPanel';
 import SearchGuide from '@/components/SearchGuide';
 import { indianColleges, worldColleges } from '@/data/collegeData';
+
+const COLLEGES_PER_PAGE = 9;
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('indian');
   const [searchTerm, setSearchTerm] = useState('');
   const [showFilters, setShowFilters] = useState(false);
   const [showGuide, setShowGuide] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
   const [filters, setFilters] = useState({
     courseType: '',
     rankingRange: '',
@@ -115,69 +127,111 @@ const Index = () => {
     return true;
   });
 
+  // Reset to page 1 when filters change
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab);
+    setCurrentPage(1);
+  };
+
+  // Pagination calculations
+  const totalPages = Math.ceil(filteredColleges.length / COLLEGES_PER_PAGE);
+  const startIndex = (currentPage - 1) * COLLEGES_PER_PAGE;
+  const endIndex = startIndex + COLLEGES_PER_PAGE;
+  const currentCollegesPage = filteredColleges.slice(startIndex, endIndex);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100">
-      {/* Enhanced Header */}
-      <header className="bg-white/95 backdrop-blur-lg border-b border-emerald-200/50 sticky top-0 z-50 shadow-lg">
-        <div className="container mx-auto px-4 py-6">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+      {/* Modern Header */}
+      <header className="bg-white/95 backdrop-blur-xl border-b border-slate-200/60 sticky top-0 z-50 shadow-sm">
+        <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="p-2 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-xl shadow-lg">
-                <GraduationCap className="h-8 w-8 text-white" />
+            <div className="flex items-center space-x-4">
+              <div className="relative">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-xl shadow-lg flex items-center justify-center transform rotate-3">
+                  <GraduationCap className="h-6 w-6 text-white" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-orange-400 rounded-full shadow-md"></div>
               </div>
               <div>
-                <h1 className="text-3xl font-black bg-gradient-to-r from-emerald-700 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-700 bg-clip-text text-transparent">
                   EduNavigator
                 </h1>
-                <p className="text-sm text-gray-600 font-medium">Your College Discovery Platform</p>
+                <p className="text-sm text-slate-600 font-medium">Smart College Discovery</p>
               </div>
             </div>
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-6">
               <Button
                 variant="ghost"
                 onClick={() => setShowGuide(!showGuide)}
-                className="text-gray-700 hover:text-emerald-600 font-medium"
+                className="text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-200"
               >
                 <Compass className="h-4 w-4 mr-2" />
                 Search Guide
               </Button>
-              <a href="#features" className="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Features</a>
-              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors font-medium">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Contact</a>
+              <Button variant="ghost" className="text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-medium">
+                About
+              </Button>
+              <Button variant="ghost" className="text-slate-700 hover:text-blue-600 hover:bg-blue-50 font-medium">
+                Contact
+              </Button>
             </nav>
           </div>
         </div>
       </header>
 
-      {/* Enhanced Hero Section */}
-      <section className="py-24 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/10 via-teal-600/10 to-cyan-600/10"></div>
+      {/* Hero Section with Search */}
+      <section className="py-16 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-indigo-600/5 to-purple-600/5"></div>
+        <div className="absolute top-10 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl"></div>
+        
         <div className="container mx-auto text-center relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-6xl md:text-7xl font-black mb-8 bg-gradient-to-r from-emerald-700 via-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight">
-              Discover Your
-              <span className="block">Dream College</span>
+            <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-700 bg-clip-text text-transparent leading-tight">
+              Find Your Perfect
+              <span className="block text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                University Match
+              </span>
             </h2>
-            <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
-              Navigate through thousands of universities worldwide with intelligent filters, course-specific insights, and personalized recommendations
+            <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+              Discover thousands of universities with advanced filtering, course insights, and personalized recommendations
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center max-w-3xl mx-auto">
-              <div className="relative flex-1 w-full">
-                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 h-6 w-6" />
+            
+            {/* Search Bar */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-4xl mx-auto mb-8">
+              <div className="relative flex-1 w-full max-w-2xl">
+                <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-slate-500 h-5 w-5" />
                 <Input
-                  placeholder="Search colleges, courses, locations, or specializations..."
+                  placeholder="Search universities, courses, locations..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-12 h-16 text-lg border-2 border-emerald-200 focus:border-emerald-500 rounded-2xl shadow-lg bg-white/80 backdrop-blur-sm"
+                  className="pl-14 h-14 text-lg border-2 border-slate-200 focus:border-blue-500 rounded-2xl shadow-sm bg-white/90 backdrop-blur-sm"
                 />
               </div>
               <Button 
                 onClick={() => setShowFilters(!showFilters)}
                 variant={showFilters ? "default" : "outline"}
-                className="h-16 px-8 border-2 border-emerald-200 hover:border-emerald-500 rounded-2xl font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg"
+                className="h-14 px-8 border-2 border-slate-200 hover:border-blue-500 rounded-2xl font-semibold bg-white hover:bg-blue-50 text-slate-700 shadow-sm"
               >
-                <SlidersHorizontal className="h-6 w-6 mr-2" />
-                Smart Filters
+                <SlidersHorizontal className="h-5 w-5 mr-2" />
+                Filters
+              </Button>
+            </div>
+
+            {/* Prominent Search Guide Button */}
+            <div className="mb-8">
+              <Button
+                onClick={() => setShowGuide(!showGuide)}
+                size="lg"
+                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <Lightbulb className="h-5 w-5 mr-2" />
+                Need Help Finding Colleges? Get Smart Search Tips
               </Button>
             </div>
           </div>
@@ -186,40 +240,40 @@ const Index = () => {
 
       {/* Search Guide Section */}
       {showGuide && (
-        <section className="px-4 mb-8">
+        <section className="px-6 mb-8">
           <div className="container mx-auto">
             <SearchGuide />
           </div>
         </section>
       )}
 
-      {/* Enhanced Tabs */}
-      <section className="px-4 mb-12">
+      {/* College Type Tabs */}
+      <section className="px-6 mb-8">
         <div className="container mx-auto">
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-x-4">
             <Button
-              onClick={() => setActiveTab('indian')}
+              onClick={() => handleTabChange('indian')}
               variant={activeTab === 'indian' ? 'default' : 'outline'}
-              className={`h-16 px-10 text-lg font-semibold rounded-2xl shadow-lg transition-all duration-300 ${
+              className={`h-14 px-8 text-lg font-semibold rounded-2xl shadow-sm transition-all duration-300 ${
                 activeTab === 'indian' 
-                  ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-orange-200 hover:shadow-xl' 
-                  : 'border-2 border-orange-200 hover:border-orange-400 bg-white/80 backdrop-blur-sm'
+                  ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-orange-200' 
+                  : 'border-2 border-orange-200 hover:border-orange-400 bg-white hover:bg-orange-50 text-slate-700'
               }`}
             >
-              <MapPin className="h-6 w-6 mr-3" />
-              Indian Colleges
+              <MapPin className="h-5 w-5 mr-3" />
+              Indian Universities
             </Button>
             <Button
-              onClick={() => setActiveTab('world')}
+              onClick={() => handleTabChange('world')}
               variant={activeTab === 'world' ? 'default' : 'outline'}
-              className={`h-16 px-10 text-lg font-semibold rounded-2xl shadow-lg transition-all duration-300 ${
+              className={`h-14 px-8 text-lg font-semibold rounded-2xl shadow-sm transition-all duration-300 ${
                 activeTab === 'world' 
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-blue-200 hover:shadow-xl' 
-                  : 'border-2 border-blue-200 hover:border-blue-400 bg-white/80 backdrop-blur-sm'
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-blue-200' 
+                  : 'border-2 border-blue-200 hover:border-blue-400 bg-white hover:bg-blue-50 text-slate-700'
               }`}
             >
-              <Globe className="h-6 w-6 mr-3" />
-              World Colleges
+              <Globe className="h-5 w-5 mr-3" />
+              Global Universities
             </Button>
           </div>
         </div>
@@ -227,48 +281,51 @@ const Index = () => {
 
       {/* Filters Panel */}
       {showFilters && (
-        <section className="px-4 mb-8">
+        <section className="px-6 mb-8">
           <div className="container mx-auto">
             <FilterPanel filters={filters} setFilters={setFilters} activeTab={activeTab} />
           </div>
         </section>
       )}
 
-      {/* Enhanced Results Summary */}
-      <section className="px-4 mb-8">
+      {/* Results Summary */}
+      <section className="px-6 mb-8">
         <div className="container mx-auto">
-          <div className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-white/30 shadow-2xl">
+          <div className="bg-white/70 backdrop-blur-xl rounded-3xl p-8 border border-slate-200/60 shadow-lg">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
               <div className="flex-1">
-                <h3 className="text-3xl font-bold text-gray-800 mb-2">
+                <h3 className="text-2xl font-bold text-slate-800 mb-2">
                   {activeTab === 'indian' ? (
                     <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                      Indian Colleges Discovery
+                      Indian Universities
                     </span>
                   ) : (
                     <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                      Global Universities Explorer
+                      Global Universities
                     </span>
                   )}
                 </h3>
-                <div className="flex items-center space-x-4 mb-3">
-                  <span className="text-2xl font-bold text-emerald-600">{filteredColleges.length}</span>
-                  <span className="text-gray-600 font-medium">results found</span>
+                <div className="flex items-center space-x-4 mb-2">
+                  <span className="text-3xl font-bold text-blue-600">{filteredColleges.length}</span>
+                  <span className="text-slate-600 font-medium">universities found</span>
+                  {totalPages > 1 && (
+                    <>
+                      <span className="text-slate-400">•</span>
+                      <span className="text-slate-600">Page {currentPage} of {totalPages}</span>
+                    </>
+                  )}
                 </div>
-                <p className="text-gray-600 leading-relaxed">
-                  Comprehensive course-specific rankings with transparent fee structures and detailed program information
+                <p className="text-slate-600">
+                  Showing {startIndex + 1}-{Math.min(endIndex, filteredColleges.length)} of {filteredColleges.length} results
                 </p>
               </div>
               {filteredColleges.length > 0 && (
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-semibold bg-emerald-50 border-emerald-200 text-emerald-700">
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline" className="px-3 py-1 text-sm font-semibold bg-blue-50 border-blue-200 text-blue-700">
                     Top Rank: #{Math.min(...filteredColleges.map(c => c.overallRanking))}
                   </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-semibold bg-blue-50 border-blue-200 text-blue-700">
+                  <Badge variant="outline" className="px-3 py-1 text-sm font-semibold bg-green-50 border-green-200 text-green-700">
                     Est. {Math.min(...filteredColleges.map(c => c.establishedYear))} - {Math.max(...filteredColleges.map(c => c.establishedYear))}
-                  </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-semibold bg-purple-50 border-purple-200 text-purple-700">
-                    Fee Range: {activeTab === 'indian' ? '₹50K - ₹25L' : '$1.4K - $85K'}
                   </Badge>
                 </div>
               )}
@@ -278,17 +335,17 @@ const Index = () => {
       </section>
 
       {/* College Grid */}
-      <section className="px-4 pb-20">
+      <section className="px-6 pb-12">
         <div className="container mx-auto">
           {filteredColleges.length === 0 ? (
-            <div className="text-center py-24">
-              <div className="max-w-lg mx-auto bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-xl">
-                <div className="w-24 h-24 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mx-auto mb-8">
-                  <Search className="h-12 w-12 text-gray-400" />
+            <div className="text-center py-16">
+              <div className="max-w-lg mx-auto bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-lg">
+                <div className="w-20 h-20 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Search className="h-10 w-10 text-slate-400" />
                 </div>
-                <h3 className="text-3xl font-bold text-gray-700 mb-4">No Results Found</h3>
-                <p className="text-gray-600 mb-8 leading-relaxed">
-                  We couldn't find any colleges matching your criteria. Try adjusting your filters or search terms for better results.
+                <h3 className="text-2xl font-bold text-slate-700 mb-4">No Universities Found</h3>
+                <p className="text-slate-600 mb-8">
+                  Try adjusting your filters or search terms to find more universities.
                 </p>
                 <Button 
                   onClick={() => {
@@ -305,65 +362,118 @@ const Index = () => {
                       courseStrength: ''
                     });
                   }}
-                  className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-2xl font-semibold shadow-lg"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-2xl font-semibold shadow-lg"
                 >
                   Reset All Filters
                 </Button>
               </div>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredColleges.map((college, index) => (
-                <CollegeCard key={college.id} college={college} index={index} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                {currentCollegesPage.map((college, index) => (
+                  <CollegeCard key={college.id} college={college} index={index} />
+                ))}
+              </div>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div className="flex justify-center">
+                  <Pagination>
+                    <PaginationContent>
+                      <PaginationItem>
+                        <PaginationPrevious 
+                          onClick={() => currentPage > 1 && handlePageChange(currentPage - 1)}
+                          className={currentPage <= 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                        />
+                      </PaginationItem>
+                      
+                      {[...Array(totalPages)].map((_, i) => {
+                        const page = i + 1;
+                        const isNearCurrent = Math.abs(page - currentPage) <= 2;
+                        const isFirst = page === 1;
+                        const isLast = page === totalPages;
+                        
+                        if (isNearCurrent || isFirst || isLast) {
+                          return (
+                            <PaginationItem key={page}>
+                              <PaginationLink
+                                onClick={() => handlePageChange(page)}
+                                isActive={currentPage === page}
+                                className="cursor-pointer"
+                              >
+                                {page}
+                              </PaginationLink>
+                            </PaginationItem>
+                          );
+                        } else if (page === currentPage - 3 || page === currentPage + 3) {
+                          return (
+                            <PaginationItem key={page}>
+                              <PaginationEllipsis />
+                            </PaginationItem>
+                          );
+                        }
+                        return null;
+                      })}
+                      
+                      <PaginationItem>
+                        <PaginationNext 
+                          onClick={() => currentPage < totalPages && handlePageChange(currentPage + 1)}
+                          className={currentPage >= totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
+                        />
+                      </PaginationItem>
+                    </PaginationContent>
+                  </Pagination>
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>
 
-      {/* Enhanced Features Section */}
-      <section id="features" className="py-24 px-4 bg-gradient-to-r from-white/70 to-emerald-50/70 backdrop-blur-sm">
+      {/* Features Section */}
+      <section className="py-20 px-6 bg-gradient-to-r from-white/40 to-blue-50/40 backdrop-blur-sm">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h3 className="text-5xl font-black mb-6 bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent">
+            <h3 className="text-4xl font-black mb-6 bg-gradient-to-r from-slate-800 to-blue-700 bg-clip-text text-transparent">
               Why Choose EduNavigator?
             </h3>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Powerful tools and comprehensive data to make your college selection journey effortless
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Advanced tools and comprehensive data for smart university selection
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center p-8 hover:shadow-2xl transition-all duration-300 bg-white/80 backdrop-blur-sm border-0 rounded-3xl group hover:-translate-y-2">
+            <Card className="text-center p-8 hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border-0 rounded-3xl group hover:-translate-y-2">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Star className="h-10 w-10 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Star className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-bold text-gray-800">Smart Filtering</CardTitle>
+                <CardTitle className="text-xl font-bold text-slate-800">Smart Filtering</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 leading-relaxed">Advanced multi-parameter filtering system to find colleges that perfectly match your preferences and requirements</p>
+                <p className="text-slate-600">Advanced filters to find universities that match your exact preferences and requirements</p>
               </CardContent>
             </Card>
-            <Card className="text-center p-8 hover:shadow-2xl transition-all duration-300 bg-white/80 backdrop-blur-sm border-0 rounded-3xl group hover:-translate-y-2">
+            <Card className="text-center p-8 hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border-0 rounded-3xl group hover:-translate-y-2">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Users className="h-10 w-10 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Users className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-bold text-gray-800">Comprehensive Database</CardTitle>
+                <CardTitle className="text-xl font-bold text-slate-800">Comprehensive Database</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 leading-relaxed">Extensive collection of colleges with detailed course information, rankings, and transparent fee structures</p>
+                <p className="text-slate-600">Extensive collection of universities with detailed course information and transparent fees</p>
               </CardContent>
             </Card>
-            <Card className="text-center p-8 hover:shadow-2xl transition-all duration-300 bg-white/80 backdrop-blur-sm border-0 rounded-3xl group hover:-translate-y-2">
+            <Card className="text-center p-8 hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border-0 rounded-3xl group hover:-translate-y-2">
               <CardHeader>
-                <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Target className="h-10 w-10 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Target className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-bold text-gray-800">Course-Specific Insights</CardTitle>
+                <CardTitle className="text-xl font-bold text-slate-800">Course-Specific Insights</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 leading-relaxed">Detailed course-specific rankings and program strengths to help you make informed decisions about your academic future</p>
+                <p className="text-slate-600">Detailed program rankings and strengths to help you make informed academic decisions</p>
               </CardContent>
             </Card>
           </div>
