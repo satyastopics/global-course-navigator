@@ -1,5 +1,5 @@
 
 import { College } from '../../../../types/collegeTypes';
-import { stateUniversities } from './state-universities';
+import { stateUniversities } from './state-universities/index';
 
 export { stateUniversities };

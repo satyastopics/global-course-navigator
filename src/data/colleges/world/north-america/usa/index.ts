@@ -1,5 +1,5 @@
 
-import { College } from '../../../../types/collegeTypes';
+import { College } from '../../../../../types/collegeTypes';
 import { ivyLeagueColleges } from './ivy-league';
 import { usPublicUniversities } from '../../../us/public-universities';
 import { usPrivateUniversities } from '../../../us/private-universities';

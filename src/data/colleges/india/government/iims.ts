@@ -1,5 +1,5 @@
 
 import { College } from '../../../../types/collegeTypes';
-import { iimColleges } from './iims';
+import { iimColleges } from './iims/index';
 
 export { iimColleges };

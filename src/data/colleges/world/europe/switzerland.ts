@@ -1,3 +1,4 @@
+
 import { College } from '../../../../types/collegeTypes';
 
 export const swissColleges: College[] = [
