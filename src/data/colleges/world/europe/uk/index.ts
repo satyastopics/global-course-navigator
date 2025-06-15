@@ -1,7 +1,7 @@
 
 import { College } from '../../../../../types/collegeTypes';
 import { oxbridgeColleges } from './oxbridge';
-import { russellGroupColleges } from '../../../uk/russell-group';
+import { russellGroupColleges } from '../../uk/russell-group';
 
 export { 
   oxbridgeColleges,
