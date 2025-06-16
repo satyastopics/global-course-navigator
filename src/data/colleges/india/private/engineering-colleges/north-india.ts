@@ -1,9 +1,9 @@
 
 import { College } from '../../../../../types/collegeTypes';
-import { delhiNCREngineering } from './delhi';
-import { punjabEngineering } from './punjab';
-import { haryanaEngineering } from './haryana';
-import { rajasthanEngineering } from './rajasthan';
+import { delhiNCREngineering } from './north-india/delhi';
+import { punjabEngineering } from './north-india/punjab';
+import { haryanaEngineering } from './north-india/haryana';
+import { rajasthanEngineering } from './north-india/rajasthan';
 
 export const northIndiaPrivateEngineering: College[] = [
   {

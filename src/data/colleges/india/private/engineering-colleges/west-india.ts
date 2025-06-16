@@ -1,7 +1,7 @@
 
 import { College } from '../../../../../types/collegeTypes';
-import { mumbaiPrivateEngineering } from './maharashtra/mumbai-engineering';
-import { gujaratEngineering } from './gujarat';
+import { mumbaiPrivateEngineering } from './west-india/maharashtra/mumbai-engineering';
+import { gujaratEngineering } from './west-india/gujarat';
 
 export const westIndiaPrivateEngineering: College[] = [
   ...mumbaiPrivateEngineering,
