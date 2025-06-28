@@ -2,8 +2,9 @@
 import { College } from '../../../../../../types/collegeTypes';
 import { bangaloreMedical } from './bangalore';
 import { tamilNaduMedical } from './tamil-nadu';
+import { keralaMedical } from './kerala';
 
-export { bangaloreMedical, tamilNaduMedical };
+export { bangaloreMedical, tamilNaduMedical, keralaMedical };
 
 export const southIndiaPrivateMedical: College[] = [
   {
@@ -24,5 +25,6 @@ export const southIndiaPrivateMedical: College[] = [
     image: "/placeholder.svg"
   },
   ...bangaloreMedical,
-  ...tamilNaduMedical
+  ...tamilNaduMedical,
+  ...keralaMedical
 ];
