@@ -1,9 +1,11 @@
 
 import { College } from '../../../../../../../types/collegeTypes';
 import { hyderabadPrivateEngineering } from './hyderabad-engineering';
+import { visakhapatnamPrivateEngineering } from './visakhapatnam-engineering';
 
-export { hyderabadPrivateEngineering };
+export { hyderabadPrivateEngineering, visakhapatnamPrivateEngineering };
 
 export const andhraEngineering: College[] = [
-  ...hyderabadPrivateEngineering
+  ...hyderabadPrivateEngineering,
+  ...visakhapatnamPrivateEngineering
 ];

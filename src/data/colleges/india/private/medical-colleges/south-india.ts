@@ -1,5 +1,6 @@
 
 import { College } from '../../../../../types/collegeTypes';
+import { bangaloreMedical } from './south-india/bangalore';
 
 export const southIndiaPrivateMedical: College[] = [
   {
@@ -18,5 +19,6 @@ export const southIndiaPrivateMedical: College[] = [
     highlights: ["Healthcare excellence", "Multiple campuses", "International programs", "Strong alumni network"],
     website: "https://manipal.edu",
     image: "/placeholder.svg"
-  }
+  },
+  ...bangaloreMedical
 ];

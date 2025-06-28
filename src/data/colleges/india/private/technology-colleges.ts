@@ -1,5 +1,6 @@
 
 import { College } from '../../../../types/collegeTypes';
+import { northIndiaPrivateTechnology } from './technology-colleges/north-india';
 
 export const privateTechnologyColleges: College[] = [
   {
@@ -33,5 +34,6 @@ export const privateTechnologyColleges: College[] = [
     highlights: ["State-private partnership", "Research excellence", "Industry connect", "Innovation focus"],
     website: "https://www.iiitd.ac.in",
     image: "/placeholder.svg"
-  }
+  },
+  ...northIndiaPrivateTechnology
 ];
