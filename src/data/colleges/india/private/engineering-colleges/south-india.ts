@@ -1,9 +1,9 @@
 
 import { College } from '../../../../../types/collegeTypes';
-import { karnatakaPrivateEngineering } from './bangalore';
-import { tamilNaduEngineering } from './tamil-nadu';
-import { andhraEngineering } from './andhra-pradesh';
-import { keralaEngineering } from './kerala';
+import { karnatakaPrivateEngineering } from './south-india/bangalore';
+import { tamilNaduEngineering } from './south-india/tamil-nadu';
+import { andhraEngineering } from './south-india/andhra-pradesh';
+import { keralaEngineering } from './south-india/kerala';
 
 export const southIndiaPrivateEngineering: College[] = [
   {
