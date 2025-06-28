@@ -3,51 +3,35 @@ import { College } from '../../../../../../../types/collegeTypes';
 
 export const coimbatorePrivateEngineering: College[] = [
   {
-    id: "eng-tn-02",
-    name: "PSG College of Technology",
+    id: "eng-tn-cbe-01",
+    name: "Amrita Vishwa Vidyapeetham",
     location: "Coimbatore, Tamil Nadu, India",
     type: "Private",
-    overallRanking: 24,
-    establishedYear: 1951,
+    overallRanking: 20,
+    establishedYear: 2003,
     courses: [
-      { name: "Computer Science", ranking: 20, strength: "Very Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Engineering", ranking: 24, strength: "Good", fees: "₹1.6L", feeType: "per-year" },
-      { name: "Electronics", ranking: 22, strength: "Good", fees: "₹1.7L", feeType: "per-year" }
+      { name: "Computer Science", ranking: 15, strength: "Very Good", fees: "₹3.2L", feeType: "per-year" },
+      { name: "Engineering", ranking: 20, strength: "Very Good", fees: "₹2.8L", feeType: "per-year" },
+      { name: "Medicine", ranking: 25, strength: "Good", fees: "₹18L", feeType: "per-year" }
     ],
-    highlights: ["Deemed university", "Industry connect", "Research excellence", "Strong placement"],
-    website: "https://www.psgtech.edu",
+    highlights: ["Deemed university", "Research excellence", "Spiritual foundation", "Multiple campuses"],
+    website: "https://www.amrita.edu",
     image: "/placeholder.svg"
   },
   {
-    id: "eng-tn-03",
-    name: "Kumaraguru College of Technology",
+    id: "eng-tn-cbe-02",
+    name: "Karunya Institute of Technology",
     location: "Coimbatore, Tamil Nadu, India",
     type: "Private",
-    overallRanking: 39,
-    establishedYear: 1984,
+    overallRanking: 65,
+    establishedYear: 1986,
     courses: [
-      { name: "Computer Science", ranking: 33, strength: "Good", fees: "₹2.2L", feeType: "per-year" },
-      { name: "Engineering", ranking: 39, strength: "Good", fees: "₹2L", feeType: "per-year" },
-      { name: "Information Technology", ranking: 35, strength: "Good", fees: "₹2.1L", feeType: "per-year" }
+      { name: "Computer Science", ranking: 55, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
+      { name: "Engineering", ranking: 65, strength: "Average", fees: "₹2.2L", feeType: "per-year" },
+      { name: "Management", ranking: 70, strength: "Average", fees: "₹6L", feeType: "total" }
     ],
-    highlights: ["Autonomous college", "Industry partnerships", "Innovation focus", "Modern campus"],
-    website: "https://www.kct.ac.in",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "eng-tn-04",
-    name: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute",
-    location: "Chennai, Tamil Nadu, India",
-    type: "Private",
-    overallRanking: 47,
-    establishedYear: 1997,
-    courses: [
-      { name: "Computer Science", ranking: 40, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Engineering", ranking: 47, strength: "Good", fees: "₹2.3L", feeType: "per-year" },
-      { name: "Electronics", ranking: 44, strength: "Good", fees: "₹2.4L", feeType: "per-year" }
-    ],
-    highlights: ["Deemed university", "Research focus", "Industry exposure", "Multi-campus"],
-    website: "https://www.veltech.edu.in",
+    highlights: ["Deemed university", "Christian values", "Industry partnerships", "Research focus"],
+    website: "https://www.karunya.edu",
     image: "/placeholder.svg"
   }
 ];

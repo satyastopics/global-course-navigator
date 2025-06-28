@@ -3,35 +3,35 @@ import { College } from '../../../../../../../types/collegeTypes';
 
 export const haryanaPrivateEngineering: College[] = [
   {
-    id: "eng-har-01",
-    name: "Manav Rachna International Institute of Research and Studies",
-    location: "Faridabad, Haryana, India",
+    id: "eng-hr-gur-01",
+    name: "O.P. Jindal Global University",
+    location: "Sonipat, Haryana, India",
     type: "Private",
-    overallRanking: 35,
-    establishedYear: 1997,
+    overallRanking: 52,
+    establishedYear: 2009,
     courses: [
-      { name: "Computer Science", ranking: 30, strength: "Good", fees: "₹2.8L", feeType: "per-year" },
-      { name: "Engineering", ranking: 35, strength: "Good", fees: "₹2.5L", feeType: "per-year" },
-      { name: "Management", ranking: 55, strength: "Good", fees: "₹9L", feeType: "total" }
+      { name: "Computer Science", ranking: 45, strength: "Good", fees: "₹3.5L", feeType: "per-year" },
+      { name: "Engineering", ranking: 52, strength: "Good", fees: "₹3.2L", feeType: "per-year" },
+      { name: "Management", ranking: 35, strength: "Good", fees: "₹15L", feeType: "total" }
     ],
-    highlights: ["Deemed university", "Industry partnerships", "Modern campus", "Research facilities"],
-    website: "https://www.manavrachna.edu.in",
+    highlights: ["Global university", "Liberal arts focus", "International faculty", "Modern campus"],
+    website: "https://www.jgu.edu.in",
     image: "/placeholder.svg"
   },
   {
-    id: "eng-har-02",
-    name: "The NorthCap University",
-    location: "Gurugram, Haryana, India",
+    id: "eng-hr-gur-02",
+    name: "Ansal University",
+    location: "Gurgaon, Haryana, India",
     type: "Private",
-    overallRanking: 42,
-    establishedYear: 1996,
+    overallRanking: 78,
+    establishedYear: 2012,
     courses: [
-      { name: "Computer Science", ranking: 35, strength: "Good", fees: "₹3.2L", feeType: "per-year" },
-      { name: "Engineering", ranking: 42, strength: "Good", fees: "₹2.9L", feeType: "per-year" },
-      { name: "Management", ranking: 60, strength: "Average", fees: "₹11L", feeType: "total" }
+      { name: "Computer Science", ranking: 68, strength: "Average", fees: "₹2.5L", feeType: "per-year" },
+      { name: "Engineering", ranking: 78, strength: "Average", fees: "₹2.2L", feeType: "per-year" },
+      { name: "Management", ranking: 80, strength: "Average", fees: "₹8L", feeType: "total" }
     ],
-    highlights: ["Private university", "Corporate partnerships", "Placement focus", "Industry exposure"],
-    website: "https://www.ncuindia.edu",
+    highlights: ["Private university", "Modern infrastructure", "Industry connect", "Growing reputation"],
+    website: "https://www.ansaluniversity.edu.in",
     image: "/placeholder.svg"
   }
 ];

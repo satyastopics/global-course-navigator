@@ -3,35 +3,35 @@ import { College } from '../../../../../../../types/collegeTypes';
 
 export const lucknowPrivateEngineering: College[] = [
   {
-    id: "eng-up-02",
+    id: "eng-up-lko-01",
     name: "Integral University",
     location: "Lucknow, Uttar Pradesh, India",
     type: "Private",
-    overallRanking: 46,
+    overallRanking: 85,
     establishedYear: 2004,
     courses: [
-      { name: "Computer Science", ranking: 40, strength: "Good", fees: "₹1.8L", feeType: "per-year" },
-      { name: "Engineering", ranking: 46, strength: "Good", fees: "₹1.6L", feeType: "per-year" },
-      { name: "Management", ranking: 65, strength: "Average", fees: "₹6L", feeType: "total" }
+      { name: "Computer Science", ranking: 70, strength: "Average", fees: "₹1.8L", feeType: "per-year" },
+      { name: "Engineering", ranking: 85, strength: "Average", fees: "₹1.5L", feeType: "per-year" },
+      { name: "Management", ranking: 90, strength: "Average", fees: "₹5L", feeType: "total" }
     ],
-    highlights: ["Deemed university", "Affordable fees", "Modern campus", "Industry exposure"],
+    highlights: ["State private university", "Affordable fees", "Growing reputation", "Multi-disciplinary"],
     website: "https://www.iul.ac.in",
     image: "/placeholder.svg"
   },
   {
-    id: "eng-up-03",
-    name: "ABES Engineering College",
-    location: "Ghaziabad, Uttar Pradesh, India",
+    id: "eng-up-lko-02",
+    name: "Sharda University",
+    location: "Greater Noida, Uttar Pradesh, India",
     type: "Private",
-    overallRanking: 52,
-    establishedYear: 2000,
+    overallRanking: 75,
+    establishedYear: 2009,
     courses: [
-      { name: "Computer Science", ranking: 45, strength: "Good", fees: "₹2.2L", feeType: "per-year" },
-      { name: "Engineering", ranking: 52, strength: "Good", fees: "₹2L", feeType: "per-year" },
-      { name: "Information Technology", ranking: 48, strength: "Good", fees: "₹2.1L", feeType: "per-year" }
+      { name: "Computer Science", ranking: 65, strength: "Good", fees: "₹2.2L", feeType: "per-year" },
+      { name: "Engineering", ranking: 75, strength: "Average", fees: "₹2L", feeType: "per-year" },
+      { name: "Medicine", ranking: 80, strength: "Average", fees: "₹15L", feeType: "per-year" }
     ],
-    highlights: ["AICTE approved", "Industry partnerships", "Modern labs", "Placement cell"],
-    website: "https://www.abes.ac.in",
+    highlights: ["Multi-disciplinary university", "Modern campus", "International programs", "Research focus"],
+    website: "https://www.sharda.ac.in",
     image: "/placeholder.svg"
   }
 ];
