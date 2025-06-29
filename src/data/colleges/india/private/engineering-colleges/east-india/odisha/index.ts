@@ -1,9 +1,9 @@
 
 import { College } from '../../../../../../../types/collegeTypes';
-import { odishaEngineering } from './odisha-engineering';
+import { odishaPrivateEngineering } from './odisha-engineering';
 
-export { odishaEngineering };
+export { odishaPrivateEngineering };
 
-export const odishaPrivateEngineering: College[] = [
-  ...odishaEngineering
+export const odishaEngineering: College[] = [
+  ...odishaPrivateEngineering
 ];
