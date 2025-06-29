@@ -1,8 +1,8 @@
 
-import { College } from '../../../../../../../types/collegeTypes';
-import { bangalorePrivateEngineering } from './bangalore-engineering';
+import { College } from '../../../../../../types/collegeTypes';
+import { bangalorePrivateEngineering } from '../bangalore/bangalore-engineering';
 import { mysorePrivateEngineering } from './mysore-engineering';
-import { manipalPrivateEngineering } from './manipal-engineering';
+import { manipalPrivateEngineering } from '../bangalore/manipal-engineering';
 
 export { bangalorePrivateEngineering, mysorePrivateEngineering, manipalPrivateEngineering };
 
