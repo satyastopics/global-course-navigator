@@ -5,13 +5,15 @@ import { punjabEngineering } from './punjab';
 import { uttarPradeshEngineering } from './uttar-pradesh';
 import { haryanaEngineering } from './haryana';
 import { rajasthanEngineering } from './rajasthan';
+import { himachalEngineering } from './himachal-pradesh';
 
 export { 
   delhiNCREngineering, 
   punjabEngineering, 
   uttarPradeshEngineering,
   haryanaEngineering,
-  rajasthanEngineering
+  rajasthanEngineering,
+  himachalEngineering
 };
 
 export const northIndiaPrivateEngineering: College[] = [
@@ -19,5 +21,6 @@ export const northIndiaPrivateEngineering: College[] = [
   ...punjabEngineering,
   ...uttarPradeshEngineering,
   ...haryanaEngineering,
-  ...rajasthanEngineering
+  ...rajasthanEngineering,
+  ...himachalEngineering
 ];

@@ -1,6 +1,6 @@
 
 import { College } from '../../../../../../types/collegeTypes';
-import { karnatakaPrivateEngineering } from './bangalore';
+import { karnatakaPrivateEngineering } from './karnataka';
 import { tamilNaduEngineering } from './tamil-nadu';
 import { andhraEngineering } from './andhra-pradesh';
 import { keralaEngineering } from './kerala';
