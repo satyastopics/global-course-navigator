@@ -49,5 +49,85 @@ export const mumbaiPrivateEngineering: College[] = [
     highlights: ["NMIMS group", "Industry exposure", "Modern campus", "Placement support"],
     website: "https://www.nmims.edu",
     image: "/placeholder.svg"
+  },
+  {
+    id: "eng-mh-mum-04",
+    name: "Thadomal Shahani Engineering College",
+    location: "Mumbai, Maharashtra, India",
+    type: "Private",
+    overallRanking: 55,
+    establishedYear: 1983,
+    courses: [
+      { name: "Computer Science", ranking: 48, strength: "Good", fees: "₹1.8L", feeType: "per-year" },
+      { name: "Engineering", ranking: 55, strength: "Good", fees: "₹1.5L", feeType: "per-year" },
+      { name: "Information Technology", ranking: 52, strength: "Good", fees: "₹1.6L", feeType: "per-year" }
+    ],
+    highlights: ["Autonomous college", "Mumbai location", "Industry connections", "Placement record"],
+    website: "https://www.tsec.edu",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "eng-mh-mum-05",
+    name: "Fr. Conceicao Rodrigues College of Engineering",
+    location: "Mumbai, Maharashtra, India",
+    type: "Private",
+    overallRanking: 58,
+    establishedYear: 1999,
+    courses: [
+      { name: "Computer Science", ranking: 52, strength: "Good", fees: "₹2L", feeType: "per-year" },
+      { name: "Engineering", ranking: 58, strength: "Good", fees: "₹1.8L", feeType: "per-year" },
+      { name: "Information Technology", ranking: 55, strength: "Good", fees: "₹1.9L", feeType: "per-year" }
+    ],
+    highlights: ["Autonomous college", "Modern infrastructure", "Industry connect", "Quality education"],
+    website: "https://www.fcrit.ac.in",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "eng-mh-mum-06",
+    name: "Atharva College of Engineering",
+    location: "Mumbai, Maharashtra, India",
+    type: "Private",
+    overallRanking: 72,
+    establishedYear: 1999,
+    courses: [
+      { name: "Computer Science", ranking: 65, strength: "Average", fees: "₹1.8L", feeType: "per-year" },
+      { name: "Engineering", ranking: 72, strength: "Average", fees: "₹1.5L", feeType: "per-year" },
+      { name: "Electronics", ranking: 68, strength: "Average", fees: "₹1.6L", feeType: "per-year" }
+    ],
+    highlights: ["Autonomous college", "Industry exposure", "Placement support", "Modern labs"],
+    website: "https://www.atharvacoe.ac.in",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "eng-mh-mum-07",
+    name: "Thakur College of Engineering and Technology",
+    location: "Mumbai, Maharashtra, India",
+    type: "Private",
+    overallRanking: 78,
+    establishedYear: 1999,
+    courses: [
+      { name: "Computer Science", ranking: 72, strength: "Average", fees: "₹2.2L", feeType: "per-year" },
+      { name: "Engineering", ranking: 78, strength: "Average", fees: "₹2L", feeType: "per-year" },
+      { name: "Electronics", ranking: 75, strength: "Average", fees: "₹2.1L", feeType: "per-year" }
+    ],
+    highlights: ["Thakur Educational Trust", "Industry exposure", "Placement assistance", "Modern infrastructure"],
+    website: "https://www.tcet.ac.in",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "eng-mh-mum-08",
+    name: "Sardar Patel Institute of Technology",
+    location: "Mumbai, Maharashtra, India",
+    type: "Private",
+    overallRanking: 62,
+    establishedYear: 1962,
+    courses: [
+      { name: "Computer Science", ranking: 55, strength: "Good", fees: "₹1.9L", feeType: "per-year" },
+      { name: "Engineering", ranking: 62, strength: "Good", fees: "₹1.7L", feeType: "per-year" },
+      { name: "Electronics", ranking: 58, strength: "Good", fees: "₹1.8L", feeType: "per-year" }
+    ],
+    highlights: ["Bharatiya Vidya Bhavan", "Heritage institution", "Industry partnerships", "Quality education"],
+    website: "https://www.spit.ac.in",
+    image: "/placeholder.svg"
   }
 ];
