@@ -7,6 +7,9 @@ import { privateLiberalArtsColleges } from './liberal-arts-colleges';
 import { privateDesignColleges } from './design-colleges';
 import { privateLawColleges } from './law-colleges';
 import { privateTechnologyColleges } from './technology-colleges';
+import { privateDentalColleges } from './dental-colleges';
+import { privatePharmacyColleges } from './pharmacy-colleges';
+import { privateArchitectureColleges } from './architecture-colleges';
 
 // Export individual private college categories
 export { 
@@ -16,7 +19,10 @@ export {
   privateLiberalArtsColleges,
   privateDesignColleges,
   privateLawColleges,
-  privateTechnologyColleges
+  privateTechnologyColleges,
+  privateDentalColleges,
+  privatePharmacyColleges,
+  privateArchitectureColleges
 };
 
 // Combined private colleges
@@ -27,7 +33,10 @@ export const privateColleges: College[] = [
   ...privateLiberalArtsColleges,
   ...privateDesignColleges,
   ...privateLawColleges,
-  ...privateTechnologyColleges
+  ...privateTechnologyColleges,
+  ...privateDentalColleges,
+  ...privatePharmacyColleges,
+  ...privateArchitectureColleges
 ];
 
 // Private colleges organized by type for easy filtering
@@ -38,5 +47,8 @@ export const privateCollegesByType = {
   'liberal-arts': privateLiberalArtsColleges,
   'design': privateDesignColleges,
   'law': privateLawColleges,
-  'technology': privateTechnologyColleges
+  'technology': privateTechnologyColleges,
+  'dental': privateDentalColleges,
+  'pharmacy': privatePharmacyColleges,
+  'architecture': privateArchitectureColleges
 };
