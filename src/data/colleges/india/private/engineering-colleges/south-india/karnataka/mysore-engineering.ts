@@ -34,5 +34,21 @@ export const mysorePrivateEngineering: College[] = [
     highlights: ["Autonomous college", "Affordable fees", "Industry partnerships", "Placement support"],
     website: "https://www.vvce.ac.in",
     image: "/placeholder.svg"
+  },
+  {
+    id: "eng-ka-mys-03",
+    name: "NIE Institute of Technology",
+    location: "Mysore, Karnataka, India",
+    type: "Private",
+    overallRanking: 58,
+    establishedYear: 1946,
+    courses: [
+      { name: "Engineering", ranking: 52, strength: "Good", fees: "₹5L", feeType: "total" },
+      { name: "Computer Science", ranking: 55, strength: "Good", fees: "₹5L", feeType: "total" },
+      { name: "Architecture", ranking: 35, strength: "Good", fees: "₹4L", feeType: "total" }
+    ],
+    highlights: ["Historic institution", "Architecture program", "Quality education", "Affordable fees"],
+    website: "https://www.nie.ac.in",
+    image: "/placeholder.svg"
   }
 ];

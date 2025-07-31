@@ -34,5 +34,21 @@ export const punjabPrivateMedical: College[] = [
     highlights: ["Regional university", "Affordable medical education", "Growing reputation", "Industry partnerships"],
     website: "https://www.deshbhagatuniversity.ac.in",
     image: "/placeholder.svg"
+  },
+  {
+    id: "med-pb-03",
+    name: "Christian Medical College Ludhiana",
+    location: "Ludhiana, Punjab, India",
+    type: "Private",
+    overallRanking: 35,
+    establishedYear: 1894,
+    courses: [
+      { name: "Medicine", ranking: 28, strength: "Good", fees: "₹16L", feeType: "per-year" },
+      { name: "Nursing", ranking: 22, strength: "Good", fees: "₹2L", feeType: "per-year" },
+      { name: "Pharmacy", ranking: 25, strength: "Good", fees: "₹1.8L", feeType: "per-year" }
+    ],
+    highlights: ["Historic medical college", "Christian minority institution", "Quality healthcare", "Research focus"],
+    website: "https://www.cmcludhiana.in",
+    image: "/placeholder.svg"
   }
 ];

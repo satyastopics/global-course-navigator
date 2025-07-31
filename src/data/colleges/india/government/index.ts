@@ -5,13 +5,17 @@ import { iimColleges } from './iims';
 import { nitColleges } from './nits';
 import { centralUniversities } from './central-universities';
 import { stateUniversities } from './state-universities';
+import { aiimsColleges } from './aiims';
+import { nluColleges } from './nlus';
 
 export { 
   iitColleges, 
   iimColleges, 
   nitColleges, 
   centralUniversities, 
-  stateUniversities 
+  stateUniversities,
+  aiimsColleges,
+  nluColleges
 };
 
 export const governmentColleges: College[] = [
@@ -19,5 +23,7 @@ export const governmentColleges: College[] = [
   ...iimColleges,
   ...nitColleges,
   ...centralUniversities,
-  ...stateUniversities
+  ...stateUniversities,
+  ...aiimsColleges,
+  ...nluColleges
 ];
