@@ -16,6 +16,7 @@ import {
   ukColleges, 
   europeanColleges, 
   asianColleges, 
+  oceaniaColleges,
   otherColleges,
   worldCollegesByRegion,
   usCollegesByType,
@@ -40,6 +41,7 @@ export {
   ukColleges,
   europeanColleges,
   asianColleges,
+  oceaniaColleges,
   otherColleges,
   
   // Granular category exports
@@ -86,6 +88,7 @@ export const collegeStats = {
   uk: ukColleges.length,
   european: europeanColleges.length,
   asian: asianColleges.length,
+  oceania: oceaniaColleges.length,
   other: otherColleges.length
 };
 
