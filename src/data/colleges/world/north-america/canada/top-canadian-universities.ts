@@ -68,5 +68,107 @@ export const topCanadianUniversities: College[] = [
     highlights: ["Co-op program leader", "Tech innovation", "Startup ecosystem", "Industry partnerships"],
     website: "https://uwaterloo.ca",
     image: "/placeholder.svg"
+  },
+  {
+    id: "canada-05",
+    name: "University of Alberta",
+    location: "Edmonton, Alberta, Canada",
+    type: "Public",
+    overallRanking: 110,
+    establishedYear: 1908,
+    courses: [
+      { name: "Engineering", ranking: 40, strength: "Good", fees: "CAD 34,500", feeType: "per-year" },
+      { name: "Medicine", ranking: 35, strength: "Good", fees: "CAD 42,000", feeType: "per-year" },
+      { name: "Business", ranking: 55, strength: "Average", fees: "CAD 32,000", feeType: "per-year" },
+      { name: "Computer Science", ranking: 45, strength: "Good", fees: "CAD 34,500", feeType: "per-year" }
+    ],
+    highlights: ["Research intensive", "Energy sector ties", "Strong alumni", "Western Canada hub"],
+    website: "https://www.ualberta.ca",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "canada-06",
+    name: "McMaster University",
+    location: "Hamilton, Ontario, Canada",
+    type: "Public",
+    overallRanking: 144,
+    establishedYear: 1887,
+    courses: [
+      { name: "Medicine", ranking: 32, strength: "Good", fees: "CAD 72,393", feeType: "per-year" },
+      { name: "Engineering", ranking: 38, strength: "Good", fees: "CAD 52,698", feeType: "per-year" },
+      { name: "Business", ranking: 48, strength: "Good", fees: "CAD 34,578", feeType: "per-year" },
+      { name: "Liberal Arts", ranking: 42, strength: "Good", fees: "CAD 31,234", feeType: "per-year" }
+    ],
+    highlights: ["Medical innovation", "Research excellence", "Problem-based learning", "Health sciences"],
+    website: "https://www.mcmaster.ca",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "canada-07",
+    name: "Queen's University",
+    location: "Kingston, Ontario, Canada",
+    type: "Public",
+    overallRanking: 209,
+    establishedYear: 1841,
+    courses: [
+      { name: "Business", ranking: 42, strength: "Good", fees: "CAD 52,926", feeType: "per-year" },
+      { name: "Engineering", ranking: 45, strength: "Good", fees: "CAD 54,192", feeType: "per-year" },
+      { name: "Medicine", ranking: 38, strength: "Good", fees: "CAD 85,974", feeType: "per-year" },
+      { name: "Law", ranking: 25, strength: "Very Good", fees: "CAD 52,926", feeType: "per-year" }
+    ],
+    highlights: ["Historic campus", "Business excellence", "Alumni network", "Traditions"],
+    website: "https://www.queensu.ca",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "canada-08",
+    name: "Western University",
+    location: "London, Ontario, Canada",
+    type: "Public",
+    overallRanking: 203,
+    establishedYear: 1878,
+    courses: [
+      { name: "Business", ranking: 38, strength: "Good", fees: "CAD 35,658", feeType: "per-year" },
+      { name: "Medicine", ranking: 40, strength: "Good", fees: "CAD 89,194", feeType: "per-year" },
+      { name: "Engineering", ranking: 48, strength: "Good", fees: "CAD 58,404", feeType: "per-year" },
+      { name: "Liberal Arts", ranking: 45, strength: "Good", fees: "CAD 33,768", feeType: "per-year" }
+    ],
+    highlights: ["Beautiful campus", "Business school", "Research university", "Student experience"],
+    website: "https://www.uwo.ca",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "canada-09",
+    name: "University of Calgary",
+    location: "Calgary, Alberta, Canada",
+    type: "Public",
+    overallRanking: 235,
+    establishedYear: 1966,
+    courses: [
+      { name: "Engineering", ranking: 42, strength: "Good", fees: "CAD 36,072", feeType: "per-year" },
+      { name: "Medicine", ranking: 45, strength: "Good", fees: "CAD 82,251", feeType: "per-year" },
+      { name: "Business", ranking: 58, strength: "Average", fees: "CAD 34,200", feeType: "per-year" },
+      { name: "Computer Science", ranking: 52, strength: "Average", fees: "CAD 36,072", feeType: "per-year" }
+    ],
+    highlights: ["Energy sector hub", "Research intensive", "Innovation", "Western Canada"],
+    website: "https://www.ucalgary.ca",
+    image: "/placeholder.svg"
+  },
+  {
+    id: "canada-10",
+    name: "Simon Fraser University",
+    location: "Burnaby, British Columbia, Canada",
+    type: "Public",
+    overallRanking: 298,
+    establishedYear: 1965,
+    courses: [
+      { name: "Computer Science", ranking: 48, strength: "Good", fees: "CAD 35,778", feeType: "per-year" },
+      { name: "Business", ranking: 52, strength: "Average", fees: "CAD 33,426", feeType: "per-year" },
+      { name: "Engineering", ranking: 55, strength: "Average", fees: "CAD 38,394", feeType: "per-year" },
+      { name: "Liberal Arts", ranking: 58, strength: "Average", fees: "CAD 29,586", feeType: "per-year" }
+    ],
+    highlights: ["Mountain campus", "Co-op programs", "Innovation", "Vancouver proximity"],
+    website: "https://www.sfu.ca",
+    image: "/placeholder.svg"
   }
 ];
