@@ -1,5 +1,7 @@
 
 import { College } from '../../../../types/collegeTypes';
-import { usPublicUniversities } from '../north-america/usa/public-universities';
+import { californiaPublicUniversities } from '../north-america/usa/public-universities/california-publics';
 
-export { usPublicUniversities };
+export const usPublicUniversities: College[] = [
+  ...californiaPublicUniversities
+];

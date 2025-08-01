@@ -1,9 +1,10 @@
 
 import { College } from '../../../types/collegeTypes';
-import { allUsColleges, usCollegesByType } from './us';
+import { allNorthAmericaColleges, allUsColleges, usCollegesByType, topCanadianUniversities } from './north-america/usa';
 import { allUkColleges, ukCollegesByType } from './uk';
 import { allEuropeanColleges, europeanCollegesByCountry } from './europe';
 import { allAsianColleges, asianCollegesByCountry } from './asia';
+import { allOceaniaColleges, oceaniaCollegesByCountry } from './oceania';
 import { otherColleges } from '../other-colleges';
 
 // Export individual collections for easy access
@@ -12,17 +13,18 @@ export {
   allUkColleges as ukColleges,
   allEuropeanColleges as europeanColleges,
   allAsianColleges as asianColleges,
+  topCanadianUniversities as canadianColleges,
   otherColleges,
   usCollegesByType,
   ukCollegesByType,
   europeanCollegesByCountry,
-  asianCollegesByCountry
+  asianCollegesByCountry,
+  oceaniaCollegesByCountry
 };
 
 // Organized by region for future expansion
 export const northAmericaColleges: College[] = [
-  ...allUsColleges
-  // Canada colleges can be added here
+  ...allNorthAmericaColleges
 ];
 
 export const europeColleges: College[] = [
@@ -35,6 +37,10 @@ export const asiaColleges: College[] = [
   // Exclude Indian colleges as they have their own section
 ];
 
+export const oceaniaColleges: College[] = [
+  ...allOceaniaColleges
+];
+
 export const otherRegionColleges: College[] = [
   ...otherColleges
 ];
@@ -44,6 +50,7 @@ export const worldColleges: College[] = [
   ...northAmericaColleges,
   ...europeColleges,
   ...asiaColleges,
+  ...oceaniaColleges,
   ...otherRegionColleges
 ];
 
@@ -53,11 +60,14 @@ export const worldCollegesByRegion = {
   'north-america': northAmericaColleges,
   'europe': europeColleges,
   'asia': asiaColleges,
+  'oceania': oceaniaColleges,
   'other': otherRegionColleges,
   
   // Country-specific categories
   'us': allUsColleges,
   'uk': allUkColleges,
+  'canada': topCanadianUniversities,
+  'australia': allOceaniaColleges,
   'european-continent': allEuropeanColleges,
   'asian-continent': allAsianColleges,
   
@@ -66,6 +76,7 @@ export const worldCollegesByRegion = {
   ...ukCollegesByType,
   ...europeanCollegesByCountry,
   ...asianCollegesByCountry,
+  ...oceaniaCollegesByCountry,
   
   // Main category
   'all': worldColleges

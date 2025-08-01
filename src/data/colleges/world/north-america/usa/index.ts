@@ -4,12 +4,14 @@ import { ivyLeagueColleges } from './ivy-league';
 import { usPublicUniversities } from '../../us/public-universities';
 import { usPrivateUniversities } from '../../us/private-universities';
 import { usLiberalArtsColleges } from '../../us/liberal-arts';
+import { topCanadianUniversities } from '../canada/top-canadian-universities';
 
 export { 
   ivyLeagueColleges,
   usPublicUniversities,
   usPrivateUniversities,
-  usLiberalArtsColleges
+  usLiberalArtsColleges,
+  topCanadianUniversities
 };
 
 export const allUsColleges: College[] = [
@@ -17,6 +19,11 @@ export const allUsColleges: College[] = [
   ...usPublicUniversities,
   ...usPrivateUniversities,
   ...usLiberalArtsColleges
+];
+
+export const allNorthAmericaColleges: College[] = [
+  ...allUsColleges,
+  ...topCanadianUniversities
 ];
 
 export const usCollegesByType = {
