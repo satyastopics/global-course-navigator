@@ -14,6 +14,7 @@ export {
   allEuropeanColleges as europeanColleges,
   allAsianColleges as asianColleges,
   topCanadianUniversities as canadianColleges,
+  allOceaniaColleges as oceaniaColleges,
   otherColleges,
   usCollegesByType,
   ukCollegesByType,
@@ -37,10 +38,6 @@ export const asiaColleges: College[] = [
   // Exclude Indian colleges as they have their own section
 ];
 
-export const oceaniaColleges: College[] = [
-  ...allOceaniaColleges
-];
-
 export const otherRegionColleges: College[] = [
   ...otherColleges
 ];
@@ -50,7 +47,7 @@ export const worldColleges: College[] = [
   ...northAmericaColleges,
   ...europeColleges,
   ...asiaColleges,
-  ...oceaniaColleges,
+  ...allOceaniaColleges,
   ...otherRegionColleges
 ];
 
@@ -60,7 +57,7 @@ export const worldCollegesByRegion = {
   'north-america': northAmericaColleges,
   'europe': europeColleges,
   'asia': asiaColleges,
-  'oceania': oceaniaColleges,
+  'oceania': allOceaniaColleges,
   'other': otherRegionColleges,
   
   // Country-specific categories
