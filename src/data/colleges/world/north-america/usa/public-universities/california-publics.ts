@@ -2,54 +2,37 @@ import { College } from '../../../../../../types/collegeTypes';
 
 export const californiaPublicUniversities: College[] = [
   {
-    id: "cal-01",
+    id: "uc-01",
     name: "University of California, Berkeley",
     location: "Berkeley, California, USA",
     type: "Public",
-    overallRanking: 20,
+    overallRanking: 22,
     establishedYear: 1868,
     courses: [
-      { name: "Computer Science", ranking: 3, strength: "Excellent", fees: "$47,760", feeType: "per-year" },
-      { name: "Engineering", ranking: 4, strength: "Excellent", fees: "$47,760", feeType: "per-year" },
-      { name: "Business", ranking: 7, strength: "Excellent", fees: "$70,000", feeType: "per-year" },
-      { name: "Economics", ranking: 8, strength: "Excellent", fees: "$47,760", feeType: "per-year" }
+      { name: "Engineering", ranking: 3, strength: "Excellent", fees: "$46,326", feeType: "per-year" },
+      { name: "Computer Science", ranking: 1, strength: "Excellent", fees: "$46,326", feeType: "per-year" },
+      { name: "Business", ranking: 7, strength: "Excellent", fees: "$65,000", feeType: "per-year" },
+      { name: "Economics", ranking: 3, strength: "Excellent", fees: "$46,326", feeType: "per-year" }
     ],
-    highlights: ["Top public university", "Silicon Valley proximity", "Research powerhouse", "Innovation hub"],
+    highlights: ["Top public university", "Silicon Valley proximity", "Nobel Prize winners", "Free speech movement"],
     website: "https://www.berkeley.edu",
     image: "/placeholder.svg"
   },
   {
-    id: "cal-02",
+    id: "uc-02", 
     name: "University of California, Los Angeles",
     location: "Los Angeles, California, USA",
     type: "Public",
-    overallRanking: 21,
+    overallRanking: 20,
     establishedYear: 1919,
     courses: [
-      { name: "Film Studies", ranking: 1, strength: "Excellent", fees: "$45,518", feeType: "per-year" },
-      { name: "Medicine", ranking: 12, strength: "Excellent", fees: "$61,294", feeType: "per-year" },
-      { name: "Engineering", ranking: 16, strength: "Excellent", fees: "$45,518", feeType: "per-year" },
-      { name: "Psychology", ranking: 6, strength: "Excellent", fees: "$45,518", feeType: "per-year" }
+      { name: "Film & Television", ranking: 1, strength: "Excellent", fees: "$46,326", feeType: "per-year" },
+      { name: "Medicine", ranking: 6, strength: "Excellent", fees: "$46,755", feeType: "per-year" },
+      { name: "Engineering", ranking: 16, strength: "Very Good", fees: "$46,326", feeType: "per-year" },
+      { name: "Business", ranking: 15, strength: "Very Good", fees: "$61,000", feeType: "per-year" }
     ],
-    highlights: ["Entertainment industry connections", "Beautiful campus", "Research excellence", "Diverse programs"],
+    highlights: ["Hollywood connections", "Research powerhouse", "Beautiful campus", "Athletic excellence"],
     website: "https://www.ucla.edu",
-    image: "/placeholder.svg"
-  },
-  {
-    id: "cal-03",
-    name: "University of California, San Diego",
-    location: "San Diego, California, USA",
-    type: "Public",
-    overallRanking: 34,
-    establishedYear: 1960,
-    courses: [
-      { name: "Bioengineering", ranking: 2, strength: "Excellent", fees: "$44,487", feeType: "per-year" },
-      { name: "Computer Science", ranking: 14, strength: "Excellent", fees: "$44,487", feeType: "per-year" },
-      { name: "Medicine", ranking: 16, strength: "Excellent", fees: "$58,109", feeType: "per-year" },
-      { name: "Economics", ranking: 18, strength: "Excellent", fees: "$44,487", feeType: "per-year" }
-    ],
-    highlights: ["Biotech research hub", "Pacific coast campus", "Innovation focus", "STEM excellence"],
-    website: "https://www.ucsd.edu",
     image: "/placeholder.svg"
   }
 ];
