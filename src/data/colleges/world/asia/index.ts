@@ -1,7 +1,7 @@
 
 import { College } from '../../../../types/collegeTypes';
 import { beijingUniversities } from './china/beijing';
-import { asianColleges } from '../../../asian-colleges';
+import { asianColleges } from '../../asian-colleges';
 
 export { beijingUniversities };
 

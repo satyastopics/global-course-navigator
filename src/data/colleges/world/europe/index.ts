@@ -1,7 +1,7 @@
 
 import { College } from '../../../../types/collegeTypes';
 import { allUkColleges } from '../uk';
-import { europeanColleges } from '../../../european-colleges';
+import { europeanColleges } from '../../european-colleges';
 
 export { allUkColleges };
 
