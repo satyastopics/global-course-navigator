@@ -1,18 +1,25 @@
 
 import { College } from '../../../../types/collegeTypes';
 import { allUkColleges } from '../uk';
+import { topGermanUniversities } from './germany/top-german-universities';
+import { topFrenchUniversities } from './france/top-french-universities';
+import { topSwissUniversities } from './switzerland/top-swiss-universities';
 import { europeanColleges } from '../../european-colleges';
 
-export { allUkColleges };
+export { allUkColleges, topGermanUniversities, topFrenchUniversities, topSwissUniversities };
 
-// For now, UK colleges are our main European colleges
-// Additional European countries can be added here
 export const allEuropeanColleges: College[] = [
   ...allUkColleges,
+  ...topGermanUniversities,
+  ...topFrenchUniversities,
+  ...topSwissUniversities,
   ...europeanColleges
 ];
 
 export const europeanCollegesByCountry = {
   'uk': allUkColleges,
+  'germany': topGermanUniversities,
+  'france': topFrenchUniversities,
+  'switzerland': topSwissUniversities,
   'all': allEuropeanColleges
 };
