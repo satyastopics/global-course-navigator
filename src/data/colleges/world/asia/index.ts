@@ -6,9 +6,21 @@ import { topJapaneseUniversities } from './japan/top-japanese-universities';
 import { topKoreanUniversities } from './south-korea/top-korean-universities';
 import { topSingaporeUniversities } from './singapore/top-singapore-universities';
 import { topHongKongUniversities } from './hong-kong/top-hongkong-universities';
-import { asianColleges } from '../../asian-colleges';
+import { topTaiwaneseUniversities } from './taiwan/top-taiwanese-universities';
+import { topThaiUniversities } from './thailand/top-thai-universities';
+import { topMalaysianUniversities } from './malaysia/top-malaysian-universities';
 
-export { beijingUniversities, topChineseUniversities, topJapaneseUniversities, topKoreanUniversities, topSingaporeUniversities, topHongKongUniversities };
+export { 
+  beijingUniversities, 
+  topChineseUniversities, 
+  topJapaneseUniversities, 
+  topKoreanUniversities, 
+  topSingaporeUniversities, 
+  topHongKongUniversities,
+  topTaiwaneseUniversities,
+  topThaiUniversities,
+  topMalaysianUniversities
+};
 
 export const allAsianColleges: College[] = [
   ...beijingUniversities,
@@ -17,7 +29,9 @@ export const allAsianColleges: College[] = [
   ...topKoreanUniversities,
   ...topSingaporeUniversities,
   ...topHongKongUniversities,
-  ...asianColleges
+  ...topTaiwaneseUniversities,
+  ...topThaiUniversities,
+  ...topMalaysianUniversities
 ];
 
 export const asianCollegesByCountry = {
@@ -26,5 +40,8 @@ export const asianCollegesByCountry = {
   'south-korea': topKoreanUniversities,
   'singapore': topSingaporeUniversities,
   'hong-kong': topHongKongUniversities,
+  'taiwan': topTaiwaneseUniversities,
+  'thailand': topThaiUniversities,
+  'malaysia': topMalaysianUniversities,
   'all': allAsianColleges
 };

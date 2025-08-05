@@ -4,16 +4,31 @@ import { allUkColleges } from '../uk';
 import { topGermanUniversities } from './germany/top-german-universities';
 import { topFrenchUniversities } from './france/top-french-universities';
 import { topSwissUniversities } from './switzerland/top-swiss-universities';
-import { europeanColleges } from '../../european-colleges';
+import { topDutchUniversities } from './netherlands/top-dutch-universities';
+import { topSwedishUniversities } from './sweden/top-swedish-universities';
+import { topItalianUniversities } from './italy/top-italian-universities';
+import { topSpanishUniversities } from './spain/top-spanish-universities';
 
-export { allUkColleges, topGermanUniversities, topFrenchUniversities, topSwissUniversities };
+export { 
+  allUkColleges, 
+  topGermanUniversities, 
+  topFrenchUniversities, 
+  topSwissUniversities,
+  topDutchUniversities,
+  topSwedishUniversities,
+  topItalianUniversities,
+  topSpanishUniversities
+};
 
 export const allEuropeanColleges: College[] = [
   ...allUkColleges,
   ...topGermanUniversities,
   ...topFrenchUniversities,
   ...topSwissUniversities,
-  ...europeanColleges
+  ...topDutchUniversities,
+  ...topSwedishUniversities,
+  ...topItalianUniversities,
+  ...topSpanishUniversities
 ];
 
 export const europeanCollegesByCountry = {
@@ -21,5 +36,9 @@ export const europeanCollegesByCountry = {
   'germany': topGermanUniversities,
   'france': topFrenchUniversities,
   'switzerland': topSwissUniversities,
+  'netherlands': topDutchUniversities,
+  'sweden': topSwedishUniversities,
+  'italy': topItalianUniversities,
+  'spain': topSpanishUniversities,
   'all': allEuropeanColleges
 };
